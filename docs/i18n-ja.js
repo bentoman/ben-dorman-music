@@ -36,8 +36,9 @@
   text('.music .section-note', '完成したキャスト録音と、創作過程を伝えるデモや資料に分けて紹介しています。');
   text('.featured-video .video-status', 'アニメーション制作中');
   text('.featured-video .kicker', '注目の一曲 · 2026');
-  text('.featured-video .video-copy > p:not(.kicker):not(.video-note)', '『Emma Amazing & the Bucket Fillers』オリジナル・キャスト録音のアニメーション作品。');
+  text('.featured-video .video-copy > p:not(.kicker):not(.video-note):not(.photo-credit)', '『Emma Amazing & the Bucket Fillers』オリジナル・キャスト録音のための、写真を用いた映像を制作中です。');
   text('.featured-video .video-note', '完成後、再生コントロールと字幕付きの映像をこちらに掲載します。');
+  text('.photo-credit', '公演写真提供：Nagoya Players。撮影者クレジットは確認中です。');
   const groups = document.querySelectorAll('.music-label');
   html(groups[0].querySelector('h3'), 'オリジナル・キャスト録音');
   text(groups[0].querySelector('p'), '作品に命を吹き込んだ出演者たちによる録音。');

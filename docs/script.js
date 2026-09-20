@@ -37,6 +37,9 @@ renderAlbums('#cast-recordings', window.PORTFOLIO.music.cast);
 renderAlbums('#demo-recordings', window.PORTFOLIO.music.demos);
 document.querySelector('#beyond-bandcamp').innerHTML = window.PORTFOLIO.music.beyond.map((item, index) => `
   <article class="archive-item"><span>0${index + 1}</span><h4>${item.title}</h4><p>${item.detail}</p></article>`).join('');
+document.querySelector('#notes-list').innerHTML = window.PORTFOLIO.notes.map(note => `
+  <article class="note"><p class="note-date">${note.date}</p><div><h3>${note.title}</h3><p>${note.body}</p></div>
+  </article>`).join('');
 document.querySelector('#year').textContent = new Date().getFullYear();
 
 const menu = document.querySelector('.menu');

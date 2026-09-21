@@ -50,7 +50,6 @@
   text('.embed-placeholder small', 'キャスト録音、作曲デモ、プロダクション・アーカイブ');
   html('.embed-placeholder > a', '音楽を聴く <span aria-hidden="true">↗</span>');
 
-  text('.notes .section-heading .kicker', '作曲の部屋から');
   text('#notes-title', 'ノート');
   text('.notes .section-note', '制作中の作品やリハーサル、創作のプロセスから生まれる、ときどきの記録。');
 

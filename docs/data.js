@@ -52,10 +52,10 @@ window.PORTFOLIO = {
       role: "Composer & lyricist",
       status: "Composer demos / archive",
       collaborators: [
-        { name: "Ana Valdes Lim", role: "adapter & director" },
+        { name: "Ana Valdes Lim", role: "adaptation writer & director" },
         { name: "Jeff Fritch", role: "choreographer" },
         { name: "Valeriya Takazato", role: "choreographer & assistant director" },
-        { name: "Shawn Mahler", role: "sound designer & creative director" }
+        { name: "Shawn Mahler", role: "sound designer, creative director & producer" }
       ],
       art: "assets/romeo-juliet.jpg",
       theme: "pale"
@@ -104,7 +104,7 @@ window.PORTFOLIO = {
     {
       date: "September 2026",
       title: "Two new shows in the works",
-      body: "Two new Nagoya Players Junior shows are in the works. <em>Mega Team Attack</em>, for the Elementary Troupe, is a lively fantasy world with the energy of a video game; <em>Sweet Dreams, Eugene</em>, for the Pre-Teen Troupe, is a comedy adventure about imagination, creativity and the power of working together.<br><br>I’ve been discussing the music and lyrics with the writers, Jeff Fritch (Elementary) and Kory Alexander Majansky (Pre-Teen), alongside producer Shawn Mahler.<br><br>Jeff and I have been collaborating on performance and music for more than 20 years. He has been involved in most NJP productions, apart from the most recent one, when I worked closely with Kory.<br><br>Each show offers a new opportunity to expand my musical palette. I don’t play video games, so I had never really listened to the rich, dramatic music used in games such as <em>World of Warcraft</em>. I found it a powerful experience, and learned a great deal from it while developing one of the pieces for <em>Mega Team Attack</em>.<br><br>For one of the songs in <em>Sweet Dreams, Eugene</em>, the brief was comic dancing—“think Marx Brothers.” I went with a Charleston-style piece: again, nothing like I’d written before.<br><br>I enjoy piecing the music together with fellow collaborators, whose feedback and insights inspire work the performers will, I hope, enjoy performing. If they take home memories of the music and songs, I could not ask for anything more."
+      body: "Two new Nagoya Players Junior shows are in the works. <em>Mega Team Attack</em>, for the Elementary Troupe, is a lively fantasy world with the energy of a video game; <em>Sweet Dreams, Eugene</em>, for the Pre-Teen Troupe, is a comedy adventure about imagination, creativity and the power of working together.<br><br>I’ve been discussing the music and lyrics with the writers, Jeff Fritch (Elementary) and Kory Alexander Majansky (Pre-Teen), alongside producer Shawn Mahler.<br><br>Jeff and I have been collaborating on performance and music for more than 20 years. He has been involved in most NPJ productions, apart from the most recent one, when I worked closely with Kory.<br><br>Each show offers a new opportunity to expand my musical palette. I don’t play video games, so I had never really listened to the rich, dramatic music used in games such as <em>World of Warcraft</em>. I found it a powerful experience, and learned a great deal from it while developing one of the pieces for <em>Mega Team Attack</em>.<br><br>For one of the songs in <em>Sweet Dreams, Eugene</em>, the brief was comic dancing—“think Marx Brothers.” I went with a Charleston-style piece: again, nothing like I’d written before.<br><br>I enjoy piecing the music together with fellow collaborators, whose feedback and insights inspire work the performers will, I hope, enjoy performing. If they take home memories of the music and songs, I could not ask for anything more."
     }
   ],
   music: {

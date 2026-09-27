@@ -13,3 +13,14 @@
 .photo-credit{font-size:11px!important;line-height:1.45;margin-top:20px;color:#847d71!important}
 .notes{background:#e3ddcf}.notes-list{max-width:var(--max);margin:auto;border-top:1px solid var(--line)}.note{display:grid;grid-template-columns:180px minmax(0,760px);gap:clamp(28px,6vw,100px);padding:42px 0;border-bottom:1px solid var(--line)}.note-date{margin:4px 0 0;font-size:12px;text-transform:uppercase;letter-spacing:.14em;color:#806313;font-weight:700}.note h3{font:400 clamp(32px,4vw,58px)/1.05 Georgia,serif;letter-spacing:-.04em;margin:0 0 22px}.note div>p{max-width:690px;margin:0;font-size:18px;line-height:1.7;color:#4e4a44}@media(max-width:640px){.note{grid-template-columns:1fr;gap:14px;padding:30px 0}.note h3{font-size:34px}.note div>p{font-size:16px}}
 .site-header nav .language-link{border-left:1px solid var(--line);padding-left:28px;text-transform:none;letter-spacing:.08em}@media(max-width:900px){.site-header nav .language-link{border-left:0;border-top:1px solid var(--line);padding:16px 0 0}}html[lang="ja"] body{font-family:"Hiragino Sans","Yu Gothic",Meiryo,Arial,sans-serif}html[lang="ja"] .hero h1,html[lang="ja"] .section h2,html[lang="ja"] .about h2,html[lang="ja"] footer h2,html[lang="ja"] .production-copy h3,html[lang="ja"] .music-label h3,html[lang="ja"] .album h4,html[lang="ja"] .archive-item h4,html[lang="ja"] .video-copy h3,html[lang="ja"] .philosophy p{font-family:"Yu Mincho","Hiragino Mincho ProN",serif;letter-spacing:-.02em}html[lang="ja"] .hero h1{line-height:1.08}html[lang="ja"] .hero h1 span{line-height:1.35}html[lang="ja"] .kicker,html[lang="ja"] .eyebrow{letter-spacing:.12em}
+
+
+/* Give artwork and headings their own space on narrow screens. */
+@media(max-width:640px){
+  .hero-art{height:auto;display:flow-root}
+  .art-side{top:45vw;bottom:auto}
+  .hero-note{position:relative;right:auto;bottom:auto;margin:100vw 0 0;text-align:right}
+  .section-heading{grid-template-columns:45px minmax(0,1fr)}
+  .section-heading>div{min-width:0}
+  .section h2{font-size:clamp(36px,11vw,54px);overflow-wrap:anywhere}
+}

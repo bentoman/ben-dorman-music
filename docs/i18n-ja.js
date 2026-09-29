@@ -34,10 +34,9 @@
   text('.music .section-heading .kicker', '聴く');
   text('#music-title', '音楽');
   text('.music .section-note', '完成したキャスト録音と、創作過程を伝えるデモや資料に分けて紹介しています。');
-  text('.featured-video .video-status', 'アニメーション制作中');
   text('.featured-video .kicker', '注目の一曲 · 2026');
-  text('.featured-video .video-copy > p:not(.kicker):not(.video-note):not(.photo-credit)', '『Emma Amazing & the Bucket Fillers』オリジナル・キャスト録音のための、写真を用いた映像を制作中です。');
-  text('.featured-video .video-note', '完成後、再生コントロールと字幕付きの映像をこちらに掲載します。');
+  text('.featured-video .video-copy > p:not(.kicker):not(.video-note):not(.photo-credit)', 'Nagoya Players Junior Showcase 2026の作品『Emma Amazing & the Bucket Fillers』より、オリジナル・キャストによるパフォーマンス。');
+  html('.featured-video .video-note a', 'YouTubeで見る <span aria-hidden="true">↗</span>');
   text('.photo-credit', '写真提供：Nagoya Players Junior。Nagoya Players Junior Showcase 2026『Emma Amazing & the Bucket Fillers』。脚本・演出：Kory Alexander Majansky。');
   const groups = document.querySelectorAll('.music-label');
   html(groups[0].querySelector('h3'), 'オリジナル・キャスト録音');

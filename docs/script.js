@@ -11,12 +11,14 @@ const artMarkup = (item) => item.art
 window.PORTFOLIO.productions.forEach((item, index) => {
   const article = document.createElement('article');
   article.className = `production-card ${item.theme}`;
+  if (item.id) article.id = item.id;
   article.innerHTML = `
     <div class="production-year">${item.year}</div>
     <div class="production-art">${artMarkup(item)}</div>
     <div class="production-copy">
       <p class="eyebrow">${item.eyebrow}</p>
       <h3>${item.title}</h3>
+      ${item.recording ? `<p><a class="production-recording" href="${item.recording.href}">${item.recording.label}</a></p>` : ''}
       <ul>${item.works.map(work => `<li>${work}</li>`).join('')}</ul>
       <div class="production-meta"><span>${item.role}</span><strong>${item.status}</strong></div>
       ${item.collaborators ? `<div class="collaborators"><span>${ui.collaborators}</span><p>${item.collaborators.map(person => `<b>${person.name}</b> — ${person.role}`).join(' · ')}</p></div>` : ''}
@@ -29,7 +31,7 @@ function renderAlbums(target, albums) {
   document.querySelector(target).innerHTML = albums.map(album => `
     <article class="album">
       <img src="${album.art}" alt="${ui.artwork} ${album.title}">
-      <div><span>${album.year}</span><h4>${album.title}</h4><p>${album.detail}</p><a class="album-link" href="https://bendorman.bandcamp.com/music" target="_blank" rel="noopener">${ui.bandcamp} <span aria-hidden="true">↗</span></a></div>
+      <div><span>${album.year}</span><h4>${album.title}</h4><p>${album.detail}</p>${album.recording ? `<p><a class="album-link" href="${album.recording.href}">${album.recording.label}</a></p>` : ''}<a class="album-link" href="https://bendorman.bandcamp.com/music" target="_blank" rel="noopener">${ui.bandcamp} <span aria-hidden="true">↗</span></a></div>
     </article>`).join('');
 }
 

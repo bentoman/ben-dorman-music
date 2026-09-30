@@ -39,7 +39,7 @@
   html('#big-blue-bucket .video-note a', 'YouTubeで見る <span aria-hidden="true">↗</span>');
   text('#big-blue-bucket .photo-credit', '写真提供：Nagoya Players Junior。Nagoya Players Junior Showcase 2026『Emma Amazing & the Bucket Fillers』。脚本・演出：Kory Alexander Majansky。');
   text('#romeos-lament .kicker', 'プロダクション・アーカイブ · 作曲者によるデモ');
-  html('#romeos-lament .video-description', 'Nagoya Playersの舞台『<em>Romeo and Juliet</em>』のために書いたオリジナル曲。作曲者によるデモ音源です。');
+  html('#romeos-lament .video-description', 'Nagoya Playersの<a href="#romeo-and-juliet-2024">2024年公演『<em>Romeo and Juliet</em>』</a>のために書いたオリジナル曲。作曲者によるデモ音源です。');
   html('#romeos-lament .song-credit', '作曲・オリジナル歌詞：Ben Dorman。<br>William Shakespeareの『<em>Romeo and Juliet</em>』の台詞を一部使用。<br>歌：Ben Dorman。');
   html('#romeos-lament .video-note a', 'YouTubeで見る <span aria-hidden="true">↗</span>');
   text('#this-town .kicker', '舞台作品より · 2010');
@@ -87,7 +87,7 @@
       { year:'2027', eyebrow:'制作中', title:'2027年に向けた新作ミュージカル', works:['Mega Team Attack','Sweet Dreams, Eugene'], role:'作曲・共同作詞', status:'制作中', collaborators:[{name:'Jeff Fritch',role:'Mega Team Attack 脚本、共同作詞、ダンス指導・振付'},{name:'Kory Alexander Majansky',role:'Sweet Dreams, Eugene 脚本、共同作詞、演技指導'},{name:'Shawn Mahler',role:'プロデューサー'}], art:null, theme:'development' },
       { year:'2026', eyebrow:'Nagoya Players Junior Showcase', title:'歌と音で形づくられた、三つの世界', works:['Super Shells','The Jar of Truth','Emma Amazing & the Bucket Fillers'], role:'作曲・共同作詞・音楽監督', status:'オリジナル・キャスト録音', collaborators:[{name:'Kory Alexander Majansky',role:'脚本、共同作詞、演出・振付'},{name:'Shawn Mahler',role:'プロデューサー'}], art:'assets/showcase-2026.jpg', theme:'blue' },
       { year:'2024', eyebrow:'Nagoya Players Junior Showcase', title:'冒険と魔法、そしてとても自立した猫', works:['The Jollyville Treasure','The Cat Who Walked by Herself'], role:'作曲・共同作詞', status:'作曲デモ／アーカイブ', collaborators:[{name:'Jeff Fritch',role:'脚本、共同作詞、演出・振付'},{name:'Ayako Hara',role:'ボーカルコーチ'},{name:'Shawn Mahler',role:'プロデューサー'}], art:'assets/showcase-2024.jpg', theme:'yellow' },
-      { year:'2024', eyebrow:'Nagoya Players', title:'Romeo and Juliet', works:['シェイクスピアの悲劇のためのオリジナル楽曲'], role:'作曲・作詞', status:'作曲デモ／アーカイブ', collaborators:[{name:'Ana Valdes Lim',role:'脚色執筆・演出'},{name:'Jeff Fritch',role:'振付'},{name:'Valeriya Takazato',role:'振付・演出助手'},{name:'Shawn Mahler',role:'サウンドデザイン、クリエイティブディレクション、プロデューサー'}], art:'assets/romeo-juliet.jpg', theme:'pale' },
+      { year:'2024', eyebrow:'Nagoya Players', title:'Romeo and Juliet', id:'romeo-and-juliet-2024', recording:{href:'#romeos-lament',label:'Romeo’s Lamentを聴く · 作曲者によるデモ'}, works:['シェイクスピアの悲劇のためのオリジナル楽曲'], role:'作曲・作詞', status:'作曲デモ／アーカイブ', collaborators:[{name:'Ana Valdes Lim',role:'脚色執筆・演出'},{name:'Jeff Fritch',role:'振付'},{name:'Valeriya Takazato',role:'振付・演出助手'},{name:'Shawn Mahler',role:'サウンドデザイン、クリエイティブディレクション、プロデューサー'}], art:'assets/romeo-juliet.jpg', theme:'pale' },
       { year:'2023', eyebrow:'Nagoya Players Junior', title:'Penny’s World of Dreams', works:['子どものためのオリジナル・ミュージカル'], role:'作曲・共同作詞', status:'オリジナル・キャスト録音', collaborators:[{name:'Jeff Fritch',role:'脚本、共同作詞、演出・振付'},{name:'Ayako Hara',role:'ボーカルコーチ'},{name:'Shawn Mahler',role:'プロデューサー'}], art:'assets/pennys-world.jpg', theme:'purple' },
       { year:'2022', eyebrow:'Nagoya Players Junior Showcase', title:'音源アーカイブの始まり', works:['Rainbow Connections: The Land of Kindness','A Day in the Life of Boogy'], role:'作曲・共同作詞', status:'オリジナル・キャスト録音', collaborators:[{name:'Jeff Fritch',role:'脚本、共同作詞、演出・振付'},{name:'Shawn Mahler',role:'プロデューサー'}], art:'assets/showcase-2022.jpg', theme:'cyan' },
       { year:'2010', eyebrow:'Nagoya Players', title:'A Christmas Carol', works:['初期の舞台作品 — アーカイブ整理中'], role:'音楽', status:'プロダクション・アーカイブ', art:null, theme:'archive' }
@@ -102,7 +102,7 @@
         {year:'2022',title:'NPJ Showcase 2022',detail:'Rainbow Connections と A Day in the Life of Boogy からの楽曲',art:'assets/showcase-2022.jpg'}
       ],
       demos:[
-        {year:'2024',title:'Romeo and Juliet',detail:'上演のために書かれた3曲の制作音源',art:'assets/romeo-juliet.jpg'},
+        {year:'2024',title:'Romeo and Juliet', id:'romeo-and-juliet-2024', recording:{href:'#romeos-lament',label:'Romeo’s Lamentを聴く · 作曲者によるデモ'},detail:'上演のために書かれた3曲の制作音源',art:'assets/romeo-juliet.jpg'},
         {year:'2024',title:'NPJ Showcase 2024',detail:'Sassy Cat、The First Magic などの作曲デモ',art:'assets/showcase-2024.jpg'}
       ],
       beyond:[

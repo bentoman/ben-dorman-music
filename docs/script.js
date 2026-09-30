@@ -54,3 +54,19 @@ menu.addEventListener('click', () => {
 nav.addEventListener('click', (event) => {
   if (event.target.matches('a')) { menu.setAttribute('aria-expanded', 'false'); nav.classList.remove('open'); }
 });
+
+// Keep archive navigation on the page and scroll to the rendered production.
+document.addEventListener('click', (event) => {
+  const link = event.target.closest('a');
+  if (!link || event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+  const destination = new URL(link.href, window.location.href);
+  if (destination.origin !== window.location.origin || destination.pathname !== window.location.pathname) return;
+  if (!['#romeo-and-juliet-2024', '#romeos-lament'].includes(destination.hash)) return;
+  const target = document.getElementById(destination.hash.slice(1));
+  if (!target) return;
+  event.preventDefault();
+  history.pushState(null, '', destination.hash);
+  target.scrollIntoView({ behavior: 'instant', block: 'start' });
+  target.setAttribute('tabindex', '-1');
+  target.focus({ preventScroll: true });
+});

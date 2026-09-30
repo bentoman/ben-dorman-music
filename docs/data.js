@@ -32,7 +32,7 @@ window.PORTFOLIO = {
     {
       year: "2024",
       eyebrow: "Nagoya Players Junior Showcase",
-      title: "The Cat Who Walked by Herself",
+      title: "The Cat Who Walked by Herself", id: "cat-who-walked-2024", recordings: [{ href: "/?lang=en#the-first-magic", label: "Watch The First Magic · Composer demo" }],
       works: ["The First Magic — music and original lyrics by Ben Dorman, incorporating text by Rudyard Kipling", "Sassy Cat — music and lyrics by Ben Dorman"],
       role: "Composer & original lyricist",
       status: "Composer demos / archive",
@@ -47,7 +47,7 @@ window.PORTFOLIO = {
     {
       year: "2024",
       eyebrow: "Nagoya Players",
-      title: "Romeo and Juliet", id: "romeo-and-juliet-2024", recordings: [{ href: "/?lang=en#romeos-lament", label: "Watch Romeo’s Lament · Composer demo" }, { href: "/?lang=en#juliets-nightingale", label: "Watch Juliet’s Nightingale / Home Sweet Home · Composer demo" }],
+      title: "Romeo and Juliet", id: "romeo-and-juliet-2024", recordings: [{ href: "/?lang=en#juliets-nightingale", label: "Watch Juliet’s Nightingale / Home Sweet Home · Composer demo" }, { href: "/?lang=en#romeos-lament", label: "Watch Romeo’s Lament · Composer demo" }],
       works: ["Original songs for Shakespeare’s tragedy"],
       role: "Composer & lyricist",
       status: "Composer demos / archive",
@@ -114,8 +114,8 @@ window.PORTFOLIO = {
       { year: "2022", title: "NPJ Showcase 2022", detail: "Songs from Rainbow Connections and A Day in the Life of Boogy", art: "assets/showcase-2022.jpg" }
     ],
     demos: [
-      { year: "2024", title: "Romeo and Juliet", id: "romeo-and-juliet-2024", recordings: [{ href: "/?lang=en#romeos-lament", label: "Watch Romeo’s Lament · Composer demo" }, { href: "/?lang=en#juliets-nightingale", label: "Watch Juliet’s Nightingale / Home Sweet Home · Composer demo" }], detail: "Three working recordings written for the production", art: "assets/romeo-juliet.jpg" },
-      { year: "2024", title: "The Cat Who Walked by Herself", detail: "NPJ Showcase 2024 · Composer demos: Sassy Cat and The First Magic", art: "assets/showcase-2024.jpg" }
+      { year: "2024", title: "Romeo and Juliet", id: "romeo-and-juliet-2024", recordings: [{ href: "/?lang=en#juliets-nightingale", label: "Watch Juliet’s Nightingale / Home Sweet Home · Composer demo" }, { href: "/?lang=en#romeos-lament", label: "Watch Romeo’s Lament · Composer demo" }], detail: "Three working recordings written for the production", art: "assets/romeo-juliet.jpg" },
+      { year: "2024", title: "The Cat Who Walked by Herself", id: "cat-who-walked-2024", recordings: [{ href: "/?lang=en#the-first-magic", label: "Watch The First Magic · Composer demo" }], detail: "NPJ Showcase 2024 · Composer demos: Sassy Cat and The First Magic", art: "assets/showcase-2024.jpg" }
     ],
     beyond: [
       { title: "Unpublished songs", detail: "Songs and demos that have not been released publicly" },

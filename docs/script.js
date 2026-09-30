@@ -61,7 +61,7 @@ document.addEventListener('click', (event) => {
   if (!link || event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
   const destination = new URL(link.href, window.location.href);
   if (destination.origin !== window.location.origin || destination.pathname !== window.location.pathname) return;
-  if (!['#romeo-and-juliet-2024', '#romeos-lament', '#juliets-nightingale'].includes(destination.hash)) return;
+  if (!['#romeo-and-juliet-2024', '#romeos-lament', '#juliets-nightingale', '#cat-who-walked-2024', '#the-first-magic'].includes(destination.hash)) return;
   const target = document.getElementById(destination.hash.slice(1));
   if (!target) return;
   event.preventDefault();

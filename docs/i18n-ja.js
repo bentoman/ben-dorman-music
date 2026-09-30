@@ -53,6 +53,11 @@
   html('#the-first-magic .production-return', '<a href="/?lang=ja#cat-who-walked-2024">2024年の公演を見る</a>');
   html('#the-first-magic .song-credit', '作曲・オリジナル歌詞：Ben Dorman。<br>Rudyard Kiplingの『<em>The Cat Who Walked by Herself</em>』の原文を一部使用。<br>歌：Ben Dorman。');
   html('#the-first-magic .video-note a', 'YouTubeで見る <span aria-hidden="true">↗</span>');
+  text('#sassy-cat-and-friends .kicker', 'プロダクション・アーカイブ · 作曲者によるデモ');
+  html('#sassy-cat-and-friends .video-description', '<a href="/?lang=ja#cat-who-walked-2024">Nagoya Players Junior Showcase 2024の『<em>The Cat Who Walked by Herself</em>』</a>のために書いたオリジナル曲。作曲者によるデモ音源です。');
+  html('#sassy-cat-and-friends .production-return', '<a href="/?lang=ja#cat-who-walked-2024">2024年の公演を見る</a>');
+  html('#sassy-cat-and-friends .song-credit', '作曲：Ben Dorman。<br>作詞：Ben Dorman、Jeff Fritch。<br>歌：Ben Dorman。');
+  html('#sassy-cat-and-friends .video-note a', 'YouTubeで見る <span aria-hidden="true">↗</span>');
   text('#this-town .kicker', '舞台作品より · 2010');
   html('#this-town .video-description', '衰退していく町を描いた、陰りのある一曲。Nagoya Playersの2010年公演『<em>A Christmas Carol with Heart</em>』のために書きました。John Lenihan演出によるこの作品は、ディケンズの物語をテキサスに舞台を移して描いたものです。');
   text('#this-town .song-credit', '作曲・作詞・歌：Ben Dorman。');
@@ -97,7 +102,7 @@
     productions: [
       { year:'2027', eyebrow:'制作中', title:'2027年に向けた新作ミュージカル', works:['Mega Team Attack','Sweet Dreams, Eugene'], role:'作曲・共同作詞', status:'制作中', collaborators:[{name:'Jeff Fritch',role:'Mega Team Attack 脚本、共同作詞、ダンス指導・振付'},{name:'Kory Alexander Majansky',role:'Sweet Dreams, Eugene 脚本、共同作詞、演技指導'},{name:'Shawn Mahler',role:'プロデューサー'}], art:null, theme:'development' },
       { year:'2026', eyebrow:'Nagoya Players Junior Showcase', title:'歌と音で形づくられた、三つの世界', works:['Super Shells','The Jar of Truth','Emma Amazing & the Bucket Fillers'], role:'作曲・共同作詞・音楽監督', status:'オリジナル・キャスト録音', collaborators:[{name:'Kory Alexander Majansky',role:'脚本、共同作詞、演出・振付'},{name:'Shawn Mahler',role:'プロデューサー'}], art:'assets/showcase-2026.jpg', theme:'blue' },
-      { year:'2024', eyebrow:'Nagoya Players Junior Showcase', title:'The Cat Who Walked by Herself', id:'cat-who-walked-2024', recordings:[{href:'/?lang=ja#the-first-magic',label:'The First Magicを聴く · 作曲者によるデモ'}], works:['The First Magic — 作曲・オリジナル歌詞：Ben Dorman。Rudyard Kiplingの原文を一部使用','Sassy Cat — 作曲・作詞：Ben Dorman'], role:'作曲・オリジナル歌詞', status:'作曲デモ／アーカイブ', collaborators:[{name:'Jeff Fritch',role:'脚本、演出・振付'},{name:'Ayako Hara',role:'ボーカルコーチ'},{name:'Shawn Mahler',role:'プロデューサー'}], art:'assets/showcase-2024.jpg', theme:'yellow' },
+      { year:'2024', eyebrow:'Nagoya Players Junior Showcase', title:'The Cat Who Walked by Herself', id:'cat-who-walked-2024', recordings:[{href:'/?lang=ja#the-first-magic',label:'The First Magicを聴く · 作曲者によるデモ'},{href:'/?lang=ja#sassy-cat-and-friends',label:'Sassy Cat and Friendsを聴く · 作曲者によるデモ'}], works:['The First Magic — 作曲・オリジナル歌詞：Ben Dorman。Rudyard Kiplingの原文を一部使用','Sassy Cat — 作曲：Ben Dorman。作詞：Ben Dorman、Jeff Fritch'], role:'作曲・作詞', status:'作曲デモ／アーカイブ', collaborators:[{name:'Jeff Fritch',role:'脚本、演出・振付'},{name:'Ayako Hara',role:'ボーカルコーチ'},{name:'Shawn Mahler',role:'プロデューサー'}], art:'assets/showcase-2024.jpg', theme:'yellow' },
       { year:'2024', eyebrow:'Nagoya Players', title:'Romeo and Juliet', id:'romeo-and-juliet-2024', recordings:[{href:'/?lang=ja#juliets-nightingale',label:'Juliet’s Nightingale / Home Sweet Homeを聴く · 作曲者によるデモ'},{href:'/?lang=ja#romeos-lament',label:'Romeo’s Lamentを聴く · 作曲者によるデモ'}], works:['シェイクスピアの悲劇のためのオリジナル楽曲'], role:'作曲・作詞', status:'作曲デモ／アーカイブ', collaborators:[{name:'Ana Valdes Lim',role:'脚色執筆・演出'},{name:'Jeff Fritch',role:'振付'},{name:'Valeriya Takazato',role:'振付・演出助手'},{name:'Shawn Mahler',role:'サウンドデザイン、クリエイティブディレクション、プロデューサー'}], art:'assets/romeo-juliet.jpg', theme:'pale' },
       { year:'2023', eyebrow:'Nagoya Players Junior', title:'Penny’s World of Dreams', works:['子どものためのオリジナル・ミュージカル'], role:'作曲・共同作詞', status:'オリジナル・キャスト録音', collaborators:[{name:'Jeff Fritch',role:'脚本、共同作詞、演出・振付'},{name:'Ayako Hara',role:'ボーカルコーチ'},{name:'Shawn Mahler',role:'プロデューサー'}], art:'assets/pennys-world.jpg', theme:'purple' },
       { year:'2022', eyebrow:'Nagoya Players Junior Showcase', title:'音源アーカイブの始まり', works:['Rainbow Connections: The Land of Kindness','A Day in the Life of Boogy'], role:'作曲・共同作詞', status:'オリジナル・キャスト録音', collaborators:[{name:'Jeff Fritch',role:'脚本、共同作詞、演出・振付'},{name:'Shawn Mahler',role:'プロデューサー'}], art:'assets/showcase-2022.jpg', theme:'cyan' },
@@ -114,7 +119,7 @@
       ],
       demos:[
         {year:'2024',title:'Romeo and Juliet', id:'romeo-and-juliet-2024', recordings:[{href:'/?lang=ja#juliets-nightingale',label:'Juliet’s Nightingale / Home Sweet Homeを聴く · 作曲者によるデモ'},{href:'/?lang=ja#romeos-lament',label:'Romeo’s Lamentを聴く · 作曲者によるデモ'}],detail:'上演のために書かれた3曲の制作音源',art:'assets/romeo-juliet.jpg'},
-        {year:'2024',title:'The Cat Who Walked by Herself', id:'cat-who-walked-2024', recordings:[{href:'/?lang=ja#the-first-magic',label:'The First Magicを聴く · 作曲者によるデモ'}],detail:'NPJ Showcase 2024 · Sassy CatとThe First Magicの作曲デモ',art:'assets/showcase-2024.jpg'}
+        {year:'2024',title:'The Cat Who Walked by Herself', id:'cat-who-walked-2024', recordings:[{href:'/?lang=ja#the-first-magic',label:'The First Magicを聴く · 作曲者によるデモ'},{href:'/?lang=ja#sassy-cat-and-friends',label:'Sassy Cat and Friendsを聴く · 作曲者によるデモ'}],detail:'NPJ Showcase 2024 · The First MagicとSassy Cat and Friendsの作曲デモ',art:'assets/showcase-2024.jpg'}
       ],
       beyond:[
         {title:'未発表曲',detail:'まだ一般公開していない楽曲やデモ'},

@@ -32,9 +32,9 @@ window.PORTFOLIO = {
     {
       year: "2024",
       eyebrow: "Nagoya Players Junior Showcase",
-      title: "The Cat Who Walked by Herself", id: "cat-who-walked-2024", recordings: [{ href: "/?lang=en#the-first-magic", label: "Watch The First Magic · Composer demo" }],
+      title: "The Cat Who Walked by Herself", id: "cat-who-walked-2024", recordings: [{ href: "/?lang=en#the-first-magic", label: "Watch The First Magic · Composer demo" }, { href: "/?lang=en#sassy-cat-and-friends", label: "Watch Sassy Cat and Friends · Composer demo" }],
       works: ["The First Magic — music and original lyrics by Ben Dorman, incorporating text by Rudyard Kipling", "Sassy Cat — music and lyrics by Ben Dorman"],
-      role: "Composer & original lyricist",
+      role: "Composer & lyricist",
       status: "Composer demos / archive",
       collaborators: [
         { name: "Jeff Fritch", role: "writer, director & choreographer" },
@@ -115,7 +115,7 @@ window.PORTFOLIO = {
     ],
     demos: [
       { year: "2024", title: "Romeo and Juliet", id: "romeo-and-juliet-2024", recordings: [{ href: "/?lang=en#juliets-nightingale", label: "Watch Juliet’s Nightingale / Home Sweet Home · Composer demo" }, { href: "/?lang=en#romeos-lament", label: "Watch Romeo’s Lament · Composer demo" }], detail: "Three working recordings written for the production", art: "assets/romeo-juliet.jpg" },
-      { year: "2024", title: "The Cat Who Walked by Herself", id: "cat-who-walked-2024", recordings: [{ href: "/?lang=en#the-first-magic", label: "Watch The First Magic · Composer demo" }], detail: "NPJ Showcase 2024 · Composer demos: Sassy Cat and The First Magic", art: "assets/showcase-2024.jpg" }
+      { year: "2024", title: "The Cat Who Walked by Herself", id: "cat-who-walked-2024", recordings: [{ href: "/?lang=en#the-first-magic", label: "Watch The First Magic · Composer demo" }, { href: "/?lang=en#sassy-cat-and-friends", label: "Watch Sassy Cat and Friends · Composer demo" }], detail: "NPJ Showcase 2024 · Composer demos: The First Magic and Sassy Cat and Friends", art: "assets/showcase-2024.jpg" }
     ],
     beyond: [
       { title: "Unpublished songs", detail: "Songs and demos that have not been released publicly" },

@@ -92,7 +92,7 @@
     productions: [
       { year:'2027', eyebrow:'制作中', title:'2027年に向けた新作ミュージカル', works:['Mega Team Attack','Sweet Dreams, Eugene'], role:'作曲・共同作詞', status:'制作中', collaborators:[{name:'Jeff Fritch',role:'Mega Team Attack 脚本、共同作詞、ダンス指導・振付'},{name:'Kory Alexander Majansky',role:'Sweet Dreams, Eugene 脚本、共同作詞、演技指導'},{name:'Shawn Mahler',role:'プロデューサー'}], art:null, theme:'development' },
       { year:'2026', eyebrow:'Nagoya Players Junior Showcase', title:'歌と音で形づくられた、三つの世界', works:['Super Shells','The Jar of Truth','Emma Amazing & the Bucket Fillers'], role:'作曲・共同作詞・音楽監督', status:'オリジナル・キャスト録音', collaborators:[{name:'Kory Alexander Majansky',role:'脚本、共同作詞、演出・振付'},{name:'Shawn Mahler',role:'プロデューサー'}], art:'assets/showcase-2026.jpg', theme:'blue' },
-      { year:'2024', eyebrow:'Nagoya Players Junior Showcase', title:'冒険と魔法、そしてとても自立した猫', works:['The Jollyville Treasure','The Cat Who Walked by Herself'], role:'作曲・共同作詞', status:'作曲デモ／アーカイブ', collaborators:[{name:'Jeff Fritch',role:'脚本、共同作詞、演出・振付'},{name:'Ayako Hara',role:'ボーカルコーチ'},{name:'Shawn Mahler',role:'プロデューサー'}], art:'assets/showcase-2024.jpg', theme:'yellow' },
+      { year:'2024', eyebrow:'Nagoya Players Junior Showcase', title:'The Cat Who Walked by Herself', works:['The First Magic — 作曲・オリジナル歌詞：Ben Dorman。Rudyard Kiplingの原文を一部使用','Sassy Cat — 作曲・作詞：Ben Dorman'], role:'作曲・オリジナル歌詞', status:'作曲デモ／アーカイブ', collaborators:[{name:'Jeff Fritch',role:'脚本、演出・振付'},{name:'Ayako Hara',role:'ボーカルコーチ'},{name:'Shawn Mahler',role:'プロデューサー'}], art:'assets/showcase-2024.jpg', theme:'yellow' },
       { year:'2024', eyebrow:'Nagoya Players', title:'Romeo and Juliet', id:'romeo-and-juliet-2024', recordings:[{href:'/?lang=ja#romeos-lament',label:'Romeo’s Lamentを聴く · 作曲者によるデモ'},{href:'/?lang=ja#juliets-nightingale',label:'Juliet’s Nightingale / Home Sweet Homeを聴く · 作曲者によるデモ'}], works:['シェイクスピアの悲劇のためのオリジナル楽曲'], role:'作曲・作詞', status:'作曲デモ／アーカイブ', collaborators:[{name:'Ana Valdes Lim',role:'脚色執筆・演出'},{name:'Jeff Fritch',role:'振付'},{name:'Valeriya Takazato',role:'振付・演出助手'},{name:'Shawn Mahler',role:'サウンドデザイン、クリエイティブディレクション、プロデューサー'}], art:'assets/romeo-juliet.jpg', theme:'pale' },
       { year:'2023', eyebrow:'Nagoya Players Junior', title:'Penny’s World of Dreams', works:['子どものためのオリジナル・ミュージカル'], role:'作曲・共同作詞', status:'オリジナル・キャスト録音', collaborators:[{name:'Jeff Fritch',role:'脚本、共同作詞、演出・振付'},{name:'Ayako Hara',role:'ボーカルコーチ'},{name:'Shawn Mahler',role:'プロデューサー'}], art:'assets/pennys-world.jpg', theme:'purple' },
       { year:'2022', eyebrow:'Nagoya Players Junior Showcase', title:'音源アーカイブの始まり', works:['Rainbow Connections: The Land of Kindness','A Day in the Life of Boogy'], role:'作曲・共同作詞', status:'オリジナル・キャスト録音', collaborators:[{name:'Jeff Fritch',role:'脚本、共同作詞、演出・振付'},{name:'Shawn Mahler',role:'プロデューサー'}], art:'assets/showcase-2022.jpg', theme:'cyan' },
@@ -109,7 +109,7 @@
       ],
       demos:[
         {year:'2024',title:'Romeo and Juliet', id:'romeo-and-juliet-2024', recordings:[{href:'/?lang=ja#romeos-lament',label:'Romeo’s Lamentを聴く · 作曲者によるデモ'},{href:'/?lang=ja#juliets-nightingale',label:'Juliet’s Nightingale / Home Sweet Homeを聴く · 作曲者によるデモ'}],detail:'上演のために書かれた3曲の制作音源',art:'assets/romeo-juliet.jpg'},
-        {year:'2024',title:'NPJ Showcase 2024',detail:'Sassy Cat、The First Magic などの作曲デモ',art:'assets/showcase-2024.jpg'}
+        {year:'2024',title:'The Cat Who Walked by Herself',detail:'NPJ Showcase 2024 · Sassy CatとThe First Magicの作曲デモ',art:'assets/showcase-2024.jpg'}
       ],
       beyond:[
         {title:'未発表曲',detail:'まだ一般公開していない楽曲やデモ'},

@@ -47,6 +47,11 @@
   text('#this-town .song-credit', '作曲・作詞・歌：Ben Dorman。');
   html('#this-town .video-note a', 'YouTubeで見る <span aria-hidden="true">↗</span>');
   text('#this-town .photo-credit', '写真：John Lenihan。本人の許可を得て使用しています。');
+  text('#songs-title', 'ソングス');
+  text('.songs-heading p', '舞台作品とは別に書いた歌。');
+  text('#breathe .kicker', 'アコースティック');
+  text('#breathe .video-description', 'ギターとボーカル・ハーモニーによる、穏やかなアコースティック・ソング。');
+  html('#breathe .video-note a', 'YouTubeで見る <span aria-hidden="true">↗</span>');
   const groups = document.querySelectorAll('.music-label');
   html(groups[0].querySelector('h3'), 'オリジナル・キャスト録音');
   text(groups[0].querySelector('p'), '作品に命を吹き込んだ出演者たちによる録音。');

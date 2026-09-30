@@ -47,7 +47,7 @@ window.PORTFOLIO = {
     {
       year: "2024",
       eyebrow: "Nagoya Players",
-      title: "Romeo and Juliet", id: "romeo-and-juliet-2024", recording: { href: "/?lang=en#romeos-lament", label: "Watch Romeo’s Lament · Composer demo" },
+      title: "Romeo and Juliet", id: "romeo-and-juliet-2024", recordings: [{ href: "/?lang=en#romeos-lament", label: "Watch Romeo’s Lament · Composer demo" }, { href: "/?lang=en#juliets-nightingale", label: "Watch Juliet’s Nightingale / Home Sweet Home · Composer demo" }],
       works: ["Original songs for Shakespeare’s tragedy"],
       role: "Composer & lyricist",
       status: "Composer demos / archive",
@@ -114,7 +114,7 @@ window.PORTFOLIO = {
       { year: "2022", title: "NPJ Showcase 2022", detail: "Songs from Rainbow Connections and A Day in the Life of Boogy", art: "assets/showcase-2022.jpg" }
     ],
     demos: [
-      { year: "2024", title: "Romeo and Juliet", id: "romeo-and-juliet-2024", recording: { href: "/?lang=en#romeos-lament", label: "Watch Romeo’s Lament · Composer demo" }, detail: "Three working recordings written for the production", art: "assets/romeo-juliet.jpg" },
+      { year: "2024", title: "Romeo and Juliet", id: "romeo-and-juliet-2024", recordings: [{ href: "/?lang=en#romeos-lament", label: "Watch Romeo’s Lament · Composer demo" }, { href: "/?lang=en#juliets-nightingale", label: "Watch Juliet’s Nightingale / Home Sweet Home · Composer demo" }], detail: "Three working recordings written for the production", art: "assets/romeo-juliet.jpg" },
       { year: "2024", title: "NPJ Showcase 2024", detail: "Composer demos including Sassy Cat and The First Magic", art: "assets/showcase-2024.jpg" }
     ],
     beyond: [

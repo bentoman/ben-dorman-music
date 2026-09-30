@@ -18,7 +18,7 @@ window.PORTFOLIO.productions.forEach((item, index) => {
     <div class="production-copy">
       <p class="eyebrow">${item.eyebrow}</p>
       <h3>${item.title}</h3>
-      ${item.recording ? `<p><a class="production-recording" href="${item.recording.href}">${item.recording.label}</a></p>` : ''}
+      ${(item.recordings || []).map(recording => `<p><a class="production-recording" href="${recording.href}">${recording.label}</a></p>`).join('')}
       <ul>${item.works.map(work => `<li>${work}</li>`).join('')}</ul>
       <div class="production-meta"><span>${item.role}</span><strong>${item.status}</strong></div>
       ${item.collaborators ? `<div class="collaborators"><span>${ui.collaborators}</span><p>${item.collaborators.map(person => `<b>${person.name}</b> — ${person.role}`).join(' · ')}</p></div>` : ''}
@@ -31,7 +31,7 @@ function renderAlbums(target, albums) {
   document.querySelector(target).innerHTML = albums.map(album => `
     <article class="album">
       <img src="${album.art}" alt="${ui.artwork} ${album.title}">
-      <div><span>${album.year}</span><h4>${album.title}</h4><p>${album.detail}</p>${album.recording ? `<p><a class="album-link" href="${album.recording.href}">${album.recording.label}</a></p>` : ''}<a class="album-link" href="https://bendorman.bandcamp.com/music" target="_blank" rel="noopener">${ui.bandcamp} <span aria-hidden="true">↗</span></a></div>
+      <div><span>${album.year}</span><h4>${album.title}</h4><p>${album.detail}</p>${(album.recordings || []).map(recording => `<p><a class="album-link" href="${recording.href}">${recording.label}</a></p>`).join('')}<a class="album-link" href="https://bendorman.bandcamp.com/music" target="_blank" rel="noopener">${ui.bandcamp} <span aria-hidden="true">↗</span></a></div>
     </article>`).join('');
 }
 
@@ -61,7 +61,7 @@ document.addEventListener('click', (event) => {
   if (!link || event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
   const destination = new URL(link.href, window.location.href);
   if (destination.origin !== window.location.origin || destination.pathname !== window.location.pathname) return;
-  if (!['#romeo-and-juliet-2024', '#romeos-lament'].includes(destination.hash)) return;
+  if (!['#romeo-and-juliet-2024', '#romeos-lament', '#juliets-nightingale'].includes(destination.hash)) return;
   const target = document.getElementById(destination.hash.slice(1));
   if (!target) return;
   event.preventDefault();

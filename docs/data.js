@@ -19,7 +19,7 @@ window.PORTFOLIO = {
       year: "2026",
       eyebrow: "Nagoya Players Junior Showcase",
       title: "Three worlds, shaped through song and sound",
-      works: ["Super Shells", "The Jar of Truth", "Emma Amazing & the Bucket Fillers"],
+      works: ["Super Shells", "The Jar of Truth", { title: "Emma Amazing & the Bucket Fillers", id: "emma-amazing-bucket-fillers", href: "/?lang=en#big-blue-bucket" }],
       role: "Composer, co-lyricist & music director",
       status: "Original cast recording",
       collaborators: [

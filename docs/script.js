@@ -7,6 +7,9 @@ const ui = window.PORTFOLIO.ui || {
 const artMarkup = (item) => item.art
   ? `<img src="${item.art}" alt="${ui.artwork} ${item.eyebrow}: ${item.title}">`
   : `<div class="type-art" aria-hidden="true"><span>${item.year}</span><b>${item.theme === 'development' ? 'WIP' : 'ARCHIVE'}</b></div>`;
+const workMarkup = (work) => typeof work === 'string'
+  ? `<li>${work}</li>`
+  : `<li${work.id ? ` id="${work.id}"` : ''}><a href="${work.href}">${work.title}</a></li>`;
 
 window.PORTFOLIO.productions.forEach((item, index) => {
   const article = document.createElement('article');
@@ -19,7 +22,7 @@ window.PORTFOLIO.productions.forEach((item, index) => {
       <p class="eyebrow">${item.eyebrow}</p>
       <h3>${item.title}</h3>
       ${(item.recordings || []).map(recording => `<p><a class="production-recording" href="${recording.href}">${recording.label}</a></p>`).join('')}
-      <ul>${item.works.map(work => `<li>${work}</li>`).join('')}</ul>
+      <ul>${item.works.map(workMarkup).join('')}</ul>
       <div class="production-meta"><span>${item.role}</span><strong>${item.status}</strong></div>
       ${item.collaborators ? `<div class="collaborators"><span>${ui.collaborators}</span><p>${item.collaborators.map(person => `<b>${person.name}</b> — ${person.role}`).join(' · ')}</p></div>` : ''}
     </div>
@@ -61,7 +64,7 @@ document.addEventListener('click', (event) => {
   if (!link || event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
   const destination = new URL(link.href, window.location.href);
   if (destination.origin !== window.location.origin || destination.pathname !== window.location.pathname) return;
-  if (!['#romeo-and-juliet-2024', '#romeos-lament', '#juliets-nightingale', '#cat-who-walked-2024', '#the-first-magic', '#sassy-cat-and-friends'].includes(destination.hash)) return;
+  if (!['#romeo-and-juliet-2024', '#romeos-lament', '#juliets-nightingale', '#cat-who-walked-2024', '#the-first-magic', '#sassy-cat-and-friends', '#emma-amazing-bucket-fillers', '#big-blue-bucket'].includes(destination.hash)) return;
   const target = document.getElementById(destination.hash.slice(1));
   if (!target) return;
   event.preventDefault();

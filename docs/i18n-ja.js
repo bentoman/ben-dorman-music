@@ -38,6 +38,10 @@
   text('#big-blue-bucket .video-copy > p:not(.kicker):not(.video-note):not(.photo-credit)', 'Nagoya Players Junior Showcase 2026のファミリー・ミュージカル『Emma Amazing & the Bucket Fillers』より、オリジナル・キャストによるパフォーマンス。');
   html('#big-blue-bucket .video-note a', 'YouTubeで見る <span aria-hidden="true">↗</span>');
   text('#big-blue-bucket .photo-credit', '写真提供：Nagoya Players Junior。Nagoya Players Junior Showcase 2026『Emma Amazing & the Bucket Fillers』。脚本・演出：Kory Alexander Majansky。');
+  text('#romeos-lament .kicker', 'プロダクション・アーカイブ · 作曲者によるデモ');
+  html('#romeos-lament .video-description', 'Nagoya Playersの舞台『<em>Romeo and Juliet</em>』のために書いたオリジナル曲。作曲者によるデモ音源です。');
+  html('#romeos-lament .song-credit', '作曲・オリジナル歌詞：Ben Dorman。<br>William Shakespeareの『<em>Romeo and Juliet</em>』の台詞を一部使用。<br>歌：Ben Dorman。');
+  html('#romeos-lament .video-note a', 'YouTubeで見る <span aria-hidden="true">↗</span>');
   text('#this-town .kicker', '舞台作品より · 2010');
   html('#this-town .video-description', '衰退していく町を描いた、陰りのある一曲。Nagoya Playersの2010年公演『<em>A Christmas Carol with Heart</em>』のために書きました。John Lenihan演出によるこの作品は、ディケンズの物語をテキサスに舞台を移して描いたものです。');
   text('#this-town .song-credit', '作曲・作詞・歌：Ben Dorman。');

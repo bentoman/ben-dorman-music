@@ -6,11 +6,19 @@ const ui = window.PORTFOLIO.ui || {
 };
 // Approved survey excerpts; use the original Japanese when supplied.
 const productionFeedback = {
-  'cat-who-walked-2024': {
-    quote: 'After the performance, even after returning home, I remember that the children kept humming the song The Cat Who Walked by Herself.',
-    attribution: 'Parent of a performer',
-    attributionJa: '出演者の保護者'
-  },
+  'cat-who-walked-2024': [
+    {
+      quote: 'After the performance, even after returning home, I remember that the children kept humming the song The Cat Who Walked by Herself.',
+      attribution: 'Parent of a performer',
+      attributionJa: '出演者の保護者'
+    },
+    {
+      quote: 'The children sang with such energy. The songs were catchy and easy for the children to learn.',
+      quoteJa: '子供たちが生き生きと歌っていた。子供たちがすぐ覚えれるcatchyな曲でした。',
+      attribution: 'Tomoko, backstage team',
+      attributionJa: 'Tomoko（舞台裏スタッフ）'
+    }
+  ],
   'romeo-and-juliet-2024': [
     {
       quote: 'The music was cohesive with the emotions portrayed by the actors on stage.',

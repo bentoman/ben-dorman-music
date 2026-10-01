@@ -38,6 +38,9 @@
   html('#big-blue-bucket .video-copy > p:not(.kicker):not(.video-note):not(.photo-credit)', 'Nagoya Players Junior Showcase 2026のファミリー・ミュージカル<a href="/?lang=ja#emma-amazing-bucket-fillers">『<em>Emma Amazing & the Bucket Fillers</em>』</a>より、オリジナル・キャストによるパフォーマンス。');
   html('#big-blue-bucket .video-note a', 'YouTubeで見る <span aria-hidden="true">↗</span>');
   text('#big-blue-bucket .photo-credit', '写真提供：Nagoya Players Junior。Nagoya Players Junior Showcase 2026『Emma Amazing & the Bucket Fillers』。脚本・演出：Kory Alexander Majansky。');
+  document.querySelector('#romeos-lament .production-feedback').setAttribute('aria-label', '公演からの声');
+  text('#romeos-lament .feedback-label', '公演からの声');
+  text('#romeos-lament .production-feedback footer', 'Richard Harris（出演者）');
   text('#romeos-lament .kicker', 'プロダクション・アーカイブ · 作曲者によるデモ');
   html('#romeos-lament .video-description', 'Nagoya Playersの<a href="/?lang=ja#romeo-and-juliet-2024">2024年公演『<em>Romeo and Juliet</em>』</a>のために書いたオリジナル曲。作曲者によるデモ音源です。');
   html('#romeos-lament .production-return', '<a href="/?lang=ja#romeo-and-juliet-2024">2024年の公演を見る</a>');

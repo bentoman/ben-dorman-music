@@ -4,6 +4,27 @@ const ui = window.PORTFOLIO.ui || {
   collaborators: 'Key collaborators',
   bandcamp: 'Find on Bandcamp'
 };
+// Approved survey excerpts; keep quotation text in its original language.
+const productionFeedback = {
+  'cat-who-walked-2024': {
+    quote: 'After the performance, even after returning home, I remember that the children kept humming the song The Cat Who Walked by Herself.',
+    attribution: 'Parent of a performer',
+    attributionJa: '出演者の保護者'
+  },
+  'romeo-and-juliet-2024': {
+    quote: 'The music was cohesive with the emotions portrayed by the actors on stage.',
+    attribution: 'Richard Harris, performer',
+    attributionJa: 'Richard Harris（出演者）'
+  }
+};
+const feedbackMarkup = (feedback) => {
+  if (!feedback) return '';
+  const japanese = document.documentElement.lang === 'ja';
+  return `<aside class="production-feedback" aria-label="${japanese ? '公演からの声' : 'From the productions'}">
+    <p class="feedback-label">${japanese ? '公演からの声' : 'From the productions'}</p>
+    <blockquote><p lang="en">“${feedback.quote}”</p><footer>${japanese ? feedback.attributionJa : feedback.attribution}</footer></blockquote>
+  </aside>`;
+};
 const artMarkup = (item) => item.art
   ? `<img src="${item.art}" alt="${ui.artwork} ${item.eyebrow}: ${item.title}">`
   : `<div class="type-art" aria-hidden="true"><span>${item.year}</span><b>${item.theme === 'development' ? 'WIP' : 'ARCHIVE'}</b></div>`;
@@ -25,6 +46,7 @@ window.PORTFOLIO.productions.forEach((item, index) => {
       <ul>${item.works.map(workMarkup).join('')}</ul>
       <div class="production-meta"><span>${item.role}</span><strong>${item.status}</strong></div>
       ${item.collaborators ? `<div class="collaborators"><span>${ui.collaborators}</span><p>${item.collaborators.map(person => `<b>${person.name}</b> — ${person.role}`).join(' · ')}</p></div>` : ''}
+      ${feedbackMarkup(productionFeedback[item.id])}
     </div>
     <span class="index" aria-hidden="true">${String(index + 1).padStart(2, '0')}</span>`;
   productionList.append(article);

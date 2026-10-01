@@ -28,3 +28,14 @@
 .songs{max-width:var(--max);margin:100px auto 0;scroll-margin-top:110px}.songs-heading{margin-bottom:34px}.songs-heading h3{font:400 clamp(38px,5vw,68px)/1 Georgia,serif;margin:0 0 18px}.songs-heading p{color:#aaa398}.songs .featured-video{margin-bottom:0}.songs .video-copy h4{font:400 clamp(38px,5vw,68px)/1 Georgia,serif;margin:0 0 22px}html[lang="ja"] .songs-heading h3{font-family:"Yu Mincho","Hiragino Mincho ProN",serif}@media(max-width:760px){.songs{margin-top:70px}}
 
 .production-card[id],#romeos-lament,#juliets-nightingale,#the-first-magic,#sassy-cat-and-friends,#rainbow-connections-land-of-kindness,#rainbow-connections,#emma-amazing-bucket-fillers,#big-blue-bucket{scroll-margin-top:110px}.production-copy li a{color:#806313;text-underline-offset:4px}.production-recording{color:#806313;text-underline-offset:4px}
+
+/* Quiet production recollections, within the existing archive layout. */
+.production-feedback{margin-top:24px;padding-top:18px;border-top:1px solid var(--line);min-width:0}
+.production-feedback .feedback-label{margin:0 0 10px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.14em;color:#806313}
+.production-feedback blockquote{margin:0;padding:0}
+.production-feedback blockquote p{margin:0;font:400 18px/1.55 Georgia,'Times New Roman',serif;color:#4f4b45;overflow-wrap:anywhere}
+.production-feedback blockquote footer{margin:10px 0 0;padding:0;background:none;font:400 12px/1.5 Arial,Helvetica,sans-serif;letter-spacing:0;color:var(--muted)}
+.music .production-feedback{border-color:#3d3933}
+.music .production-feedback .feedback-label{color:#d8b557}
+.music .production-feedback blockquote p{color:#e5dfd3}
+.music .production-feedback blockquote footer{color:#aaa398}

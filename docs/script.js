@@ -8,7 +8,7 @@ const ui = window.PORTFOLIO.ui || {
 const productionFeedback = {
   'cat-who-walked-2024': [
     {
-      quote: 'After the performance, even after returning home, I remember that the children kept humming the song The Cat Who Walked by Herself.',
+      quote: 'After the performance, even after returning home, I remember that the children kept humming the song [from] The Cat Who Walked by Herself.',
       attribution: 'Parent of a performer',
       attributionJa: '出演者の保護者'
     },

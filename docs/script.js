@@ -8,7 +8,7 @@ const ui = window.PORTFOLIO.ui || {
 const productionFeedback = {
   'cat-who-walked-2024': [
     {
-      quote: 'After the performance, even after returning home, I remember that the children kept humming the song [from] The Cat Who Walked by Herself.',
+      quote: 'After the performance, even after returning home, I remember that the children kept humming the song [from] <em>The Cat Who Walked by Herself</em>.',
       attribution: 'Parent of a performer',
       attributionJa: '出演者の保護者'
     },
@@ -26,7 +26,7 @@ const productionFeedback = {
       attributionJa: 'Richard Harris（出演者）'
     },
     {
-      quote: 'During Romeo and Juliet, when Kory sang, it brought tears to my eyes.',
+      quote: 'During <em>Romeo and Juliet</em>, when Kory sang, it brought tears to my eyes.',
       quoteJa: 'R & J では、Koryが歌った時、涙が出てきました。',
       attribution: 'Tomoko, performer',
       attributionJa: 'Tomoko（出演者）'

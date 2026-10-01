@@ -4,25 +4,33 @@ const ui = window.PORTFOLIO.ui || {
   collaborators: 'Key collaborators',
   bandcamp: 'Find on Bandcamp'
 };
-// Approved survey excerpts; keep quotation text in its original language.
+// Approved survey excerpts; use the original Japanese when supplied.
 const productionFeedback = {
   'cat-who-walked-2024': {
     quote: 'After the performance, even after returning home, I remember that the children kept humming the song The Cat Who Walked by Herself.',
     attribution: 'Parent of a performer',
     attributionJa: '出演者の保護者'
   },
-  'romeo-and-juliet-2024': {
-    quote: 'The music was cohesive with the emotions portrayed by the actors on stage.',
-    attribution: 'Richard Harris, performer',
-    attributionJa: 'Richard Harris（出演者）'
-  }
+  'romeo-and-juliet-2024': [
+    {
+      quote: 'The music was cohesive with the emotions portrayed by the actors on stage.',
+      attribution: 'Richard Harris, performer',
+      attributionJa: 'Richard Harris（出演者）'
+    },
+    {
+      quote: 'During Romeo and Juliet, when Kory sang, it brought tears to my eyes.',
+      quoteJa: 'R & J では、Koryが歌った時、涙が出てきました。',
+      attribution: 'Tomoko, performer',
+      attributionJa: 'Tomoko（出演者）'
+    }
+  ]
 };
 const feedbackMarkup = (feedback) => {
   if (!feedback) return '';
   const japanese = document.documentElement.lang === 'ja';
   return `<aside class="production-feedback" aria-label="${japanese ? '公演からの声' : 'From the productions'}">
     <p class="feedback-label">${japanese ? '公演からの声' : 'From the productions'}</p>
-    <blockquote><p lang="en">“${feedback.quote}”</p><footer>${japanese ? feedback.attributionJa : feedback.attribution}</footer></blockquote>
+    ${(Array.isArray(feedback) ? feedback : [feedback]).map(comment => `<blockquote><p lang="${japanese && comment.quoteJa ? 'ja' : 'en'}">${japanese && comment.quoteJa ? `「${comment.quoteJa}」` : `“${comment.quote}”`}</p><footer>${japanese ? comment.attributionJa : comment.attribution}${!japanese && comment.quoteJa ? ' · Translated from Japanese' : ''}</footer></blockquote>`).join('')}
   </aside>`;
 };
 const artMarkup = (item) => item.art

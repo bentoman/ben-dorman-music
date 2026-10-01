@@ -39,3 +39,5 @@
 .music .production-feedback .feedback-label{color:#d8b557}
 .music .production-feedback blockquote p{color:#e5dfd3}
 .music .production-feedback blockquote footer{color:#aaa398}
+
+.production-feedback blockquote+blockquote{margin-top:18px}

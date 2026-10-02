@@ -41,3 +41,9 @@
 .music .production-feedback blockquote footer{color:#aaa398}
 
 .production-feedback blockquote+blockquote{margin-top:18px}
+
+/* Archive Note links share the existing cream and ochre palette. */
+.note[id],#this-town{scroll-margin-top:110px}
+.note-links{display:flex;flex-direction:column;align-items:flex-start;gap:12px;margin-top:28px}
+.note-links a{color:#806313;font-size:16px;text-underline-offset:4px;overflow-wrap:anywhere}
+.note-return a{color:#d8b557;text-underline-offset:4px}

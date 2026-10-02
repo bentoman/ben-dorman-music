@@ -81,7 +81,7 @@ renderAlbums('#demo-recordings', window.PORTFOLIO.music.demos);
 document.querySelector('#beyond-bandcamp').innerHTML = window.PORTFOLIO.music.beyond.map((item, index) => `
   <article class="archive-item"><span>0${index + 1}</span><h4>${item.title}</h4><p>${item.detail}</p></article>`).join('');
 document.querySelector('#notes-list').innerHTML = window.PORTFOLIO.notes.map(note => `
-  <article class="note"><p class="note-date">${note.date}</p><div><h3>${note.title}</h3><p>${note.body}</p></div>
+  <article class="note"${note.id ? ` id="${note.id}"` : ''}${note.lang ? ` lang="${note.lang}"` : ''}><p class="note-date">${note.date}</p><div><h3>${note.title}</h3><p>${note.body}</p>${note.links ? `<nav class="note-links" aria-label="Related music and production">${note.links.map(link => `<a href="${link.href}">${link.label}</a>`).join('') }</nav>` : ''}</div>
   </article>`).join('');
 document.querySelector('#year').textContent = new Date().getFullYear();
 
@@ -102,7 +102,7 @@ document.addEventListener('click', (event) => {
   if (!link || event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
   const destination = new URL(link.href, window.location.href);
   if (destination.origin !== window.location.origin || destination.pathname !== window.location.pathname) return;
-  if (!['#romeo-and-juliet-2024', '#romeos-lament', '#juliets-nightingale', '#cat-who-walked-2024', '#the-first-magic', '#sassy-cat-and-friends', '#showcase-2022', '#rainbow-connections-land-of-kindness', '#rainbow-connections', '#shiny-gold-button', '#forever-friends', '#a-christmas-carol-with-heart-2010', '#emma-amazing-bucket-fillers', '#big-blue-bucket'].includes(destination.hash)) return;
+  if (!['#where-a-song-begins', '#this-town', '#romeo-and-juliet-2024', '#romeos-lament', '#juliets-nightingale', '#cat-who-walked-2024', '#the-first-magic', '#sassy-cat-and-friends', '#showcase-2022', '#rainbow-connections-land-of-kindness', '#rainbow-connections', '#shiny-gold-button', '#forever-friends', '#a-christmas-carol-with-heart-2010', '#emma-amazing-bucket-fillers', '#big-blue-bucket'].includes(destination.hash)) return;
   const target = document.getElementById(destination.hash.slice(1));
   if (!target) return;
   event.preventDefault();

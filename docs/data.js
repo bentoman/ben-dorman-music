@@ -79,7 +79,7 @@ window.PORTFOLIO = {
       year: "2022",
       eyebrow: "Nagoya Players Junior Showcase",
       title: "Showcase 2022", id: "showcase-2022",
-      works: [{ title: "Rainbow Connections: The Land of Kindness", id: "rainbow-connections-land-of-kindness", href: "/?lang=en#rainbow-connections" }, { title: "A Day in the Life of Boogy", href: "/?lang=en#forever-friends" }],
+      works: [{ title: "Rainbow Connections: The Land of Kindness", id: "rainbow-connections-land-of-kindness", href: "/?lang=en#rainbow-connections" }, { title: "Shiny Gold Button", href: "/?lang=en#shiny-gold-button" }, { title: "A Day in the Life of Boogy", href: "/?lang=en#forever-friends" }],
       role: "Composer & co-lyricist",
       status: "Original cast recording",
       collaborators: [

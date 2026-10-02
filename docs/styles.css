@@ -27,7 +27,7 @@
 
 .songs{max-width:var(--max);margin:100px auto 0;scroll-margin-top:110px}.songs-heading{margin-bottom:34px}.songs-heading h3{font:400 clamp(38px,5vw,68px)/1 Georgia,serif;margin:0 0 18px}.songs-heading p{color:#aaa398}.songs .featured-video{margin-bottom:0}.songs .video-copy h4{font:400 clamp(38px,5vw,68px)/1 Georgia,serif;margin:0 0 22px}html[lang="ja"] .songs-heading h3{font-family:"Yu Mincho","Hiragino Mincho ProN",serif}@media(max-width:760px){.songs{margin-top:70px}}
 
-.production-card[id],#romeos-lament,#juliets-nightingale,#the-first-magic,#sassy-cat-and-friends,#rainbow-connections-land-of-kindness,#rainbow-connections,#forever-friends,#a-christmas-carol-with-heart-2010,#emma-amazing-bucket-fillers,#big-blue-bucket{scroll-margin-top:110px}.production-copy li a{color:#806313;text-underline-offset:4px}.production-recording{color:#806313;text-underline-offset:4px}
+.production-card[id],#romeos-lament,#juliets-nightingale,#the-first-magic,#sassy-cat-and-friends,#rainbow-connections-land-of-kindness,#rainbow-connections,#shiny-gold-button,#forever-friends,#a-christmas-carol-with-heart-2010,#emma-amazing-bucket-fillers,#big-blue-bucket{scroll-margin-top:110px}.production-copy li a{color:#806313;text-underline-offset:4px}.production-recording{color:#806313;text-underline-offset:4px}
 
 /* Quiet production recollections, within the existing archive layout. */
 .production-feedback{margin-top:24px;padding-top:18px;border-top:1px solid var(--line);min-width:0}

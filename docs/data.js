@@ -78,8 +78,8 @@ window.PORTFOLIO = {
     {
       year: "2022",
       eyebrow: "Nagoya Players Junior Showcase",
-      title: "Showcase 2022",
-      works: [{ title: "Rainbow Connections: The Land of Kindness", id: "rainbow-connections-land-of-kindness", href: "/?lang=en#rainbow-connections" }, "A Day in the Life of Boogy"],
+      title: "Showcase 2022", id: "showcase-2022",
+      works: [{ title: "Rainbow Connections: The Land of Kindness", id: "rainbow-connections-land-of-kindness", href: "/?lang=en#rainbow-connections" }, { title: "A Day in the Life of Boogy", href: "/?lang=en#forever-friends" }],
       role: "Composer & co-lyricist",
       status: "Original cast recording",
       collaborators: [
@@ -92,7 +92,7 @@ window.PORTFOLIO = {
     {
       year: "2010",
       eyebrow: "Nagoya Players",
-      title: "A Christmas Carol",
+      title: "A Christmas Carol with Heart", id: "a-christmas-carol-with-heart-2010", recordings: [{ href: "/?lang=en#this-town", label: "Watch This Town · Production recording" }],
       works: ["Earlier theatre work — archive in progress"],
       role: "Music",
       status: "Production archive",

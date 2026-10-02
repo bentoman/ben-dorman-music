@@ -102,7 +102,7 @@ document.addEventListener('click', (event) => {
   if (!link || event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
   const destination = new URL(link.href, window.location.href);
   if (destination.origin !== window.location.origin || destination.pathname !== window.location.pathname) return;
-  if (!['#word-hit-me-again-word', '#where-a-song-begins', '#this-town', '#romeo-and-juliet-2024', '#romeos-lament', '#juliets-nightingale', '#cat-who-walked-2024', '#the-first-magic', '#sassy-cat-and-friends', '#showcase-2022', '#rainbow-connections-land-of-kindness', '#rainbow-connections', '#shiny-gold-button', '#forever-friends', '#a-christmas-carol-with-heart-2010', '#emma-amazing-bucket-fillers', '#big-blue-bucket'].includes(destination.hash)) return;
+  if (!['#finding-a-home-for-home-sweet-home', '#word-hit-me-again-word', '#where-a-song-begins', '#this-town', '#romeo-and-juliet-2024', '#romeos-lament', '#juliets-nightingale', '#cat-who-walked-2024', '#the-first-magic', '#sassy-cat-and-friends', '#showcase-2022', '#rainbow-connections-land-of-kindness', '#rainbow-connections', '#shiny-gold-button', '#forever-friends', '#a-christmas-carol-with-heart-2010', '#emma-amazing-bucket-fillers', '#big-blue-bucket'].includes(destination.hash)) return;
   const target = document.getElementById(destination.hash.slice(1));
   if (!target) return;
   event.preventDefault();

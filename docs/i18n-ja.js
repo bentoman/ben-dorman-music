@@ -127,7 +127,7 @@
       { year:'2010', eyebrow:'Nagoya Players', title:'A Christmas Carol with Heart', id:'a-christmas-carol-with-heart-2010', recordings:[{href:'/?lang=ja#this-town',label:'This Townを聴く · プロダクション録音'},{href:'#where-a-song-begins',label:'曲の始まりについてのノートを読む（英語）'}], works:['初期の舞台作品 — アーカイブ整理中'], role:'音楽', status:'プロダクション・アーカイブ', art:null, theme:'archive' }
     ],
     notes: [
-      ...window.PORTFOLIO.notes.filter(note => ['word-hit-me-again-word', 'where-a-song-begins'].includes(note.id)),
+      ...window.PORTFOLIO.notes.filter(note => ['finding-a-home-for-home-sweet-home', 'word-hit-me-again-word', 'where-a-song-begins'].includes(note.id)),
       { date:'2026年9月', title:'二つの新作が進行中です', body:'Nagoya Players Juniorの二つの新作が、いま動き始めています。エレメンタリー・トゥループのための<em>Mega Team Attack</em>は、ビデオゲームのようなエネルギーをもつ、にぎやかなファンタジーの世界。プレティーン・トゥループのための<em>Sweet Dreams, Eugene</em>は、想像力、創造性、そして力を合わせることを描くコメディ・アドベンチャーです。<br><br>音楽と歌詞については、エレメンタリーの作家Jeff Fritch、プレティーンの作家Kory Alexander Majansky、そしてプロデューサーのShawn Mahlerと話し合いを重ねています。<br><br>Jeffとは、20年以上にわたりパフォーマンスと音楽の仕事で協働してきました。直近の作品ではKoryと密に作業しましたが、それ以外のNPJ作品の多くにJeffも関わってきています。<br><br>新しい作品はいつも、私の音楽的なパレットを広げる機会になります。私はビデオゲームをしないので、<em>World of Warcraft</em>のようなゲームに使われる、豊かでドラマティックな音楽をそれまでじっくり聴いたことがありませんでした。<em>Mega Team Attack</em>の一曲を作るなかで聴いてみると、とても力強い体験で、多くのことを学びました。<br><br><em>Sweet Dreams, Eugene</em>のある曲では、「マルクス兄弟のような」コミカルなダンスが求められました。そこでチャールストン風の曲に挑戦しました。これもまた、これまで書いたことのない種類の音楽です。<br><br>仲間のコラボレーターたちと音楽を組み立てていく時間が、私は大好きです。彼らからのフィードバックや洞察が、出演者がきっと楽しんで演じられる作品へと私を導いてくれます。出演者が音楽や歌の思い出を持ち帰ってくれたなら、それ以上に望むことはありません。' }
     ],
     music: {

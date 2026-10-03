@@ -43,8 +43,8 @@ const feedbackMarkup = (feedback) => {
 };
 // These excerpts refer to staged performances, not the composer demo.
 document.querySelector('#the-first-magic .production-return').insertAdjacentHTML('afterend', feedbackMarkup({
-  quote: 'My favourite so far is the song everyone in the older group—the animals—sang two years ago, which also included a solo by the girl playing the brown cat. I was moved to tears.',
-  quoteJa: '今まで一番好きな曲は、2年前に上のクラス（動物たち）でみんなが歌ってくれた、茶色の猫役の女の子のソロなどもあるあの曲です。感動して涙が出ました。',
+  quote: 'All of Ben’s songs are wonderful, and I’m full of gratitude for the lovely music and songs he brings to the children each time! My favourite so far is the song everyone in the older group—the animals—sang two years ago, which also included a solo by the girl playing the brown cat. I was moved to tears.',
+  quoteJa: 'ベンさんの曲はどれも素晴らしく、毎回素敵な音楽・楽曲を子ども達に届けてくださり感謝の気持ちでいっぱいです！今まで一番好きな曲は、2年前に上のクラス（動物たち）でみんなが歌ってくれた、茶色の猫役の女の子のソロなどもあるあの曲です。感動して涙が出ました。',
   attribution: 'Sugiko Kenny, parent of a performer · On the 2024 stage performance of The First Magic',
   attributionJa: 'Sugiko Kenny（出演者の保護者）· 2024年公演の「The First Magic」について'
 }));

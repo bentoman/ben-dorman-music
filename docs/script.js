@@ -62,12 +62,17 @@ document.querySelector('#about .philosophy').insertAdjacentHTML('afterend', feed
   attribution: 'Jeff Fritch, Director and Choreographer',
   attributionJa: 'Jeff Fritch（演出・振付）'
 }));
-document.querySelector('#cast-recordings').insertAdjacentHTML('afterend', feedbackMarkup({
+document.querySelector('#cast-recordings').insertAdjacentHTML('afterend', '<div id="npj-performer-feedback">' + feedbackMarkup([{
+  quote: 'The low harmonies in the music really stayed with me.',
+  quoteJa: '曲の低音のハモリが、良く心に残っている',
+  attribution: 'NPJ performer',
+  attributionJa: 'NPJ出演者'
+}, {
   quote: 'Please keep writing cool songs.',
   quoteJa: 'これからもかっこいい曲お願いします。',
   attribution: 'NPJ performer',
   attributionJa: 'NPJ出演者'
-}));
+}]) + '</div>');
 
 const artMarkup = (item) => item.art
   ? `<img src="${item.art}" alt="${ui.artwork} ${item.eyebrow}: ${item.title}">`

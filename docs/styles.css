@@ -47,3 +47,5 @@
 .note-links{display:flex;flex-direction:column;align-items:flex-start;gap:12px;margin-top:28px}
 .note-links a{color:#806313;font-size:16px;text-underline-offset:4px;overflow-wrap:anywhere}
 .note-return a{color:#d8b557;text-underline-offset:4px}
+
+#feedback-groups{max-width:var(--max);margin:auto;display:grid;gap:54px}.feedback-group{scroll-margin-top:110px;max-width:900px}.feedback-group h3{font:400 30px/1.2 Georgia,serif;margin:0}.feedback-collection .production-feedback .feedback-label{display:none}.feedback-collection .production-feedback blockquote+blockquote{margin-top:30px}.feedback-more{font-size:14px;margin:20px 0;text-underline-offset:4px}#npj-performer-feedback{scroll-margin-top:110px}

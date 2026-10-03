@@ -104,7 +104,7 @@
   text('#notes-title', 'ノート');
   text('.notes .section-note', '制作中の作品やリハーサル、創作のプロセスから生まれる、ときどきの記録。');
 
-  text('.about .kicker', '04 · プロフィール');
+  text('.about .kicker', '05 · プロフィール');
   html('#about-title', '物語に寄り添う<br>音楽。');
   const about = document.querySelectorAll('.about-copy > p:not(.kicker)');
   text(about[0], 'ベン・ドーマンは、日本を拠点に国内外で活動するオーストラリア出身の作曲家・作詞家です。舞台のための歌とサウンドスケープを制作しています。コラボレーターに色、感情、空気感を尋ねるところから始め、その物語に必要な音楽の言葉を探します。どの作品にも同じ音を当てはめるのではなく、ジャンルを自由に行き来します。');
@@ -112,7 +112,7 @@
   document.querySelector('.portrait img').alt = '屋外で撮影したベン・ドーマンのポートレート';
   text('.philosophy p', '「まず、たった一人の演者の心に届くことを目指しています。音楽と歌によって、若い演者たちが魔法の世界へと運ばれていく。そして、その姿を見る喜びを家族の皆さんにも分かち合ってほしい。その経験が、舞台を離れたあともずっと心に残ることを願っています。」');
 
-  text('footer > .kicker', '05 · お問い合わせ');
+  text('footer > .kicker', '06 · お問い合わせ');
   html('footer > h2', '一緒に、心に響くものを<br>つくりましょう。');
   html('.contact-link', 'Bandcampからベンに連絡する <span aria-hidden="true">↗</span>');
   const footerParts = document.querySelectorAll('.footer-line > span');

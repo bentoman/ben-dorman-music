@@ -41,6 +41,20 @@ const feedbackMarkup = (feedback) => {
     ${(Array.isArray(feedback) ? feedback : [feedback]).map(comment => `<blockquote><p lang="${japanese && comment.quoteJa ? 'ja' : 'en'}">${japanese && comment.quoteJa ? `「${comment.quoteJa}」` : `“${comment.quote}”`}</p><footer>${japanese ? comment.attributionJa : comment.attribution}${!japanese && comment.quoteJa ? ' · Translated from Japanese' : ''}</footer></blockquote>`).join('')}
   </aside>`;
 };
+// These excerpts refer to staged performances, not the composer demo.
+document.querySelector('#the-first-magic .production-return').insertAdjacentHTML('afterend', feedbackMarkup({
+  quote: 'My favourite so far is the song everyone in the older group—the animals—sang two years ago, which also included a solo by the girl playing the brown cat. I was moved to tears.',
+  quoteJa: '今まで一番好きな曲は、2年前に上のクラス（動物たち）でみんなが歌ってくれた、茶色の猫役の女の子のソロなどもあるあの曲です。感動して涙が出ました。',
+  attribution: 'Sugiko Kenny, parent of a performer · On the 2024 stage performance of The First Magic',
+  attributionJa: 'Sugiko Kenny（出演者の保護者）· 2024年公演の「The First Magic」について'
+}));
+document.querySelector('#cast-recordings').insertAdjacentHTML('afterend', feedbackMarkup({
+  quote: 'Please keep writing cool songs.',
+  quoteJa: 'これからもかっこいい曲お願いします。',
+  attribution: 'NPJ performer',
+  attributionJa: 'NPJ出演者'
+}));
+
 const artMarkup = (item) => item.art
   ? `<img src="${item.art}" alt="${ui.artwork} ${item.eyebrow}: ${item.title}">`
   : `<div class="type-art" aria-hidden="true"><span>${item.year}</span><b>${item.theme === 'development' ? 'WIP' : 'ARCHIVE'}</b></div>`;

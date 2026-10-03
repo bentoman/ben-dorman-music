@@ -38,7 +38,7 @@ const feedbackMarkup = (feedback) => {
   const japanese = document.documentElement.lang === 'ja';
   return `<aside class="production-feedback" aria-label="${japanese ? '公演からの声' : 'From the productions'}">
     <p class="feedback-label">${japanese ? '公演からの声' : 'From the productions'}</p>
-    ${(Array.isArray(feedback) ? feedback : [feedback]).map(comment => `<blockquote><p lang="${japanese && comment.quoteJa ? 'ja' : 'en'}">${japanese && comment.quoteJa ? `「${comment.quoteJa}」` : `“${comment.quote}”`}</p><footer>${japanese ? comment.attributionJa : comment.attribution}${!japanese && comment.quoteJa ? ' · Translated from Japanese' : ''}</footer></blockquote>`).join('')}
+    ${(Array.isArray(feedback) ? feedback : [feedback]).map(comment => `<blockquote><p lang="${japanese && comment.quoteJa ? 'ja' : 'en'}">${japanese && comment.quoteJa ? `「${comment.quoteJa}」` : `“${comment.quote}”`}</p><footer>${japanese ? comment.attributionJa : comment.attribution}${!japanese && comment.quoteJa && !comment.originalEnglish ? ' · Translated from Japanese' : japanese && comment.originalEnglish ? ' · 英語からの翻訳' : ''}</footer></blockquote>`).join('')}
   </aside>`;
 };
 // These excerpts refer to staged performances, not the composer demo.
@@ -47,6 +47,20 @@ document.querySelector('#the-first-magic .production-return').insertAdjacentHTML
   quoteJa: '今まで一番好きな曲は、2年前に上のクラス（動物たち）でみんなが歌ってくれた、茶色の猫役の女の子のソロなどもあるあの曲です。感動して涙が出ました。',
   attribution: 'Sugiko Kenny, parent of a performer · On the 2024 stage performance of The First Magic',
   attributionJa: 'Sugiko Kenny（出演者の保護者）· 2024年公演の「The First Magic」について'
+}));
+document.querySelector('#cast-recordings').insertAdjacentHTML('beforebegin', feedbackMarkup({
+  quote: 'Actually all the songs contributed to the success of all the productions of NPJ that I was involved with.',
+  quoteJa: '私が関わったNPJの公演では、どの曲も、それぞれの公演の成功に貢献していました。',
+  originalEnglish: true,
+  attribution: 'Jeff Fritch, Director and Choreographer',
+  attributionJa: 'Jeff Fritch（演出・振付）'
+}));
+document.querySelector('#about .philosophy').insertAdjacentHTML('afterend', feedbackMarkup({
+  quote: 'Ben’s lyrics and music compositions always boosted the show’s appeal and popularity. They enhanced performers motivation and inspired them.',
+  quoteJa: 'ベンの歌詞と音楽はいつも、公演の魅力と人気を高めてくれました。出演者の意欲を高め、刺激を与えてくれました。',
+  originalEnglish: true,
+  attribution: 'Jeff Fritch, Director and Choreographer',
+  attributionJa: 'Jeff Fritch（演出・振付）'
 }));
 document.querySelector('#cast-recordings').insertAdjacentHTML('afterend', feedbackMarkup({
   quote: 'Please keep writing cool songs.',

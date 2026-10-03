@@ -85,7 +85,7 @@ const chorusFeedback = {
 const feedbackLink = (id) => `<p class="feedback-more"><a href="#${id}">${japaneseFeedback ? '公演からの声を読む' : 'Read more from the productions'}</a></p>`;
 document.querySelector('#nav a[href="#notes"]').insertAdjacentHTML('beforebegin', `<a href="#feedback">${japaneseFeedback ? '公演からの声' : 'Feedback'}</a>`);
 const groups = [
-  {id:'feedback-cat-2024', title:'The Cat Who Walked by Herself · 2024', comments:[...productionFeedback['cat-who-walked-2024'], sugikoFeedback], href:'#cat-who-walked-2024'},
+  {id:'feedback-cat-2024', title:'Nagoya Players Junior · The Cat Who Walked by Herself · 2024', comments:[...productionFeedback['cat-who-walked-2024'], sugikoFeedback], href:'#cat-who-walked-2024'},
   {id:'feedback-romeo-2024', title:'Romeo and Juliet · 2024', comments:[...productionFeedback['romeo-and-juliet-2024'], chorusFeedback], href:'#romeo-and-juliet-2024'},
   {id:'npj-performer-feedback', title:japaneseFeedback ? 'Nagoya Players Junior · 複数の公演から' : 'Nagoya Players Junior · Across the productions', comments:[...jeffFeedback,...performerFeedback], href:'#cast-recordings'}
 ];

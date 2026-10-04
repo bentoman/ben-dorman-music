@@ -53,3 +53,4 @@
 /* Notes: separate paragraphs, spaced exactly as the former blank line (one line-height). */
 .note div>p+p{margin-top:1.7em}
 footer h2.contact-statement{font-size:clamp(38px,5.4vw,78px);line-height:1.05;letter-spacing:-.04em;max-width:880px}html[lang="ja"] footer h2.contact-statement{line-height:1.3;letter-spacing:-.01em}@media(max-width:640px){footer h2.contact-statement{font-size:36px}footer{padding-top:80px}}
+footer>a.contact-email{margin-top:28px;font:400 20px Georgia,serif;text-underline-offset:6px}footer>a.contact-email:hover,footer>a.contact-email:focus-visible{color:#fff}html[lang="ja"] footer>a.contact-email{font-family:"Yu Mincho","Hiragino Mincho ProN",serif}

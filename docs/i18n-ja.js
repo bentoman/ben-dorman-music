@@ -84,7 +84,7 @@
   html('#rainbow-connections .production-return', '<a href="/?lang=ja#rainbow-connections-land-of-kindness">2022年の公演を見る</a>');
   html('#rainbow-connections .song-credit', '作曲：Ben Dorman。<br>作詞：Ben Dorman、Jeff Fritch。<br>プロデュース：Ben Dorman。<br>演奏：Aya Kawakami。');
   html('#rainbow-connections .video-note a', 'YouTubeで見る <span aria-hidden="true">↗</span>');
-  text('#shiny-gold-button .kicker', 'プロダクション・アーカイブ · 2022');
+  text('#shiny-gold-button .kicker', '作曲者によるデモ · 2021');
   html('#shiny-gold-button .video-description', 'Nagoya Players Junior Showcase 2022の<a href="/?lang=ja#rainbow-connections-land-of-kindness">『<em>Rainbow Connections: The Land of Kindness</em>』</a>からの一曲です。');
   html('#shiny-gold-button .production-return', '<a href="/?lang=ja#rainbow-connections-land-of-kindness">2022年の公演を見る</a>');
   html('#shiny-gold-button .video-note a', 'YouTubeで見る <span aria-hidden="true">↗</span>');

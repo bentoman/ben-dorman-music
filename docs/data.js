@@ -32,8 +32,8 @@ window.PORTFOLIO = {
     {
       year: "2024",
       eyebrow: "Nagoya Players Junior Showcase",
-      title: "The Cat Who Walked by Herself", id: "cat-who-walked-2024", recordings: [{ href: "#the-first-magic", label: "Watch The First Magic · Composer demo" }, { href: "#sassy-cat-and-friends", label: "Watch Sassy Cat and Friends · Composer demo" }],
-      works: ["The First Magic — music and original lyrics by Ben Dorman, incorporating text by Rudyard Kipling", "Sassy Cat and Friends — music by Ben Dorman, lyrics by Ben Dorman and Jeff Fritch"],
+      title: "The Cat Who Walked by Herself", id: "cat-who-walked-2024", recordings: [{ href: "#the-first-magic", label: "Watch The First Magic · Composer demo" }, { href: "#sassy-cat-and-friends", label: "Watch Sassy Cat · Composer demo" }],
+      works: ["The First Magic — music and original lyrics by Ben Dorman, incorporating text by Rudyard Kipling", "Sassy Cat — music by Ben Dorman, lyrics by Ben Dorman and Jeff Fritch"],
       role: "Composer & lyricist",
       status: "Composer demos",
       collaborators: [
@@ -108,7 +108,7 @@ window.PORTFOLIO = {
     ],
     demos: [
       { year: "2024", title: "Romeo and Juliet", id: "romeo-and-juliet-2024", recordings: [{ href: "#juliets-nightingale", label: "Watch Juliet’s Nightingale / Home Sweet Home · Composer demo" }, { href: "#romeos-lament", label: "Watch Romeo’s Lament · Composer demo" }], detail: "Two working recordings written for the production", art: "assets/romeo-juliet.jpg" },
-      { year: "2024", title: "The Cat Who Walked by Herself", id: "cat-who-walked-2024", recordings: [{ href: "#the-first-magic", label: "Watch The First Magic · Composer demo" }, { href: "#sassy-cat-and-friends", label: "Watch Sassy Cat and Friends · Composer demo" }], detail: "NPJ Showcase 2024 · Composer demos: The First Magic and Sassy Cat and Friends", art: "assets/showcase-2024.jpg" }
+      { year: "2024", title: "The Cat Who Walked by Herself", id: "cat-who-walked-2024", recordings: [{ href: "#the-first-magic", label: "Watch The First Magic · Composer demo" }, { href: "#sassy-cat-and-friends", label: "Watch Sassy Cat · Composer demo" }], detail: "NPJ Showcase 2024 · Composer demos: The First Magic and Sassy Cat", art: "assets/showcase-2024.jpg" }
     ],
     beyond: [
       { title: "Unpublished songs", detail: "Songs and demos that have not been released publicly" },

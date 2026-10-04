@@ -13,6 +13,7 @@ Serve the `docs` folder with any static web server, then open its local address 
 - Production and music entries: `docs/data.js`
 - Page copy and section structure: `docs/index.html`
 - Japanese copy and catalogue entries: `docs/i18n-ja.js`
+- Notes (full text, EN and JA): `tools/notes-source.json`. After editing, run `node tools/build-notes.mjs` to regenerate the individual Note pages (`docs/notes/<slug>/` and `docs/notes/<slug>/ja/`), the homepage previews (`docs/notes-index.js`) and `docs/sitemap.xml`, then commit the generated files.
 - Visual styling and responsive layouts: `docs/styles.css`
 - Production artwork: `docs/assets/`
 

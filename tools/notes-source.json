@@ -1,0 +1,534 @@
+{
+ "_comment": "Source of truth for Note pages. Run `node tools/build-notes.mjs` after editing. Paragraph text is the approved Note text, split on the former <br><br> separators.",
+ "notes": [
+  {
+   "slug": "where-does-magic-start",
+   "iso": "2026-10",
+   "excerptParagraphs": 3,
+   "en": {
+    "date": "October 2026",
+    "title": "Where does magic start?",
+    "paragraphs": [
+     "It started for me in Port Moresby, Papua New Guinea, where I was born.",
+     "I was a rat who got killed.",
+     "It was a local production of <em>Dick Whittington</em>, the classic pantomime. My father was an amateur thespian, and when I was old enough to join in, that's what I did.",
+     "Dead and dragged unceremoniously off the stage.",
+     "But the lights, the makeup, the songs...",
+     "I loved it.",
+     "That's where the first magic started.",
+     "Ten years later, I was onstage in a school play in Melbourne. It was an original production written by two members of staff—a music teacher and a maths teacher.",
+     "I couldn't believe that they had written those songs—great songs, at least as far as I was concerned—and that there I was, standing on a stage singing them in the chorus.",
+     "Wouldn't it be amazing to actually do that? I thought.",
+     "Then I promptly forgot about it and got more and more buried in books.",
+     "I did a few more school musicals, but those original shows really got to me. I can still sing some of the songs.",
+     "Many years later, I'm on a Zoom call with Shawn Mahler, producer of the Nagoya Players Junior shows.",
+     "He's telling me about the next production, based on one of Rudyard Kipling's <em>Just So Stories</em>, “<em>The Cat that Walked by Himself</em>.”",
+     "One of the songs they want is about the cat.",
+     "Obviously.",
+     "But the other one is about the First Magic.",
+     "Huh?",
+     "First Magic?",
+     "That's odd.",
+     "But kind of cool.",
+     "What does the First Magic mean to me?",
+     "I had no idea.",
+     "But I liked the idea.",
+     "And then I found myself going back to the entire reason I started doing these shows.",
+     "I wanted kids to experience magic.",
+     "The kind of magic I'd experienced performing onstage: struggling sometimes under the lights, missing a cue, getting something wrong—but still being completely absorbed by it and loving it.",
+     "And then the hours, the days, the weeks after a show has finished, when you walk around singing that song that simply will not get out of your head.",
+     "You're completely hooked.",
+     "You want more.",
+     "That's what I wanted for the performers. I wanted them—or even just one of them—to feel that First Magic, even if they'd experienced it before.",
+     "So I started thinking about what that might sound like.",
+     "I wanted something delicate and lilting, but also dramatic and ultimately uplifting. Something that would start small and gradually open up, giving the performers somewhere to go with it.",
+     "I wanted it to be a slow burn, something rumbling deep inside that would eventually give the performer permission to soar.",
+     "I put a lot of myself into that song.",
+     "Listening to the demo now, though, there's something missing.",
+     "Them.",
+     "I wish we'd made a cast recording.",
+     "Seeing “The First Magic” performed onstage, watching the performers make it theirs, was exactly what I'd hoped for when I started writing music for these shows.",
+     "The lights, the songs, the missed cues, the excitement—and afterwards, that song that just won't get out of your head.",
+     "You're hooked.",
+     "You want more.",
+     "That's the First Magic."
+    ],
+    "links": [
+     {
+      "href": "#the-first-magic",
+      "label": "Watch The First Magic · Composer demo"
+     },
+     {
+      "href": "https://youtu.be/3Gzy96VdLho",
+      "label": "Watch The First Magic on YouTube"
+     },
+     {
+      "href": "#cat-who-walked-2024",
+      "label": "View The Cat Who Walked by Herself · 2024"
+     }
+    ]
+   },
+   "ja": {
+    "date": "2026年10月",
+    "title": "魔法はどこから始まる？",
+    "paragraphs": [
+     "僕にとっての始まりは、生まれ故郷のパプアニューギニア、ポートモレスビーだった。",
+     "僕は、殺されるネズミだった。",
+     "地元で上演された、定番のパントマイム劇『<em>Dick Whittington</em>』。父はアマチュアの役者で、僕も参加できる年齢になると、仲間に入った。",
+     "死んだら、容赦なく舞台から引きずり出された。",
+     "でも、照明、メイク、歌……。",
+     "大好きだった。",
+     "僕にとっての「The First Magic［最初の魔法］」は、そこから始まった。",
+     "その10年後、僕はメルボルンの学校の舞台に立っていた。音楽の先生と数学の先生が書いた、オリジナルの作品だった。",
+     "あの歌を先生たちが書いたなんて、信じられなかった。少なくとも僕には、すごくいい歌だった。そして僕は舞台の上で、コーラスの一員としてそれを歌っていた。",
+     "自分でも、こんなことができたらすごいだろうな、と思った。",
+     "そして、あっさり忘れた。本の世界に、ますます埋もれていった。",
+     "その後も学校のミュージカルにいくつか出たけれど、あのオリジナルの舞台は、ずっと心に残った。今でも歌える曲がある。",
+     "それから何年もたって、僕はNagoya Players Juniorの公演のプロデューサー、Shawn MahlerとZoomで話している。",
+     "彼が話しているのは、次の公演のこと。Rudyard Kiplingの『<em>Just So Stories</em>』に収められた一編、「<em>The Cat that Walked by Himself</em>」をもとにした作品だ。",
+     "欲しい曲の一つは、猫についての歌。",
+     "そりゃそうだ。",
+     "でも、もう一つは「The First Magic」についての歌だという。",
+     "え？",
+     "The First Magic？",
+     "変わってるな。",
+     "でも、ちょっといい。",
+     "僕にとって、The First Magicって何だろう？",
+     "見当もつかなかった。",
+     "でも、そのアイデアは気に入った。",
+     "そして気づくと、そもそもどうしてこういう舞台の音楽を書き始めたのか、そこに戻っていた。",
+     "子どもたちに、魔法を感じてほしかった。",
+     "僕が舞台で感じた、あの魔法。照明の下でときには苦戦して、きっかけを逃したり、何かを間違えたりする。それでも夢中になって、楽しくてたまらない。",
+     "そして公演が終わってからも、何時間も、何日も、何週間も、頭からどうしても離れないあの歌を、歩きながら口ずさんでいる。",
+     "すっかりはまっている。",
+     "もっとやりたくなる。",
+     "出演する子たちに、そう感じてほしかった。みんなに、あるいは、たった一人でもいい。前に味わったことがあったとしても、あのThe First Magicを感じてほしかった。",
+     "それで、それはどんな音になるんだろう、と考え始めた。",
+     "繊細で、軽やかに揺れる感じ。でも、ドラマもあって、最後には気持ちが上向くようなものにしたかった。小さく始まり、少しずつ広がって、演じる子たちがその先へ進んでいけるような曲。",
+     "じわじわと熱を帯びていくものにしたかった。心の奥で低く響いていて、やがて歌い手が思いきり羽ばたいてもいいんだと感じられるような。",
+     "あの曲には、自分の思いをたくさん込めた。",
+     "でも今、デモを聴き返すと、何かが足りない。",
+     "あの子たちだ。",
+     "キャスト録音を残しておけばよかった。",
+     "舞台で「The First Magic」が演じられ、出演者たちが自分たちの歌にしていくのを見た。それは、こういう舞台の音楽を書き始めたときに、僕がまさに望んでいたことだった。",
+     "照明、歌、逃してしまったきっかけ、わくわくする気持ち。そして終わったあとも、頭から離れないあの歌。",
+     "はまってしまう。",
+     "もっとやりたくなる。",
+     "それが、The First Magic。"
+    ],
+    "links": [
+     {
+      "href": "#the-first-magic",
+      "label": "The First Magicを聴く · 作曲者によるデモ"
+     },
+     {
+      "href": "https://youtu.be/3Gzy96VdLho",
+      "label": "The First MagicをYouTubeで見る"
+     },
+     {
+      "href": "#cat-who-walked-2024",
+      "label": "The Cat Who Walked by Herself · 2024年の公演を見る"
+     }
+    ]
+   }
+  },
+  {
+   "slug": "finding-a-home-for-home-sweet-home",
+   "iso": "2026-10",
+   "excerptParagraphs": 2,
+   "en": {
+    "date": "October 2026",
+    "title": "Finding a home for “Home Sweet Home”",
+    "paragraphs": [
+     "“Juliet's Nightingale” didn't begin with Juliet. It didn't begin with Shakespeare. It didn't even begin with <em>Romeo and Juliet</em>.",
+     "It began with Jeff Fritch and another family show.",
+     "Jeff's idea was a song about longing for home: “Imagine a place... home sweet home.” He suggested something with a country feel, perhaps a little John Denver. That was certainly familiar territory for me, so I picked up the guitar and started playing around with the idea.",
+     "And then, for some reason, I thought: what if I completely de-Denver this?",
+     "Rip it apart, just to see where the pieces fall.",
+     "Take those warm, nostalgic, singalong lyrics, slow everything down until it really hurts, and mash them together with stark, dark piano.",
+     "Why not?",
+     "So I did.",
+     "I sang right up close to the microphone, almost as though I were whispering to a spirit to save me from falling. It became something quite different from the song Jeff had asked for.",
+     "I knew perfectly well that this version probably wasn't going to fly in a family show.",
+     "But I couldn't resist.",
+     "I sent it to Jeff anyway and told him, “I want the adults watching to be in tears listening to this.”",
+     "He really liked it.",
+     "And then came the entirely predictable verdict:",
+     "Absolutely no way for this show.",
+     "Fair enough. Back to Denver.",
+     "But Jeff also said something else: “You've really got to use this sometime.”",
+     "Perhaps a year later, I was talking with Ana Valdes Lim, the director of Nagoya Players' <em>Romeo and Juliet</em>, about the music she wanted for the production. When we began discussing the scene in Juliet's chamber, I remembered Jeff's words.",
+     "And I remembered “Home Sweet Home.”",
+     "So I pulled it apart again. I reworked the lyrics for Juliet and began pushing the music further away from where it had started, mangling distorted, mechanical, twisted sounds into the melody. By this point, that original John Denver-inspired country song had travelled quite some distance.",
+     "Then I played it for Ana—the demo that's now on this site.",
+     "She agreed to go with it, for which I remain eternally grateful.",
+     "I'd finally found a home for “Home Sweet Home.”",
+     "But the demo is still only the bare bones.",
+     "The version that was eventually performed onstage was, from my perspective, breathtakingly beautiful. Instead of my cracking voice on the demo, there was the superb voice of Juliet, and all the work that goes into taking something from a composer's recording and turning it into a moment in a theatre.",
+     "After Jeff saw the show, he sent me a message:",
+     "“I heard ‘Home Sweet Home.’ I was in tears.”",
+     "That meant a great deal to me.",
+     "I'd told him at the beginning that I wanted the song to pull at the heart of an adult watching the show. It had taken a rejected arrangement, another production, another director, rewritten lyrics and a completely different dramatic situation to get there.",
+     "But somehow it got there.",
+     "<strong>And then there was Romeo</strong>",
+     "“Romeo's Lament,” the other demo from the production that's on this site, had a similarly strange prehistory.",
+     "It grew out of another song I was working on at the time, called “Genevieve.”",
+     "That song included a character wanting “a partner, not a project,” and another line about how she “drove a nail through the heart of town.”",
+     "That second line survived.",
+     "When I began working on Romeo's song, I wanted multiple voices around him—almost a kind of Greek chorus, echoing the tragedy engulfing him. The material from “Genevieve” started finding its way into this completely different world.",
+     "Again, what you hear on the site is a demo.",
+     "Onstage, Kory and the backing singers took those bare bones and turned them into something much larger. The voices, the performers, the sound filling the theatre—and all the incredible work required actually to get something like that onto a stage—transformed it.",
+     "That's one of the strange things about being the person who writes this stuff.",
+     "You can sit at home with a microphone and a computer and make something that suggests what a song might be. Then you hand it over.",
+     "And other people make it something else.",
+     "My only regret, in a play deeply filled with regret, is that we didn't make a cast recording.",
+     "I wish we had.",
+     "Because the two recordings on this site aren't really the finished story. They're the sketches—the bare bones that the performers, director and production team eventually turned into a feast for the senses.",
+     "And I would dearly love to be able to hear that again."
+    ],
+    "links": [
+     {
+      "href": "#juliets-nightingale",
+      "label": "Watch Juliet’s Nightingale / Home Sweet Home · Composer demo"
+     },
+     {
+      "href": "https://youtu.be/2Kr--g7VhhM",
+      "label": "Watch Juliet’s Nightingale / Home Sweet Home on YouTube"
+     },
+     {
+      "href": "#romeos-lament",
+      "label": "Watch Romeo’s Lament · Composer demo"
+     },
+     {
+      "href": "https://youtu.be/ba2MMYcGgSw",
+      "label": "Watch Romeo’s Lament on YouTube"
+     },
+     {
+      "href": "#romeo-and-juliet-2024",
+      "label": "View Romeo and Juliet"
+     }
+    ]
+   },
+   "ja": {
+    "date": "2026年10月",
+    "title": "「Home Sweet Home」の居場所を見つける",
+    "paragraphs": [
+     "「Juliet’s Nightingale」は、ジュリエットから始まったわけではない。シェイクスピアからでもない。そもそも『<em>Romeo and Juliet</em>』からですらなかった。",
+     "始まりはJeff Fritchと、別のファミリー向けの舞台だった。",
+     "Jeffのアイデアは、故郷を恋しく思う歌だった。「ある場所を思い浮かべて……愛しいわが家」。カントリー風で、ちょっとJohn Denverのような感じはどうか、と。そこは僕にも馴染みのある領域だったので、ギターを手に取って、あれこれ弾いてみた。",
+     "ところが、どういうわけか、こんなことを思った。これを徹底的に「脱デンバー」したらどうなるだろう？",
+     "ばらばらにして、破片がどこに落ちるか見てみる。",
+     "あの温かく、懐かしく、みんなで口ずさめる歌詞を使い、痛いくらいにテンポを落として、むき出しの暗いピアノと混ぜ合わせる。",
+     "いいじゃないか。",
+     "だから、やった。",
+     "マイクにぐっと近づいて歌った。転げ落ちる自分を救ってくれと、何かの霊にささやきかけるような感じで。Jeffに頼まれた歌とは、ずいぶん違うものになった。",
+     "こんなバージョンがファミリー向けの舞台で通るはずはない。それは重々分かっていた。",
+     "でも、やらずにはいられなかった。",
+     "それでもJeffに送って、こう言った。「これを聴いて、客席の大人たちに泣いてほしいんだ」",
+     "彼はとても気に入ってくれた。",
+     "そして、まったく予想どおりの判定が下った。",
+     "この舞台では、絶対に無理。",
+     "ごもっとも。では、デンバーに帰ろう。",
+     "でも、Jeffはもうひとつ、こうも言った。「これは、いつか絶対に使わないと」",
+     "たぶん一年ほど後、Nagoya Playersの『<em>Romeo and Juliet</em>』の演出家、Ana Valdes Limと、公演でどんな音楽を使いたいか話していた。ジュリエットの寝室の場面について話し始めたとき、Jeffの言葉を思い出した。",
+     "そして「Home Sweet Home」を思い出した。",
+     "それで、もう一度ばらばらにした。ジュリエットのために歌詞を書き直し、歪んだ、機械的な、ねじれた音をメロディーにねじ込みながら、音楽を出発点からさらに遠ざけていった。この頃には、John Denverをイメージした元のカントリーソングから、ずいぶん遠くまで来ていた。",
+     "それからAnaに聴いてもらった。今、このサイトにあるデモだ。",
+     "彼女は、それでいこうと言ってくれた。そのことには、今も感謝してもしきれない。",
+     "「Home Sweet Home」に、ようやく帰る家が見つかった。",
+     "でも、デモはまだ骨組みにすぎない。",
+     "実際に舞台で演奏されたバージョンは、僕にとって、息をのむほど美しかった。デモでひび割れている僕の声の代わりに、ジュリエットの見事な歌声があった。そして、作曲者の録音を劇場の一場面へと変えるための、あらゆる仕事があった。",
+     "舞台を観たあと、Jeffからメッセージが届いた。",
+     "「『Home Sweet Home』を聴いたよ。涙が出た」",
+     "それは、僕にとって、とても大きなことだった。",
+     "最初に彼に言ったのは、客席の大人の心を揺さぶる歌にしたい、ということだった。そこにたどり着くまでに、ボツになったアレンジ、別の舞台、別の演出家、書き直した歌詞、そしてまったく違う劇的状況が必要だった。",
+     "でも、どういうわけか、たどり着いた。",
+     "<strong>そして、ロミオの話</strong>",
+     "このサイトにある、同じ公演のもうひとつのデモ「Romeo’s Lament」にも、同じくらい奇妙な前史がある。",
+     "当時取り組んでいた「Genevieve」という別の歌から生まれたのだ。",
+     "その歌には “a partner, not a project”（「欲しいのはパートナー。手直しするための課題じゃない」）を求める登場人物がいて、彼女が “drove a nail through the heart of town”（「町の心臓に釘を打ち込んだ」）という一節もあった。",
+     "後者の一節が生き残った。",
+     "ロミオの歌に取りかかったとき、彼を取り巻くいくつもの声が欲しかった。彼をのみ込んでいく悲劇をこだまさせる、ギリシャ劇のコロスのようなもの。「Genevieve」の素材が、このまったく別の世界へ入り込み始めた。",
+     "ここでも、このサイトで聴けるのはデモだ。",
+     "舞台では、Koryとバックで歌う人たちが、その骨組みを受け取って、ずっと大きなものにしてくれた。声、演者、劇場を満たす音。そして、それを本当に舞台に載せるまでの、とてつもない仕事。そのすべてが、曲を変えてくれた。",
+     "こういうものを書く人間でいると、不思議に感じることがある。",
+     "家でマイクとコンピューターに向かい、曲がどんなふうになるかを示すものをつくる。それから、人に渡す。",
+     "すると、ほかの人たちが、それを別のものにしてくれる。",
+     "後悔がこれほど詰まった芝居で、僕の唯一の後悔は、キャスト録音をつくらなかったことだ。",
+     "つくっておけばよかった。",
+     "というのも、このサイトにある二つの録音は、本当の意味で完成した物語ではない。スケッチなのだ。演者、演出家、制作チームが、やがて五感を満たすごちそうへと変えてくれた、あの骨組み。",
+     "そして僕は、あれをもう一度聴けたらと、心から思っている。"
+    ],
+    "links": [
+     {
+      "href": "#juliets-nightingale",
+      "label": "Juliet’s Nightingale / Home Sweet Homeを聴く · 作曲者によるデモ"
+     },
+     {
+      "href": "https://youtu.be/2Kr--g7VhhM",
+      "label": "YouTubeでJuliet’s Nightingale / Home Sweet Homeを聴く"
+     },
+     {
+      "href": "#romeos-lament",
+      "label": "Romeo’s Lamentを聴く · 作曲者によるデモ"
+     },
+     {
+      "href": "https://youtu.be/ba2MMYcGgSw",
+      "label": "YouTubeでRomeo’s Lamentを聴く"
+     },
+     {
+      "href": "#romeo-and-juliet-2024",
+      "label": "Romeo and Julietの公演を見る"
+     }
+    ]
+   }
+  },
+  {
+   "slug": "word-hit-me-again-word",
+   "iso": "2026-10",
+   "excerptParagraphs": 2,
+   "en": {
+    "date": "October 2026",
+    "title": "“Word! Hit me again! Word!”",
+    "paragraphs": [
+     "“Word! Hit me again! Word!”",
+     "The “Word!” part was me venturing into language and cultural territory completely foreign to me. It belongs in roughly the same category as knowing how to tilt a baseball cap slightly to one side, wearing long baggy pants and a red T-shirt, and somehow making the whole thing look right. Concepts I understand in theory, perhaps, but have no business attempting myself.",
+     "The “Hit me again!” was something else. That was me trying, however improbably, to channel the spirit of the late, great Godfather of Soul, James Brown—one of my musical heroes. I remember hearing Henry Rollins describe James Brown and Iggy Pop as the two “bookends” of American music. So I wasn't entirely without a musical compass. James Brown was part of the familiar musical vocabulary I could reach for while fumbling around in a genre and rhythm that felt foreign.",
+     "And yet there I am, saying it on a recording.",
+     "The recording is the first demo of “Shiny Gold Button,” a song from <em>The Land of Kindness</em>, a family musical written by Jeff Fritch and eventually performed by Nagoya Players Junior in 2022.",
+     "The story of how I ended up saying “Word!” on it begins in 2021, still very much mid-pandemic.",
+     "Jeff and I go back a long way. He's a professionally trained dancer and choreographer, has taught tap for years, and is extremely creative and full of energy. We did some tap-and-guitar performances together in 2006 and 2008, and, if my memory serves me correctly, I also created music for a solo dance number or two that he performed on stage.",
+     "Then, in 2021, he contacted me out of the blue and asked whether I'd be interested in creating music for a children's show he was developing.",
+     "I was mostly homebound at that stage. Zoom, however, had become a regular part of life, and Jeff was really my only connection to the Nagoya Players team at the time. So we met online and he began telling me about this world he'd created: the “Land of Kindness.”",
+     "And somewhere in this world there was a shiny gold button.",
+     "Jeff wanted a song about it. He gave me some of the lyrics and told me he wanted a kind of hip-hop vibe.",
+     "This was not encouraging news.",
+     "My relationship with hip-hop at the time was probably akin to Schopenhauer's relationship with rave parties. Worlds apart.",
+     "But I said I'd try it.",
+     "I went away, worked on something and, a few days later, emailed Jeff an MP3 of what I'd come up with.",
+     "He wrote back saying he liked it, but he wasn't sure it would fit the show.",
+     "Thanks, but no thanks.",
+     "Our next Zoom conversation was where things got interesting.",
+     "Jeff got straight into the nuts and bolts of why the original demo didn't work. And here's the thing: everything he said was right.",
+     "I'm not sharing that original demo.",
+     "It didn't work.",
+     "It really didn't.",
+     "The problem was that although I understood what Jeff was telling me, I was still pretty confused about what he actually wanted me to do. I couldn't hear the rhythm he was hearing.",
+     "So eventually I asked him to stop trying to explain it.",
+     "“Just sing me the rhythm. Exactly the way you want it to go. That's all I want. I'll record it.”",
+     "And I did.",
+     "The rhythm you hear in this demo of “Shiny Gold Button” is an exact replica of the rhythm Jeff sang to me in that Zoom meeting.",
+     "Once I had that, something clicked.",
+     "In <a href=\"#where-a-song-begins\">another Note</a> I wrote about how composing can sometimes feel like hacking away at the ground until you hit something solid. Other times, something seems almost to fall out of the sky into your hands.",
+     "This was the latter.",
+     "Once Jeff had given me the rhythm, the rest came remarkably easily. I'd recently bought a whiz-bang new plug-in that made some rather unusual sounds—unusual for me, anyway—and started incorporating them into the basic track.",
+     "I worked pretty hard at replicating Jeff's rhythm precisely, and it was enormous fun precisely because it was difficult. I was much more accustomed to four-on-the-floor, straight-up rock. I was working in a musical language I didn't really speak.",
+     "And that's what you're hearing in this recording.",
+     "This isn't the version that was eventually recorded with the kids in the studio. This is a musician of a certain age fumbling around in the dark, trying to make sense of a new rhythm. It sounded kind of cool to me. But it also felt completely foreign.",
+     "So I sent the MP3 to Jeff by email.",
+     "His response came almost immediately:",
+     "<strong>“This is a hit! You nailed it!”</strong>",
+     "I've remembered those words.",
+     "Everyone experiences imposter syndrome at some point in their lives, I'm sure. For me, there had always been musical territories where I felt I didn't really belong. I knew what I knew. I knew what I could play. And I had a fairly good idea of the things that were probably best left to somebody else.",
+     "Jeff's reaction gave me permission to question that.",
+     "Not permission in the sense that I suddenly thought I could write anything. Quite the opposite. The whole experience had just demonstrated how much I <em>didn't</em> know. But it gave me permission to explore—to wander into genres I didn't understand, listen, make mistakes, ask somebody to sing the rhythm into Zoom if necessary, and then see what I could do with it.",
+     "That's one of the things I carried away from “Shiny Gold Button.”",
+     "The rhythm at the heart of the song isn't something I dreamed up sitting alone at my computer. It's Jeff's rhythm. He sang it down a Zoom connection during the pandemic. I recorded it, replicated it, and built the music around it.",
+     "One person saying:",
+     "<strong>“No, not like that. Like this.”</strong>",
+     "And another person listening."
+    ],
+    "links": [
+     {
+      "href": "#shiny-gold-button",
+      "label": "Watch Shiny Gold Button"
+     },
+     {
+      "href": "https://youtu.be/nOKl6qZEdKM",
+      "label": "Watch Shiny Gold Button on YouTube"
+     },
+     {
+      "href": "#rainbow-connections-land-of-kindness",
+      "label": "View The Land of Kindness · 2022"
+     }
+    ]
+   },
+   "ja": {
+    "date": "2026年10月",
+    "title": "“Word! Hit me again! Word!”（「Word! もう一発！ Word!」）",
+    "paragraphs": [
+     "“Word! Hit me again! Word!”（「Word! もう一発！ Word!」）",
+     "この「Word!」は、僕にはまったく縁のない言葉と文化の領域に足を踏み入れた結果だった。野球帽をちょっと斜めにかぶって、だぼだぼの長いパンツと赤いTシャツを着て、それでちゃんと様になる。だいたい、あれと同じ部類だ。理屈では分かる。たぶん。でも、自分でやっていいものじゃない。",
+     "「Hit me again!」のほうは、また別の話だった。無理があるのは承知のうえで、今は亡き偉大な「ゴッドファーザー・オブ・ソウル」、James Brownの魂を呼び込もうとしていた。僕の音楽的ヒーローのひとりだ。Henry RollinsがJames BrownとIggy Popを、アメリカ音楽の両端を支える二つの「ブックエンド」と呼んでいたのを覚えている。だから、音楽の方角を見失っていたわけではない。不慣れなジャンルとリズムの中で手探りしている僕にとって、James Brownは、頼れる馴染みの音楽語彙だった。",
+     "とはいえ、録音の中でそれを口にしているのは、僕である。",
+     "その録音は「Shiny Gold Button」の最初のデモ。Jeff Fritchが書き、最終的に2022年にNagoya Players Juniorが上演したファミリー・ミュージカル『<em>The Land of Kindness</em>』の一曲だ。",
+     "なぜそこで僕が「Word!」と言うことになったのか。その話は、まだパンデミックの真っただ中だった2021年にさかのぼる。",
+     "Jeffとは長い付き合いだ。専門的な訓練を受けたダンサーで振付家でもあり、長年タップを教えてきた。創造力とエネルギーの塊のような人だ。2006年と2008年には、タップとギターで一緒にパフォーマンスをした。記憶が確かなら、彼が舞台で踊ったソロのダンスナンバーにも、一、二曲、音楽をつくったはずだ。",
+     "そして2021年、突然彼から連絡が来た。いま考えている子ども向けの舞台の音楽をつくってみないか、という話だった。",
+     "当時、僕はほとんど家にこもっていた。でもZoomはすっかり生活の一部になっていて、その時点でNagoya Playersのチームとのつながりは、実質的にJeffだけだった。そこでオンラインで会い、彼がつくり上げた世界、「Land of Kindness」の話を聞き始めた。",
+     "その世界のどこかに、ぴかぴかの金のボタンがあった。",
+     "Jeffはそのボタンの歌が欲しいと言った。歌詞の一部を渡してくれて、ヒップホップっぽい感じにしてほしい、と。",
+     "あまり心強い知らせではなかった。",
+     "当時の僕とヒップホップの関係は、たぶんショーペンハウアーとレイヴ・パーティーの関係に近い。別世界だ。",
+     "でも、やってみると言った。",
+     "持ち帰って曲をつくり、数日後、出来たものをMP3にしてJeffにメールした。",
+     "気に入った、でもこの舞台に合うかどうかは分からない、と返事が来た。",
+     "ありがとう。でも、今回は見送り。",
+     "話が面白くなったのは、次のZoomだった。",
+     "Jeffは、最初のデモがなぜうまくいかないのか、具体的な話にさっそく入った。そして困ったことに、彼の言うことは全部正しかった。",
+     "その最初のデモを公開するつもりはない。",
+     "うまくいっていなかった。",
+     "本当に、まったく。",
+     "問題は、Jeffの説明は理解できても、実際に何をしてほしいのかは、まだよく分からなかったことだ。彼の頭の中にあるリズムが、僕には聴こえなかった。",
+     "だから最後には、説明するのをやめてもらった。",
+     "「そのリズムを歌ってくれればいい。やってほしい通りに、そのまま。それだけでいい。録音するから」",
+     "そして録音した。",
+     "この「Shiny Gold Button」のデモで聴こえるリズムは、そのZoomでJeffが僕に歌ってくれたリズムを、そっくりそのまま再現したものだ。",
+     "それが手に入った途端、何かがかちっとはまった。",
+     "<a href=\"#where-a-song-begins\">別のノート</a>で、作曲は、何か硬いものに当たるまで地面を掘り続けるように感じることがある、と書いた。一方で、何かが空から手の中に落ちてくるようなときもある。",
+     "今回は後者だった。",
+     "Jeffにリズムをもらうと、あとは驚くほどすんなり進んだ。ちょうど、ちょっと変わった音を出す、最新のすごそうなプラグインを買ったばかりだった。少なくとも僕には変わった音だった。それを土台のトラックに取り入れ始めた。",
+     "Jeffのリズムを正確に再現するために、かなり頑張った。そして難しいからこそ、ものすごく楽しかった。僕がずっと馴染んでいたのは、四つ打ちのストレートなロックだ。ここでは、ろくに話せない音楽の言葉で作業していた。",
+     "この録音で聴こえるのは、そういうものだ。",
+     "これは、後に子どもたちとスタジオで録音したバージョンではない。ある程度の年齢になったミュージシャンが、新しいリズムをつかもうと暗闇で手探りしている録音だ。自分には、ちょっとかっこよく聴こえた。でも同時に、まったく馴染みのないものでもあった。",
+     "それで、MP3をJeffにメールした。",
+     "返事はほとんどすぐに来た。",
+     "<strong>「これはヒットだ！ ばっちりだよ！」</strong>",
+     "その言葉を、ずっと覚えている。",
+     "自分は本当はここにいる資格がないんじゃないか。そんな気持ちは、きっと誰もが人生のどこかで経験する。僕にも、自分の居場所ではないと感じる音楽の領域が、ずっとあった。知っていることは知っている。弾けるものは分かっている。そして、ほかの誰かに任せたほうがよさそうなものも、だいたい分かっていた。",
+     "Jeffの反応は、その思い込みを疑ってもいいんだと思わせてくれた。",
+     "急に何でも書けると思った、という意味ではない。むしろ逆だ。この経験で、自分がどれほど<em>知らない</em>かが、はっきりしたばかりだった。でも、探ってみてもいい。分からないジャンルに足を踏み入れて、聴いて、間違えて、必要ならZoomで誰かにリズムを歌ってもらって、それから自分に何ができるか試してみてもいい。そう思えるようになった。",
+     "それが、「Shiny Gold Button」から持ち帰ったもののひとつだ。",
+     "この曲の中心にあるリズムは、僕がひとりでコンピューターの前に座って思いついたものではない。Jeffのリズムだ。パンデミックのさなか、彼がZoom越しに歌ってくれた。僕はそれを録音して、再現して、その周りに音楽を組み立てた。",
+     "ひとりが、こう言う。",
+     "<strong>「いや、そうじゃなくて。こう」</strong>",
+     "そして、もうひとりが耳を傾ける。"
+    ],
+    "links": [
+     {
+      "href": "#shiny-gold-button",
+      "label": "Shiny Gold Buttonを聴く"
+     },
+     {
+      "href": "https://youtu.be/nOKl6qZEdKM",
+      "label": "YouTubeでShiny Gold Buttonを聴く"
+     },
+     {
+      "href": "#rainbow-connections-land-of-kindness",
+      "label": "The Land of Kindness · 2022年公演を見る"
+     }
+    ]
+   }
+  },
+  {
+   "slug": "where-a-song-begins",
+   "iso": "2026-10",
+   "excerptParagraphs": 1,
+   "en": {
+    "date": "October 2026",
+    "title": "Digging through the archive: where a song begins",
+    "paragraphs": [
+     "I've been digging through my old music files recently, trying to put together an archive of the music I've written for theatre. Some of it goes back much further than the family musicals I've been working on in recent years. The earliest material I've found so far is from 2010.",
+     "One thing that has struck me as I've gone back through it is just how collaborative all of this has been. A song might eventually have my name attached to it as composer, but that's rarely where the song actually begins.",
+     "In 2010, Nagoya Players staged <em>A Christmas Carol with Heart</em>, directed by John Lenihan. I remember sitting in John's living room while he talked about his idea for Dickens's story. This wasn't going to be Victorian London. He wanted to set it in Texas.",
+     "That immediately sent my mind somewhere else.",
+     "First, Wim Wenders, Ry Cooder and <em>Paris, Texas</em>. That extraordinary, desolate sound world. Then, rather more abruptly, Woody Harrelson and <em>Natural Born Killers</em>. Different associations, certainly, but somehow they were all rattling around in there.",
+     "You don't really stop to analyse why your thoughts move in that way. Tom Waits, a songwriter and performer I've long admired, has compared songwriting to digging up potatoes. Some songs, he says, “come out of the ground just like a potato.”",
+     "I like that image. Sometimes that's exactly what it feels like. You hack at the ground. You keep going until you hit something solid. It might be misshapen and covered in dirt, but you've found something. Now you have to work out what to do with it.",
+     "Other times, songs seem almost to fall out of the sky into your hands. You're standing in a supermarket and a screaming kid in a rattling pram suddenly pumps out a rhythm that feels so important that you have to whip out your phone and sing something into it, right there, just to get the idea down <strong>NOW</strong>.",
+     "I don't think I knew exactly what I was digging for in John's living room. But as he talked, the associations started coming.",
+     "John had recently been to Texas, and he began pulling out photographs he'd taken on the trip. Some of those photographs eventually found their way into the video I made for ‘This Town.’",
+     "What I remember most clearly, though, is him talking about what he had seen: a kind of inexorable rural decline. Towns that seemed to have had the life slowly drawn out of them. Buildings and streets that suggested something had once been there and was disappearing.",
+     "That conversation—and those photographs—gave me somewhere to go.",
+     "The result was “This Town.”",
+     "Listening to the recording again now is also a reminder of where I was technically in 2010. I was very new to recording songs on a computer. I didn't really know what I was doing yet. But I do remember working extremely hard to get the sounds to feel right to me at the time.",
+     "And perhaps that's another reason I'm enjoying going back through these files. I can hear things now that I would record differently. Of course I can. Sixteen years have passed. But I can also hear the decisions I was making, and more importantly, I can remember <strong>why</strong> I was making them.",
+     "The music didn't begin with me sitting alone at a computer deciding to write a song about a dying town.",
+     "It began in somebody's living room: a director talking about Dickens and Texas, photographs spread out in front of us, and one person's ideas setting off a chain of associations in somebody else's head."
+    ],
+    "links": [
+     {
+      "href": "#this-town",
+      "label": "Watch This Town · Production recording"
+     },
+     {
+      "href": "https://youtu.be/zjpPLR21sbQ",
+      "label": "Watch This Town on YouTube"
+     },
+     {
+      "href": "#a-christmas-carol-with-heart-2010",
+      "label": "View A Christmas Carol with Heart · 2010"
+     }
+    ]
+   },
+   "ja": {
+    "date": "2026年10月",
+    "title": "アーカイブを掘り返して：歌が生まれるところ",
+    "paragraphs": [
+     "最近、昔の音楽ファイルを掘り返している。舞台のために書いてきた音楽を、アーカイブとしてまとめようと思って。ここ数年手がけているファミリー・ミュージカルより、ずっと前のものもある。今のところ、見つかった最も古い音源は2010年のものだ。",
+     "聴き返していて改めて感じるのは、どれも本当に、いろんな人と一緒につくってきたということ。出来上がった曲には作曲者として僕の名前が載るかもしれない。でも、曲が実際に生まれる場所は、たいていそこじゃない。",
+     "2010年、Nagoya PlayersはJohn Lenihan演出で『<em>A Christmas Carol with Heart</em>』を上演した。Johnの家の居間に座って、ディケンズの物語をどう舞台にするつもりなのか、話を聞いていたのを覚えている。舞台はヴィクトリア朝のロンドンではない。テキサスにしたい、と彼は言った。",
+     "そのひと言で、僕の頭はさっそく別の場所へ飛んでいった。",
+     "まずはWim Wenders、Ry Cooder、そして『<em>Paris, Texas</em>』。あの並外れた、荒涼とした音の世界。それから、かなり唐突に、Woody Harrelsonと『<em>Natural Born Killers</em>』。たしかにずいぶん違う連想だけれど、なぜか全部、頭の中でごろごろ転がっていた。",
+     "どうしてそんなふうに考えが動くのか、いちいち立ち止まって分析はしない。僕が長年敬愛しているソングライターでありパフォーマーのTom Waitsは、曲を書くことをジャガイモ掘りにたとえたことがある。曲によっては「ジャガイモみたいに、そのまま地面から出てくる」のだそうだ。",
+     "そのイメージが好きだ。まさにそんな感じがすることがある。地面をがつがつ掘る。何か硬いものに当たるまで掘り続ける。形はいびつで、泥まみれかもしれない。でも、何かを見つけた。さて、これをどうするか。",
+     "一方で、曲が空から手の中に落ちてくるようなときもある。スーパーで買い物をしていると、がたがた鳴るベビーカーの中で泣き叫ぶ子どもが、突然、妙に大事に思えるリズムを繰り出す。そうなると、その場で携帯を引っぱり出して何かを歌い込まずにはいられない。アイデアを残すなら、<strong>今、この瞬間</strong>だ。",
+     "Johnの居間で、自分が何を掘り当てようとしていたのか、はっきり分かっていたとは思わない。でも、彼の話を聞くうちに、連想が次々と浮かんできた。",
+     "Johnは少し前にテキサスを訪れていて、旅先で撮った写真を取り出し始めた。その写真の一部は、後に僕が「This Town」のためにつくった映像にも入っている。",
+     "でも、いちばん鮮明に覚えているのは、彼が目にしたものについて話していたことだ。抗いようもなく衰えていく地方の風景。ゆっくりと生気を吸い取られてしまったような町。かつてそこに何かがあり、それが消えつつあることを感じさせる建物や通り。",
+     "その会話と写真が、僕に向かう先をくれた。",
+     "そこから生まれたのが「This Town」だった。",
+     "今、この録音を聴き返すと、2010年の自分の技術的な立ち位置も思い出す。コンピューターで曲を録音し始めたばかりで、まだ何をどうすればいいのか、よく分かっていなかった。でも、当時の自分がしっくりくる音にするために、ものすごく頑張ったことは覚えている。",
+     "こうして昔のファイルを聴き返すのが楽しいのは、それも理由のひとつかもしれない。今なら違う録り方をするだろう、と思う箇所はある。当然だ。16年も経っている。でも、当時どんな判断をしていたのかも聴こえてくる。そして何より、<strong>なぜ</strong>そうしたのかを思い出せる。",
+     "この音楽は、僕がひとりでコンピューターの前に座って、衰退する町の歌を書こうと決めたところから始まったわけではない。",
+     "始まりは、ある人の家の居間だった。演出家がディケンズとテキサスについて話している。目の前には写真が広がっている。ひとりのアイデアが、もうひとりの頭の中で、連想の連鎖を引き起こしていた。"
+    ],
+    "links": [
+     {
+      "href": "#this-town",
+      "label": "This Townを聴く · 公演音源"
+     },
+     {
+      "href": "https://youtu.be/zjpPLR21sbQ",
+      "label": "YouTubeでThis Townを聴く"
+     },
+     {
+      "href": "#a-christmas-carol-with-heart-2010",
+      "label": "A Christmas Carol with Heart · 2010年公演を見る"
+     }
+    ]
+   }
+  },
+  {
+   "slug": "two-new-shows-in-the-works",
+   "iso": "2026-09",
+   "excerptParagraphs": 1,
+   "en": {
+    "date": "September 2026",
+    "title": "Two new shows in the works",
+    "paragraphs": [
+     "Two new Nagoya Players Junior shows are in the works. <em>Mega Team Attack</em>, for the Elementary Troupe, is a lively fantasy world with the energy of a video game; <em>Sweet Dreams, Eugene</em>, for the Pre-Teen Troupe, is a comedy adventure about imagination, creativity and the power of working together.",
+     "I’ve been discussing the music and lyrics with the writers, Jeff Fritch (Elementary) and Kory Alexander Majansky (Pre-Teen), alongside producer Shawn Mahler.",
+     "Jeff and I have been collaborating on performance and music for more than 20 years. He has been involved in most NPJ productions, apart from the most recent one, when I worked closely with Kory.",
+     "Each show offers a new opportunity to expand my musical palette. I don’t play video games, so I had never really listened to the rich, dramatic music used in games such as <em>World of Warcraft</em>. I found it a powerful experience, and learned a great deal from it while developing one of the pieces for <em>Mega Team Attack</em>.",
+     "For one of the songs in <em>Sweet Dreams, Eugene</em>, the brief was comic dancing—“think Marx Brothers.” I went with a Charleston-style piece: again, nothing like I’d written before.",
+     "I enjoy piecing the music together with fellow collaborators, whose feedback and insights inspire work the performers will, I hope, enjoy performing. If they take home memories of the music and songs, I could not ask for anything more."
+    ],
+    "links": []
+   },
+   "ja": {
+    "date": "2026年9月",
+    "title": "二つの新作が進行中です",
+    "paragraphs": [
+     "Nagoya Players Juniorの二つの新作が、いま動き始めています。エレメンタリー・トゥループのための<em>Mega Team Attack</em>は、ビデオゲームのようなエネルギーをもつ、にぎやかなファンタジーの世界。プレティーン・トゥループのための<em>Sweet Dreams, Eugene</em>は、想像力、創造性、そして力を合わせることを描くコメディ・アドベンチャーです。",
+     "音楽と歌詞については、エレメンタリーの作家Jeff Fritch、プレティーンの作家Kory Alexander Majansky、そしてプロデューサーのShawn Mahlerと話し合いを重ねています。",
+     "Jeffとは、20年以上にわたりパフォーマンスと音楽の仕事で協働してきました。直近の作品ではKoryと密に作業しましたが、それ以外のNPJ作品の多くにJeffも関わってきています。",
+     "新しい作品はいつも、私の音楽的なパレットを広げる機会になります。私はビデオゲームをしないので、<em>World of Warcraft</em>のようなゲームに使われる、豊かでドラマティックな音楽をそれまでじっくり聴いたことがありませんでした。<em>Mega Team Attack</em>の一曲を作るなかで聴いてみると、とても力強い体験で、多くのことを学びました。",
+     "<em>Sweet Dreams, Eugene</em>のある曲では、「マルクス兄弟のような」コミカルなダンスが求められました。そこでチャールストン風の曲に挑戦しました。これもまた、これまで書いたことのない種類の音楽です。",
+     "仲間のコラボレーターたちと音楽を組み立てていく時間が、私は大好きです。彼らからのフィードバックや洞察が、出演者がきっと楽しんで演じられる作品へと私を導いてくれます。出演者が音楽や歌の思い出を持ち帰ってくれたなら、それ以上に望むことはありません。"
+    ],
+    "links": []
+   }
+  }
+ ]
+}

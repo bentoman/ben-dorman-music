@@ -150,12 +150,50 @@ nav.addEventListener('click', (event) => {
   if (event.target.matches('a')) { menu.setAttribute('aria-expanded', 'false'); nav.classList.remove('open'); }
 });
 
+// Main navigation: every same-page section link glides with the same eased,
+// fixed-pace animation, so short hops (Productions) feel like long ones.
+let sectionScroll = 0;
+const scrollToSection = (hash) => {
+  const target = hash.length > 1 && document.getElementById(decodeURIComponent(hash.slice(1)));
+  if (!target) return false;
+  cancelAnimationFrame(sectionScroll);
+  const offset = parseFloat(getComputedStyle(target).scrollMarginTop) || 0;
+  const from = window.scrollY;
+  const to = Math.max(0, Math.min(from + target.getBoundingClientRect().top - offset, document.documentElement.scrollHeight - window.innerHeight));
+  const finish = () => {
+    history.pushState(null, '', hash);
+    target.setAttribute('tabindex', '-1');
+    target.focus({ preventScroll: true });
+  };
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || Math.abs(to - from) < 2) {
+    window.scrollTo(0, to);
+    finish();
+    return true;
+  }
+  const duration = Math.min(1100, Math.max(600, Math.abs(to - from) * 0.25));
+  const start = performance.now();
+  document.documentElement.style.scrollBehavior = 'auto';
+  const stop = () => { cancelAnimationFrame(sectionScroll); document.documentElement.style.scrollBehavior = ''; window.removeEventListener('wheel', stop); window.removeEventListener('touchstart', stop); };
+  window.addEventListener('wheel', stop, { passive: true });
+  window.addEventListener('touchstart', stop, { passive: true });
+  const step = (now) => {
+    const t = Math.min(1, (now - start) / duration);
+    const eased = t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+    window.scrollTo(0, from + (to - from) * eased);
+    if (t < 1) sectionScroll = requestAnimationFrame(step);
+    else { stop(); finish(); }
+  };
+  sectionScroll = requestAnimationFrame(step);
+  return true;
+};
+
 // Keep archive navigation on the page and scroll to the rendered production.
 document.addEventListener('click', (event) => {
   const link = event.target.closest('a');
   if (!link || event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
   const destination = new URL(link.href, window.location.href);
   if (destination.origin !== window.location.origin || destination.pathname !== window.location.pathname || destination.search !== window.location.search) return;
+  if (link.matches('#nav a[href^="#"], .brand, .text-link[href^="#"]') && scrollToSection(destination.hash)) { event.preventDefault(); return; }
   if (!['#feedback', '#feedback-cat-2024', '#feedback-romeo-2024', '#npj-performer-feedback', '#cast-recordings', '#finding-a-home-for-home-sweet-home', '#word-hit-me-again-word', '#where-a-song-begins', '#this-town', '#romeo-and-juliet-2024', '#romeos-lament', '#juliets-nightingale', '#cat-who-walked-2024', '#the-first-magic', '#sassy-cat-and-friends', '#showcase-2022', '#rainbow-connections-land-of-kindness', '#rainbow-connections', '#shiny-gold-button', '#forever-friends', '#a-christmas-carol-with-heart-2010', '#emma-amazing-bucket-fillers', '#big-blue-bucket'].includes(destination.hash)) return;
   const target = document.getElementById(destination.hash.slice(1));
   if (!target) return;

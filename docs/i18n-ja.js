@@ -31,9 +31,9 @@
     'sassy-cat-and-friends': 'Sassy Cat and Friends — 『The Cat Who Walked by Herself』Nagoya Players Junior（2024年 · 作曲者によるデモ）',
     'juliets-nightingale': 'Juliet’s Nightingale / Home Sweet Home — 『Romeo and Juliet』Nagoya Players（2024年 · 作曲者によるデモ）',
     'romeos-lament': 'Romeo’s Lament — 『Romeo and Juliet』Nagoya Players（2024年 · 作曲者によるデモ）',
-    'rainbow-connections': 'Rainbow Connections — 『Rainbow Connections: The Land of Kindness』Nagoya Players Junior（2022年 · 作曲者によるデモ）',
+    'rainbow-connections': 'Rainbow Connections — 『Rainbow Connections: The Land of Kindness』Nagoya Players Junior（2022年 · キャスト録音）',
     'shiny-gold-button': 'Shiny Gold Button — 『Rainbow Connections: The Land of Kindness』Nagoya Players Junior（2021年 · 作曲者によるデモ）',
-    'forever-friends': 'Forever Friends — 『A Day in the Life of Boogy』Nagoya Players Junior（2022年 · プロダクション録音）',
+    'forever-friends': 'Forever Friends — 『A Day in the Life of Boogy』Nagoya Players Junior（2022年 · キャスト録音）',
     'this-town': 'This Town — 『A Christmas Carol with Heart』Nagoya Players（2010年）',
   };
   Object.entries(videoTitles).forEach(([id, title]) => { document.querySelector(`#${id} iframe`).title = title; });
@@ -80,8 +80,8 @@
   html('#sassy-cat-and-friends .production-return', '<a href="/?lang=ja#cat-who-walked-2024">2024年の公演を見る</a>');
   html('#sassy-cat-and-friends .song-credit', '作曲：Ben Dorman。<br>作詞：Ben Dorman、Jeff Fritch。<br>歌：Ben Dorman。');
   html('#sassy-cat-and-friends .video-note a', 'YouTubeで見る <span aria-hidden="true">↗</span>');
-  text('#rainbow-connections .kicker', '作曲者によるデモ · 2022');
-  html('#rainbow-connections .video-description', '<a href="/?lang=ja#rainbow-connections-land-of-kindness">Nagoya Players Junior Showcase 2022の『<em>Rainbow Connections: The Land of Kindness</em>』</a>のために書いたオリジナル曲。作曲者によるデモ音源です。');
+  text('#rainbow-connections .kicker', 'キャスト録音 · 2022');
+  html('#rainbow-connections .video-description', '<a href="/?lang=ja#rainbow-connections-land-of-kindness">Nagoya Players Junior Showcase 2022の『<em>Rainbow Connections: The Land of Kindness</em>』</a>のために書いたオリジナル曲。キャスト録音です。');
   html('#rainbow-connections .production-return', '<a href="/?lang=ja#rainbow-connections-land-of-kindness">2022年の公演を見る</a>');
   html('#rainbow-connections .song-credit', '作曲：Ben Dorman。<br>作詞：Ben Dorman、Jeff Fritch。<br>プロデュース：Ben Dorman。<br>演奏：Aya Kawakami。');
   html('#rainbow-connections .video-note a', 'YouTubeで見る <span aria-hidden="true">↗</span>');
@@ -89,7 +89,7 @@
   html('#shiny-gold-button .video-description', 'Nagoya Players Junior Showcase 2022の<a href="/?lang=ja#rainbow-connections-land-of-kindness">『<em>Rainbow Connections: The Land of Kindness</em>』</a>からの一曲。作曲者によるデモ音源です。');
   html('#shiny-gold-button .production-return', '<a href="/?lang=ja#rainbow-connections-land-of-kindness">2022年の公演を見る</a>');
   html('#shiny-gold-button .video-note a', 'YouTubeで見る <span aria-hidden="true">↗</span>');
-  text('#forever-friends .kicker', 'プロダクション録音 · 2022');
+  text('#forever-friends .kicker', 'キャスト録音 · 2022');
   html('#forever-friends .video-description', 'Nagoya Players Junior Showcase 2022の<a href="/?lang=ja#showcase-2022">『<em>A Day in the Life of Boogy</em>』</a>からの一曲です。');
   html('#forever-friends .song-credit', '作曲：Ben Dorman。<br>作詞：Ben Dorman、Jeff Fritch。<br>プロデュース：Ben Dorman。<br>ボーカル：Aya Kawakami、Ben Dorman、Calum Vigrow、Kiko Sugii、Marii Takagi、Saki Kawashima、Twila Vigrow、Yurii Takagi。<br>2022年12月17日リリース · Ten Worlds Records。');
   html('#forever-friends .production-return', '<a href="/?lang=ja#showcase-2022">2022年の公演を見る</a>');
@@ -156,7 +156,7 @@
         {year:'2022',title:'NPJ Showcase 2022',detail:'Rainbow Connections と A Day in the Life of Boogy からの楽曲',art:'assets/showcase-2022.jpg'}
       ],
       demos:[
-        {year:'2024',title:'Romeo and Juliet', id:'romeo-and-juliet-2024', recordings:[{href:'/?lang=ja#juliets-nightingale',label:'Juliet’s Nightingale / Home Sweet Homeを聴く · 作曲者によるデモ'},{href:'/?lang=ja#romeos-lament',label:'Romeo’s Lamentを聴く · 作曲者によるデモ'}],detail:'上演のために書かれた3曲の制作音源',art:'assets/romeo-juliet.jpg'},
+        {year:'2024',title:'Romeo and Juliet', id:'romeo-and-juliet-2024', recordings:[{href:'/?lang=ja#juliets-nightingale',label:'Juliet’s Nightingale / Home Sweet Homeを聴く · 作曲者によるデモ'},{href:'/?lang=ja#romeos-lament',label:'Romeo’s Lamentを聴く · 作曲者によるデモ'}],detail:'上演のために書かれた2曲の制作音源',art:'assets/romeo-juliet.jpg'},
         {year:'2024',title:'The Cat Who Walked by Herself', id:'cat-who-walked-2024', recordings:[{href:'/?lang=ja#the-first-magic',label:'The First Magicを聴く · 作曲者によるデモ'},{href:'/?lang=ja#sassy-cat-and-friends',label:'Sassy Cat and Friendsを聴く · 作曲者によるデモ'}],detail:'NPJ Showcase 2024 · The First MagicとSassy Cat and Friendsの作曲デモ',art:'assets/showcase-2024.jpg'}
       ],
       beyond:[

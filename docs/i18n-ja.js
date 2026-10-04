@@ -40,9 +40,9 @@
 
   text('.hero .kicker', '作曲 · 作詞 · 音楽監督');
   html('#hero-title', '物語がどう<em>感じられるか</em>、<br><span>聞かせてください。<br>一緒に、その響きを見つけましょう。</span>');
-  text('.hero .intro', '色、感情、空気感から形づくる、舞台のための歌とサウンドスケープ。物語が求めるなら、ジャンルの枠を越えて。');
+  text('.hero .intro', '色、感情、空気感から形づくる、舞台のための歌とサウンドスケープ。');
   html('.hero .text-link', '作品を見る <span aria-hidden="true">↓</span>');
-  html('.hero-note', 'ジャンルを越えて<br>国境を越えて<br><span>いつも、物語のために</span>');
+  html('.hero-note', 'ジャンルを越えて<br>国境を越えて');
 
   text('.productions .section-heading .kicker', '主な作品');
   text('#productions-title', '作品');
@@ -50,36 +50,36 @@
 
   text('.music .section-heading .kicker', '聴く');
   text('#music-title', '音楽');
-  text('.music .section-note', '完成したキャスト録音と、創作過程を伝えるデモや資料に分けて紹介しています。');
-  text('#big-blue-bucket .kicker', '舞台作品より · 2026');
+  text('.music .section-note', '舞台と創作の過程から生まれた録音を集めています。キャストによる上演や公演の録音から、作曲者のデモ、制作中の作品まで。');
+  text('#big-blue-bucket .kicker', 'オリジナル・キャストによるパフォーマンス · 2026');
   html('#big-blue-bucket .video-copy > p:not(.kicker):not(.video-note):not(.photo-credit)', 'Nagoya Players Junior Showcase 2026のファミリー・ミュージカル<a href="/?lang=ja#emma-amazing-bucket-fillers">『<em>Emma Amazing & the Bucket Fillers</em>』</a>より、オリジナル・キャストによるパフォーマンス。');
   html('#big-blue-bucket .video-note a', 'YouTubeで見る <span aria-hidden="true">↗</span>');
   text('#big-blue-bucket .photo-credit', '写真提供：Nagoya Players Junior。Nagoya Players Junior Showcase 2026『Emma Amazing & the Bucket Fillers』。脚本・演出：Kory Alexander Majansky。');
   document.querySelector('#romeos-lament .production-feedback').setAttribute('aria-label', '公演からの声');
   text('#romeos-lament .feedback-label', '公演からの声');
   text('#romeos-lament .production-feedback footer', 'Richard Harris（出演者）');
-  text('#romeos-lament .kicker', 'プロダクション・アーカイブ · 作曲者によるデモ');
+  text('#romeos-lament .kicker', '作曲者によるデモ · 2024');
   html('#romeos-lament .video-description', 'Nagoya Playersの<a href="/?lang=ja#romeo-and-juliet-2024">2024年公演『<em>Romeo and Juliet</em>』</a>のために書いたオリジナル曲。作曲者によるデモ音源です。');
   html('#romeos-lament .production-return', '<a href="/?lang=ja#romeo-and-juliet-2024">2024年の公演を見る</a>');
   html('#romeos-lament .song-credit', '作曲・オリジナル歌詞：Ben Dorman。<br>William Shakespeareの『<em>Romeo and Juliet</em>』の台詞を一部使用。<br>歌：Ben Dorman。');
   html('#romeos-lament .video-note a', 'YouTubeで見る <span aria-hidden="true">↗</span>');
-  text('#juliets-nightingale .kicker', 'プロダクション・アーカイブ · 作曲者によるデモ');
+  text('#juliets-nightingale .kicker', '作曲者によるデモ · 2024');
   html('#juliets-nightingale .video-description', 'Nagoya Playersの<a href="/?lang=ja#romeo-and-juliet-2024">2024年公演『<em>Romeo and Juliet</em>』</a>のために書いたオリジナル曲。作曲者によるデモ音源です。');
   html('#juliets-nightingale .production-return', '<a href="/?lang=ja#romeo-and-juliet-2024">2024年の公演を見る</a>');
   html('#juliets-nightingale .song-credit', '作曲・オリジナル歌詞：Ben Dorman。<br>William Shakespeareの『<em>Romeo and Juliet</em>』の台詞を一部使用。<br>歌：Ben Dorman。');
   html('#juliets-nightingale .video-note a', 'YouTubeで見る <span aria-hidden="true">↗</span>');
-  text('#the-first-magic .kicker', 'プロダクション・アーカイブ · 作曲者によるデモ');
+  text('#the-first-magic .kicker', '作曲者によるデモ · 2024');
   html('#the-first-magic .video-description', '<a href="/?lang=ja#cat-who-walked-2024">Nagoya Players Junior Showcase 2024の『<em>The Cat Who Walked by Herself</em>』</a>のために書いたオリジナル曲。作曲者によるデモ音源です。');
   html('#the-first-magic .production-return', '<a href="/?lang=ja#cat-who-walked-2024">2024年の公演を見る</a>');
   html('#the-first-magic .song-credit', '作曲・オリジナル歌詞：Ben Dorman。<br>Rudyard Kiplingの『<em>The Cat Who Walked by Herself</em>』の原文を一部使用。<br>歌：Ben Dorman。');
   html('#the-first-magic .note-return', '<a href="#where-does-magic-start">ノートを読む：魔法はどこから始まる？</a>');
   html('#the-first-magic .video-note a', 'YouTubeで見る <span aria-hidden="true">↗</span>');
-  text('#sassy-cat-and-friends .kicker', 'プロダクション・アーカイブ · 作曲者によるデモ');
+  text('#sassy-cat-and-friends .kicker', '作曲者によるデモ · 2024');
   html('#sassy-cat-and-friends .video-description', '<a href="/?lang=ja#cat-who-walked-2024">Nagoya Players Junior Showcase 2024の『<em>The Cat Who Walked by Herself</em>』</a>のために書いたオリジナル曲。作曲者によるデモ音源です。');
   html('#sassy-cat-and-friends .production-return', '<a href="/?lang=ja#cat-who-walked-2024">2024年の公演を見る</a>');
   html('#sassy-cat-and-friends .song-credit', '作曲：Ben Dorman。<br>作詞：Ben Dorman、Jeff Fritch。<br>歌：Ben Dorman。');
   html('#sassy-cat-and-friends .video-note a', 'YouTubeで見る <span aria-hidden="true">↗</span>');
-  text('#rainbow-connections .kicker', 'プロダクション・アーカイブ · 作曲者によるデモ');
+  text('#rainbow-connections .kicker', '作曲者によるデモ · 2022');
   html('#rainbow-connections .video-description', '<a href="/?lang=ja#rainbow-connections-land-of-kindness">Nagoya Players Junior Showcase 2022の『<em>Rainbow Connections: The Land of Kindness</em>』</a>のために書いたオリジナル曲。作曲者によるデモ音源です。');
   html('#rainbow-connections .production-return', '<a href="/?lang=ja#rainbow-connections-land-of-kindness">2022年の公演を見る</a>');
   html('#rainbow-connections .song-credit', '作曲：Ben Dorman。<br>作詞：Ben Dorman、Jeff Fritch。<br>プロデュース：Ben Dorman。<br>演奏：Aya Kawakami。');
@@ -88,12 +88,12 @@
   html('#shiny-gold-button .video-description', 'Nagoya Players Junior Showcase 2022の<a href="/?lang=ja#rainbow-connections-land-of-kindness">『<em>Rainbow Connections: The Land of Kindness</em>』</a>からの一曲です。');
   html('#shiny-gold-button .production-return', '<a href="/?lang=ja#rainbow-connections-land-of-kindness">2022年の公演を見る</a>');
   html('#shiny-gold-button .video-note a', 'YouTubeで見る <span aria-hidden="true">↗</span>');
-  text('#forever-friends .kicker', 'プロダクション・アーカイブ · プロダクション録音');
+  text('#forever-friends .kicker', 'プロダクション録音 · 2022');
   html('#forever-friends .video-description', 'Nagoya Players Junior Showcase 2022の<a href="/?lang=ja#showcase-2022">『<em>A Day in the Life of Boogy</em>』</a>からの一曲です。');
   html('#forever-friends .song-credit', '作曲：Ben Dorman。<br>作詞：Ben Dorman、Jeff Fritch。<br>プロデュース：Ben Dorman。<br>ボーカル：Aya Kawakami、Ben Dorman、Calum Vigrow、Kiko Sugii、Marii Takagi、Saki Kawashima、Twila Vigrow、Yurii Takagi。<br>2022年12月17日リリース · Ten Worlds Records。');
   html('#forever-friends .production-return', '<a href="/?lang=ja#showcase-2022">2022年の公演を見る</a>');
   html('#forever-friends .video-note a', 'YouTubeで見る <span aria-hidden="true">↗</span>');
-  text('#this-town .kicker', '舞台作品より · 2010');
+  text('#this-town .kicker', 'プロダクション録音 · 2010');
   html('#this-town .video-description', '衰退していく町を描いた、陰りのある一曲。Nagoya Playersの<a href="/?lang=ja#a-christmas-carol-with-heart-2010">2010年公演『<em>A Christmas Carol with Heart</em>』</a>のために書きました。John Lenihan演出によるこの作品は、ディケンズの物語をテキサスに舞台を移して描いたものです。');
   text('#this-town .song-credit', '作曲・作詞・歌：Ben Dorman。');
   html('#this-town .production-return', '<a href="/?lang=ja#a-christmas-carol-with-heart-2010">2010年の公演を見る</a>');
@@ -123,16 +123,15 @@
   text('.notes .section-note', '制作中の作品やリハーサル、創作のプロセスから生まれる、ときどきの記録。');
 
   text('.about .kicker', '05 · プロフィール');
-  html('#about-title', '物語に寄り添う<br>音楽。');
+  html('#about-title', 'ベンについて');
   const about = document.querySelectorAll('.about-copy > p:not(.kicker)');
-  text(about[0], 'ベン・ドーマンは、日本を拠点に国内外で活動するオーストラリア出身の作曲家・作詞家です。舞台のための歌とサウンドスケープを制作しています。コラボレーターに色、感情、空気感を尋ねるところから始め、その物語に必要な音楽の言葉を探します。どの作品にも同じ音を当てはめるのではなく、ジャンルを自由に行き来します。');
+  text(about[0], 'ベン・ドーマンは、日本を拠点に国内外で活動するオーストラリア出身の作曲家・作詞家です。舞台のための歌とサウンドスケープを制作しています。コラボレーターに色、感情、空気感を尋ねるところから始め、それらを捉える音楽の言葉を探します。');
   html(about[1], 'ミュージカルとの出会いは学生時代。<em>Guys and Dolls</em>、<em>Annie Get Your Gun</em>、そして歌と音楽を取り入れたオリジナル作品に出演しました。その経験が、演者を第一に考える、きわめて個人的な作曲姿勢の原点となっています。');
   document.querySelector('.portrait img').alt = '屋外で撮影したベン・ドーマンのポートレート';
-  text('.philosophy p', '「まず、たった一人の演者の心に届くことを目指しています。音楽と歌によって、若い演者たちが魔法の世界へと運ばれていく。そして、その姿を見る喜びを家族の皆さんにも分かち合ってほしい。その経験が、舞台を離れたあともずっと心に残ることを願っています。」');
+  text('.philosophy p', '「私の作品が、若い演者たちをどこかへ運んでいってくれたら。そして、その姿を見る喜びを、ご家族の皆さんにも分かち合ってほしい。その経験が、舞台を離れたあともずっと心に残ることを願っています。」');
 
   text('footer > .kicker', '06 · お問い合わせ');
-  html('footer > h2', '一緒に、心に響くものを<br>つくりましょう。');
-  html('.contact-link', 'Bandcampからベンに連絡する <span aria-hidden="true">↗</span>');
+  text('footer > h2', '一緒にお仕事をしてみませんか？まずはご連絡ください。');
   const footerParts = document.querySelectorAll('.footer-line > span');
   text(footerParts[0], 'ベン・ドーマン — ミュージカル音楽');
   text(footerParts[1], '日本を拠点に · 国内外で活動');

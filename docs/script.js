@@ -96,7 +96,7 @@ document.querySelector('#the-first-magic .production-return').insertAdjacentHTML
 document.querySelector('#romeos-lament .production-feedback').outerHTML = feedbackMarkup(chorusFeedback) + feedbackLink('feedback-romeo-2024');
 
 const artMarkup = (item) => item.art
-  ? `<img src="${item.art}" alt="${ui.artwork} ${item.eyebrow}: ${item.title}">`
+  ? `<img src="${item.art}" alt="${ui.artwork} ${item.eyebrow}: ${item.title}" loading="lazy" decoding="async">`
   : `<div class="type-art" aria-hidden="true"><span>${item.year}</span><b>${item.theme === 'development' ? 'WIP' : 'ARCHIVE'}</b></div>`;
 const workMarkup = (work) => typeof work === 'string'
   ? `<li>${work}</li>`
@@ -125,7 +125,7 @@ window.PORTFOLIO.productions.forEach((item, index) => {
 function renderAlbums(target, albums) {
   document.querySelector(target).innerHTML = albums.map(album => `
     <article class="album">
-      <img src="${album.art}" alt="${ui.artwork} ${album.title}">
+      <img src="${album.art}" alt="${ui.artwork} ${album.title}" loading="lazy" decoding="async">
       <div><span>${album.year}</span><h4>${album.title}</h4><p>${album.detail}</p>${(album.recordings || []).map(recording => `<p><a class="album-link" href="${recording.href}">${recording.label}</a></p>`).join('')}<a class="album-link" href="https://bendorman.bandcamp.com/music" target="_blank" rel="noopener">${ui.bandcamp} <span aria-hidden="true">↗</span></a></div>
     </article>`).join('');
 }
@@ -135,7 +135,7 @@ renderAlbums('#demo-recordings', window.PORTFOLIO.music.demos);
 document.querySelector('#beyond-bandcamp').innerHTML = window.PORTFOLIO.music.beyond.map((item, index) => `
   <article class="archive-item"><span>0${index + 1}</span><h4>${item.title}</h4><p>${item.detail}</p></article>`).join('');
 document.querySelector('#notes-list').innerHTML = window.PORTFOLIO.notes.map(note => `
-  <article class="note"${note.id ? ` id="${note.id}"` : ''}${note.lang ? ` lang="${note.lang}"` : ''}><p class="note-date">${note.date}</p><div><h3>${note.title}</h3><p>${note.body}</p>${note.links ? `<nav class="note-links" aria-label="Related music and production">${note.links.map(link => `<a href="${link.href}">${link.label}</a>`).join('') }</nav>` : ''}</div>
+  <article class="note"${note.id ? ` id="${note.id}"` : ''}${note.lang ? ` lang="${note.lang}"` : ''}><p class="note-date">${note.date}</p><div><h3>${note.title}</h3>${note.body.split('<br><br>').map(paragraph => `<p>${paragraph}</p>`).join('')}${note.links ? `<nav class="note-links" aria-label="${document.documentElement.lang === 'ja' ? '関連する音楽と作品' : 'Related music and production'}">${note.links.map(link => `<a href="${link.href}">${link.label}</a>`).join('') }</nav>` : ''}</div>
   </article>`).join('');
 document.querySelector('#year').textContent = new Date().getFullYear();
 

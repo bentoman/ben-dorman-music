@@ -5,7 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Ben Dorman is a composer, lyricist and musical director writing music for theatre and family musicals.">
   <title>Ben Dorman — Musical Theatre</title>
-  <link rel="canonical" href="https://bendorman.com/">
+  <link rel="alternate" hreflang="en" href="https://bendorman.com/">
+  <link rel="alternate" hreflang="ja" href="https://bendorman.com/?lang=ja">
+  <link rel="alternate" hreflang="x-default" href="https://bendorman.com/">
+  <script>
+    // One HTML file serves both /?lang=ja and /, so the canonical URL is set per language here.
+    (function () {
+      var link = document.createElement('link');
+      link.rel = 'canonical';
+      link.href = new URLSearchParams(window.location.search).get('lang') === 'ja' ? 'https://bendorman.com/?lang=ja' : 'https://bendorman.com/';
+      document.head.appendChild(link);
+    })();
+  </script>
   <meta property="og:title" content="Ben Dorman — Musical Theatre">
   <meta property="og:description" content="Ben Dorman is a composer, lyricist and musical director writing music for theatre and family musicals.">
   <meta property="og:image" content="https://bendorman.com/assets/ben-dorman-social.png">
@@ -16,13 +27,15 @@
   <meta property="og:url" content="https://bendorman.com/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Ben Dorman">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:locale:alternate" content="ja_JP">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Ben Dorman — Musical Theatre">
   <meta name="twitter:description" content="Ben Dorman is a composer, lyricist and musical director writing music for theatre and family musicals.">
   <meta name="twitter:image" content="https://bendorman.com/assets/ben-dorman-social.png">
   <meta name="twitter:image:alt" content="Ben Dorman — Composer · Lyricist · Musical Director, in dark and ochre lettering on warm ivory.">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23100f0e'/%3E%3Cpath d='M20 14v30.5a8 8 0 1 0 4 6.9V27l24-6v17.5a8 8 0 1 0 4 6.9V10z' fill='%23d9a928'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="styles.css?v=20261003-feedback-section">
+  <link rel="stylesheet" href="styles.css?v=20261004-stage1b">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -45,7 +58,7 @@
         <p class="intro">Songs and soundscapes for the stage, shaped through colour, emotion and vibe — and open to whatever genre the story calls for.</p>
         <a class="text-link" href="#productions">Explore the productions <span aria-hidden="true">↓</span></a>
       </div>
-      <div class="hero-art" aria-label="Selected production artwork">
+      <div class="hero-art" role="group" aria-label="Selected production artwork">
         <figure class="art-card art-main"><img src="assets/showcase-2026.jpg" alt="Artwork for Nagoya Players Junior Showcase 2026"></figure>
         <figure class="art-card art-side"><img src="assets/showcase-2024.jpg" alt="Artwork for The Cat Who Walked by Herself"></figure>
         <p class="hero-note">Across genres<br>Across borders<br><span>Always for the story</span></p>
@@ -66,7 +79,7 @@
         <div class="video-copy">
           <p class="kicker">Selected stage work · 2026</p>
           <h3 id="featured-video-title">Big Blue Bucket</h3>
-          <p>An original cast performance from the family musical <a href="/?lang=en#emma-amazing-bucket-fillers"><em>Emma Amazing &amp; the Bucket Fillers</em></a>, part of the Nagoya Players Junior Showcase 2026.</p>
+          <p>An original cast performance from the family musical <a href="#emma-amazing-bucket-fillers"><em>Emma Amazing &amp; the Bucket Fillers</em></a>, part of the Nagoya Players Junior Showcase 2026.</p>
           <p class="video-note"><a href="https://youtu.be/E5kRjd10Row" target="_blank" rel="noopener">Watch on YouTube <span aria-hidden="true">↗</span></a></p>
           <p class="photo-credit">Photography courtesy of Nagoya Players Junior. Nagoya Players Junior Showcase 2026 — <em>Emma Amazing &amp; the Bucket Fillers</em>. Written and directed by Kory Alexander Majansky.</p>
         </div>
@@ -78,9 +91,9 @@
         <div class="video-copy">
           <p class="kicker">Production archive · Composer demo</p>
           <h3 id="the-first-magic-title">The First Magic</h3>
-          <p class="video-description">An original song written for <a href="/?lang=en#cat-who-walked-2024"><em>The Cat Who Walked by Herself</em>, part of Nagoya Players Junior Showcase 2024</a>, presented as a composer demo.</p>
+          <p class="video-description">An original song written for <a href="#cat-who-walked-2024"><em>The Cat Who Walked by Herself</em>, part of Nagoya Players Junior Showcase 2024</a>, presented as a composer demo.</p>
           <p class="song-credit">Music and original lyrics by Ben Dorman.<br>Incorporating text from Rudyard Kipling’s <em>The Cat Who Walked by Herself</em>.<br>Vocals by Ben Dorman.</p>
-          <p class="production-return"><a href="/?lang=en#cat-who-walked-2024">View the 2024 production</a></p>
+          <p class="production-return"><a href="#cat-who-walked-2024">View the 2024 production</a></p>
           <p class="video-note"><a href="https://youtu.be/3Gzy96VdLho" target="_blank" rel="noopener">Watch on YouTube <span aria-hidden="true">↗</span></a></p>
           <p class="note-return"><a href="#where-does-magic-start">Read the Note: Where does magic start?</a></p>
         </div>
@@ -92,9 +105,9 @@
         <div class="video-copy">
           <p class="kicker">Production archive · Composer demo</p>
           <h3 id="sassy-cat-and-friends-title">Sassy Cat and Friends</h3>
-          <p class="video-description">An original song written for <a href="/?lang=en#cat-who-walked-2024"><em>The Cat Who Walked by Herself</em>, part of Nagoya Players Junior Showcase 2024</a>, presented as a composer demo.</p>
+          <p class="video-description">An original song written for <a href="#cat-who-walked-2024"><em>The Cat Who Walked by Herself</em>, part of Nagoya Players Junior Showcase 2024</a>, presented as a composer demo.</p>
           <p class="song-credit">Music by Ben Dorman.<br>Lyrics by Ben Dorman and Jeff Fritch.<br>Vocals by Ben Dorman.</p>
-          <p class="production-return"><a href="/?lang=en#cat-who-walked-2024">View the 2024 production</a></p>
+          <p class="production-return"><a href="#cat-who-walked-2024">View the 2024 production</a></p>
           <p class="video-note"><a href="https://youtu.be/sv_q8ROIGnA" target="_blank" rel="noopener">Watch on YouTube <span aria-hidden="true">↗</span></a></p>
         </div>
       </article>
@@ -105,9 +118,9 @@
         <div class="video-copy">
           <p class="kicker">Production archive · Composer demo</p>
           <h3 id="juliets-nightingale-title">Juliet’s Nightingale / Home Sweet Home</h3>
-          <p class="video-description">An original song written for Nagoya Players’ <a href="/?lang=en#romeo-and-juliet-2024">2024 production of <em>Romeo and Juliet</em></a>, presented as a composer demo.</p>
+          <p class="video-description">An original song written for Nagoya Players’ <a href="#romeo-and-juliet-2024">2024 production of <em>Romeo and Juliet</em></a>, presented as a composer demo.</p>
           <p class="song-credit">Music and original lyrics by Ben Dorman.<br>Incorporating text from William Shakespeare’s <em>Romeo and Juliet</em>.<br>Vocals by Ben Dorman.</p>
-          <p class="production-return"><a href="/?lang=en#romeo-and-juliet-2024">View the 2024 production</a></p>
+          <p class="production-return"><a href="#romeo-and-juliet-2024">View the 2024 production</a></p>
           <p class="video-note"><a href="https://youtu.be/2Kr--g7VhhM" target="_blank" rel="noopener">Watch on YouTube <span aria-hidden="true">↗</span></a></p>
           <p class="note-return"><a href="#finding-a-home-for-home-sweet-home">Read the Note: Finding a home for “Home Sweet Home”</a></p>
         </div>
@@ -119,9 +132,9 @@
         <div class="video-copy">
           <p class="kicker">Production archive · Composer demo</p>
           <h3 id="romeos-lament-title">Romeo’s Lament</h3>
-          <p class="video-description">An original song written for Nagoya Players’ <a href="/?lang=en#romeo-and-juliet-2024">2024 production of <em>Romeo and Juliet</em></a>, presented as a composer demo.</p>
+          <p class="video-description">An original song written for Nagoya Players’ <a href="#romeo-and-juliet-2024">2024 production of <em>Romeo and Juliet</em></a>, presented as a composer demo.</p>
           <p class="song-credit">Music and original lyrics by Ben Dorman.<br>Incorporating text from William Shakespeare’s <em>Romeo and Juliet</em>.<br>Vocals by Ben Dorman.</p>
-          <p class="production-return"><a href="/?lang=en#romeo-and-juliet-2024">View the 2024 production</a></p>
+          <p class="production-return"><a href="#romeo-and-juliet-2024">View the 2024 production</a></p>
           <aside class="production-feedback" aria-label="From the productions">
             <p class="feedback-label">From the productions</p>
             <blockquote><p lang="en">“Our chorus voices easily intertwined with the fine music.”</p><footer>Richard Harris, performer</footer></blockquote>
@@ -137,9 +150,9 @@
         <div class="video-copy">
           <p class="kicker">Production archive · Composer demo</p>
           <h3 id="rainbow-connections-title">Rainbow Connections</h3>
-          <p class="video-description">An original song written for <a href="/?lang=en#rainbow-connections-land-of-kindness"><em>Rainbow Connections: The Land of Kindness</em>, part of Nagoya Players Junior Showcase 2022</a>, presented as a composer demo.</p>
+          <p class="video-description">An original song written for <a href="#rainbow-connections-land-of-kindness"><em>Rainbow Connections: The Land of Kindness</em>, part of Nagoya Players Junior Showcase 2022</a>, presented as a composer demo.</p>
           <p class="song-credit">Music by Ben Dorman.<br>Lyrics by Ben Dorman and Jeff Fritch.<br>Produced by Ben Dorman.<br>Performed by Aya Kawakami.</p>
-          <p class="production-return"><a href="/?lang=en#rainbow-connections-land-of-kindness">View the 2022 production</a></p>
+          <p class="production-return"><a href="#rainbow-connections-land-of-kindness">View the 2022 production</a></p>
           <p class="video-note"><a href="https://youtu.be/7PC4zpjolBw" target="_blank" rel="noopener">Watch on YouTube <span aria-hidden="true">↗</span></a></p>
         </div>
       </article>
@@ -150,8 +163,8 @@
         <div class="video-copy">
           <p class="kicker">Production archive · 2022</p>
           <h3 id="shiny-gold-button-title">Shiny Gold Button</h3>
-          <p class="video-description">A song from <a href="/?lang=en#rainbow-connections-land-of-kindness"><em>Rainbow Connections: The Land of Kindness</em></a>, part of Nagoya Players Junior Showcase 2022.</p>
-          <p class="production-return"><a href="/?lang=en#rainbow-connections-land-of-kindness">View the 2022 production</a></p>
+          <p class="video-description">A song from <a href="#rainbow-connections-land-of-kindness"><em>Rainbow Connections: The Land of Kindness</em></a>, part of Nagoya Players Junior Showcase 2022.</p>
+          <p class="production-return"><a href="#rainbow-connections-land-of-kindness">View the 2022 production</a></p>
           <p class="video-note"><a href="https://youtu.be/nOKl6qZEdKM" target="_blank" rel="noopener">Watch on YouTube <span aria-hidden="true">↗</span></a></p>
           <p class="note-return"><a href="#word-hit-me-again-word">Read the Note: Word! Hit me again! Word!</a></p>
         </div>
@@ -163,9 +176,9 @@
         <div class="video-copy">
           <p class="kicker">Production archive · Production recording</p>
           <h3 id="forever-friends-title">Forever Friends</h3>
-          <p class="video-description">A song from <a href="/?lang=en#showcase-2022"><em>A Day in the Life of Boogy</em></a>, part of Nagoya Players Junior Showcase 2022.</p>
+          <p class="video-description">A song from <a href="#showcase-2022"><em>A Day in the Life of Boogy</em></a>, part of Nagoya Players Junior Showcase 2022.</p>
           <p class="song-credit">Music by Ben Dorman.<br>Lyrics by Ben Dorman and Jeff Fritch.<br>Produced by Ben Dorman.<br>Vocals by Aya Kawakami, Ben Dorman, Calum Vigrow, Kiko Sugii, Marii Takagi, Saki Kawashima, Twila Vigrow and Yurii Takagi.<br>Originally released December 17, 2022 · Ten Worlds Records.</p>
-          <p class="production-return"><a href="/?lang=en#showcase-2022">View the 2022 production</a></p>
+          <p class="production-return"><a href="#showcase-2022">View the 2022 production</a></p>
           <p class="video-note"><a href="https://youtu.be/X6sozQ1RLmg" target="_blank" rel="noopener">Watch on YouTube <span aria-hidden="true">↗</span></a></p>
         </div>
       </article>
@@ -176,9 +189,9 @@
         <div class="video-copy">
           <p class="kicker">Selected stage work · 2010</p>
           <h3 id="this-town-title">This Town</h3>
-          <p class="video-description">A darker song about a town in decline, written for Nagoya Players’ <a href="/?lang=en#a-christmas-carol-with-heart-2010">2010 production of <em>A Christmas Carol with Heart</em></a>. Directed by John Lenihan, the production reimagined Dickens’s story in Texas.</p>
+          <p class="video-description">A darker song about a town in decline, written for Nagoya Players’ <a href="#a-christmas-carol-with-heart-2010">2010 production of <em>A Christmas Carol with Heart</em></a>. Directed by John Lenihan, the production reimagined Dickens’s story in Texas.</p>
           <p class="song-credit">Music, lyrics and vocals by Ben Dorman.</p>
-          <p class="production-return"><a href="/?lang=en#a-christmas-carol-with-heart-2010">View the 2010 production</a></p>
+          <p class="production-return"><a href="#a-christmas-carol-with-heart-2010">View the 2010 production</a></p>
           <p class="video-note"><a href="https://youtu.be/zjpPLR21sbQ" target="_blank" rel="noopener">Watch on YouTube <span aria-hidden="true">↗</span></a></p>
           <p class="photo-credit">Photographs by John Lenihan, used with permission.</p>
           <p class="note-return"><a href="#where-a-song-begins">Read the Note: Digging through the archive: where a song begins</a></p>
@@ -221,7 +234,7 @@
     <section class="section about" id="about" aria-labelledby="about-title">
       <div class="about-mark" aria-hidden="true">BD</div>
       <div class="about-copy"><p class="kicker">05 · About</p><h2 id="about-title">Music in service<br>of the story.</h2><p>Ben Dorman is an Australian composer and lyricist based in Japan and available for collaborations anywhere. He creates songs and soundscapes for the stage. He begins by asking collaborators about colours, feelings and vibes, then finds the musical language the story needs — moving freely across genres rather than bringing the same sound to every project.</p><p>His own relationship with musical theatre began at school, performing in <em>Guys and Dolls</em>, <em>Annie Get Your Gun</em>, and original productions with music and song. Those experiences shaped a deeply personal, performer-first approach to composition.</p></div>
-      <figure class="portrait"><img src="assets/ben-dorman-portrait.jpg" alt="Portrait of Ben Dorman outdoors"></figure>
+      <figure class="portrait"><img src="assets/ben-dorman-portrait.jpg" alt="Portrait of Ben Dorman outdoors" loading="lazy" decoding="async"></figure>
       <blockquote class="philosophy">
         <p>“I aim to reach the heart of just one performer first. I want music and song to carry young performers into a magical world—and for their families to share the joy of seeing that happen. I hope the experience stays with them far beyond the stage.”</p>
         <footer>— Ben Dorman</footer>
@@ -235,8 +248,8 @@
     <div class="footer-line"><span>Ben Dorman — Musical Theatre</span><span>Based in Japan · Available anywhere</span><span>© <span id="year"></span></span></div>
   </footer>
 
-  <script src="data.js?v=20261003-first-magic-note"></script>
-  <script src="i18n-ja.js?v=20261003-first-magic-title"></script>
-  <script src="script.js?v=20261003-first-magic-note"></script>
+  <script src="data.js?v=20261004-stage1b"></script>
+  <script src="i18n-ja.js?v=20261004-stage1b"></script>
+  <script src="script.js?v=20261004-stage1b"></script>
 </body>
 </html>

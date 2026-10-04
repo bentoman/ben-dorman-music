@@ -11,7 +11,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const docs = path.join(root, 'docs');
 const source = JSON.parse(fs.readFileSync(path.join(root, 'tools', 'notes-source.json'), 'utf8'));
 const SITE = 'https://bendorman.com';
-const VERSION = '20261004-notes';
+const VERSION = '20261004-s3';
 const slugs = new Set(source.notes.map(note => note.slug));
 
 const escapeAttr = (text) => text.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');

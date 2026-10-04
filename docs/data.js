@@ -33,7 +33,7 @@ window.PORTFOLIO = {
       year: "2024",
       eyebrow: "Nagoya Players Junior Showcase",
       title: "The Cat Who Walked by Herself", id: "cat-who-walked-2024", recordings: [{ href: "#the-first-magic", label: "Watch The First Magic · Composer demo" }, { href: "#sassy-cat-and-friends", label: "Watch Sassy Cat and Friends · Composer demo" }],
-      works: ["The First Magic — music and original lyrics by Ben Dorman, incorporating text by Rudyard Kipling", "Sassy Cat — music and lyrics by Ben Dorman"],
+      works: ["The First Magic — music and original lyrics by Ben Dorman, incorporating text by Rudyard Kipling", "Sassy Cat and Friends — music by Ben Dorman, lyrics by Ben Dorman and Jeff Fritch"],
       role: "Composer & lyricist",
       status: "Composer demos / archive",
       collaborators: [

@@ -53,6 +53,7 @@
   text('.music .section-note', '舞台と創作の過程から生まれた録音を集めています。キャストによる上演や公演の録音から、作曲者のデモ、制作中の作品まで。');
   text('#big-blue-bucket .kicker', 'オリジナル・キャストによるパフォーマンス · 2026');
   html('#big-blue-bucket .video-copy > p:not(.kicker):not(.video-note):not(.photo-credit)', 'Nagoya Players Junior Showcase 2026のファミリー・ミュージカル<a href="/?lang=ja#emma-amazing-bucket-fillers">『<em>Emma Amazing & the Bucket Fillers</em>』</a>より、オリジナル・キャストによるパフォーマンス。');
+  html('#big-blue-bucket .song-credit', '作曲：Ben Dorman。<br>作詞：Ben Dorman、Kory Alexander Majansky。<br>コンセプト：Kory Alexander Majansky。');
   html('#big-blue-bucket .video-note a', 'YouTubeで見る <span aria-hidden="true">↗</span>');
   text('#big-blue-bucket .photo-credit', '写真提供：Nagoya Players Junior。Nagoya Players Junior Showcase 2026『Emma Amazing & the Bucket Fillers』。脚本・演出：Kory Alexander Majansky。');
   document.querySelector('#romeos-lament .production-feedback').setAttribute('aria-label', '公演からの声');
@@ -71,7 +72,7 @@
   text('#the-first-magic .kicker', '作曲者によるデモ · 2024');
   html('#the-first-magic .video-description', '<a href="/?lang=ja#cat-who-walked-2024">Nagoya Players Junior Showcase 2024の『<em>The Cat Who Walked by Herself</em>』</a>のために書いたオリジナル曲。作曲者によるデモ音源です。');
   html('#the-first-magic .production-return', '<a href="/?lang=ja#cat-who-walked-2024">2024年の公演を見る</a>');
-  html('#the-first-magic .song-credit', '作曲・オリジナル歌詞：Ben Dorman。<br>Rudyard Kiplingの『<em>The Cat Who Walked by Herself</em>』の原文を一部使用。<br>歌：Ben Dorman。');
+  html('#the-first-magic .song-credit', '作曲・オリジナル歌詞：Ben Dorman。<br>Rudyard Kiplingの『<em>The Cat that Walked by Himself</em>』の原文を一部使用。<br>歌：Ben Dorman。');
   html('#the-first-magic .note-return', '<a href="/notes/where-does-magic-start/ja/">ノートを読む：魔法はどこから始まる？</a>');
   html('#the-first-magic .video-note a', 'YouTubeで見る <span aria-hidden="true">↗</span>');
   text('#sassy-cat-and-friends .kicker', '作曲者によるデモ · 2024');
@@ -85,7 +86,7 @@
   html('#rainbow-connections .song-credit', '作曲：Ben Dorman。<br>作詞：Ben Dorman、Jeff Fritch。<br>プロデュース：Ben Dorman。<br>演奏：Aya Kawakami。');
   html('#rainbow-connections .video-note a', 'YouTubeで見る <span aria-hidden="true">↗</span>');
   text('#shiny-gold-button .kicker', '作曲者によるデモ · 2021');
-  html('#shiny-gold-button .video-description', 'Nagoya Players Junior Showcase 2022の<a href="/?lang=ja#rainbow-connections-land-of-kindness">『<em>Rainbow Connections: The Land of Kindness</em>』</a>からの一曲です。');
+  html('#shiny-gold-button .video-description', 'Nagoya Players Junior Showcase 2022の<a href="/?lang=ja#rainbow-connections-land-of-kindness">『<em>Rainbow Connections: The Land of Kindness</em>』</a>からの一曲。作曲者によるデモ音源です。');
   html('#shiny-gold-button .production-return', '<a href="/?lang=ja#rainbow-connections-land-of-kindness">2022年の公演を見る</a>');
   html('#shiny-gold-button .video-note a', 'YouTubeで見る <span aria-hidden="true">↗</span>');
   text('#forever-friends .kicker', 'プロダクション録音 · 2022');
@@ -142,7 +143,7 @@
     productions: [
       { year:'2027', id:'new-musicals-2027', eyebrow:'制作中', title:'2027年に向けた新作ミュージカル', works:['Mega Team Attack','Sweet Dreams, Eugene'], role:'作曲・共同作詞', status:'制作中', collaborators:[{name:'Jeff Fritch',role:'Mega Team Attack 脚本、共同作詞、ダンス指導・振付'},{name:'Kory Alexander Majansky',role:'Sweet Dreams, Eugene 脚本、共同作詞、演技指導'},{name:'Shawn Mahler',role:'プロデューサー'}], art:null, theme:'development' },
       { year:'2026', id:'showcase-2026', eyebrow:'Nagoya Players Junior Showcase', title:'歌と音で形づくられた、三つの世界', works:['Super Shells','The Jar of Truth',{title:'Emma Amazing & the Bucket Fillers',id:'emma-amazing-bucket-fillers',href:'/?lang=ja#big-blue-bucket'}], role:'作曲・共同作詞・音楽監督', status:'オリジナル・キャスト録音', collaborators:[{name:'Kory Alexander Majansky',role:'脚本、共同作詞、演出・振付'},{name:'Shawn Mahler',role:'プロデューサー'}], art:'assets/showcase-2026.jpg', theme:'blue' },
-      { year:'2024', eyebrow:'Nagoya Players Junior Showcase', title:'The Cat Who Walked by Herself', id:'cat-who-walked-2024', recordings:[{href:'/?lang=ja#the-first-magic',label:'The First Magicを聴く · 作曲者によるデモ'},{href:'/?lang=ja#sassy-cat-and-friends',label:'Sassy Cat and Friendsを聴く · 作曲者によるデモ'}], works:['The First Magic — 作曲・オリジナル歌詞：Ben Dorman。Rudyard Kiplingの原文を一部使用','Sassy Cat — 作曲：Ben Dorman。作詞：Ben Dorman、Jeff Fritch'], role:'作曲・作詞', status:'作曲デモ／アーカイブ', collaborators:[{name:'Jeff Fritch',role:'脚本、演出・振付'},{name:'Ayako Hara',role:'ボーカルコーチ'},{name:'Shawn Mahler',role:'プロデューサー'}], art:'assets/showcase-2024.jpg', theme:'yellow' },
+      { year:'2024', eyebrow:'Nagoya Players Junior Showcase', title:'The Cat Who Walked by Herself', id:'cat-who-walked-2024', recordings:[{href:'/?lang=ja#the-first-magic',label:'The First Magicを聴く · 作曲者によるデモ'},{href:'/?lang=ja#sassy-cat-and-friends',label:'Sassy Cat and Friendsを聴く · 作曲者によるデモ'}], works:['The First Magic — 作曲・オリジナル歌詞：Ben Dorman。Rudyard Kiplingの原文を一部使用','Sassy Cat and Friends — 作曲：Ben Dorman。作詞：Ben Dorman、Jeff Fritch'], role:'作曲・作詞', status:'作曲デモ／アーカイブ', collaborators:[{name:'Jeff Fritch',role:'脚本、演出・振付'},{name:'Ayako Hara',role:'ボーカルコーチ'},{name:'Shawn Mahler',role:'プロデューサー'}], art:'assets/showcase-2024.jpg', theme:'yellow' },
       { year:'2024', eyebrow:'Nagoya Players', title:'Romeo and Juliet', id:'romeo-and-juliet-2024', recordings:[{href:'/?lang=ja#juliets-nightingale',label:'Juliet’s Nightingale / Home Sweet Homeを聴く · 作曲者によるデモ'},{href:'/?lang=ja#romeos-lament',label:'Romeo’s Lamentを聴く · 作曲者によるデモ'}], works:['シェイクスピアの悲劇のためのオリジナル楽曲'], role:'作曲・作詞', status:'作曲デモ／アーカイブ', collaborators:[{name:'Ana Valdes Lim',role:'脚色執筆・演出'},{name:'Jeff Fritch',role:'振付'},{name:'Valeriya Takazato',role:'振付・演出助手'},{name:'Shawn Mahler',role:'サウンドデザイン、クリエイティブディレクション、プロデューサー'}], art:'assets/romeo-juliet.jpg', theme:'pale' },
       { year:'2023', eyebrow:'Nagoya Players Junior', title:'Penny’s World of Dreams', id:'pennys-world-of-dreams-2023', works:['子どものためのオリジナル・ミュージカル'], role:'作曲・共同作詞', status:'オリジナル・キャスト録音', collaborators:[{name:'Jeff Fritch',role:'脚本、共同作詞、演出・振付'},{name:'Ayako Hara',role:'ボーカルコーチ'},{name:'Shawn Mahler',role:'プロデューサー'}], art:'assets/pennys-world.jpg', theme:'purple' },
       { year:'2022', eyebrow:'Nagoya Players Junior Showcase', title:'2022年ショーケース', id:'showcase-2022', recordings:[{href:'/notes/word-hit-me-again-word/ja/',label:'Word! Hit me again! Word! — ノートを読む'}], works:[{title:'Rainbow Connections: The Land of Kindness',id:'rainbow-connections-land-of-kindness',href:'/?lang=ja#rainbow-connections'},{title:'Shiny Gold Button',href:'/?lang=ja#shiny-gold-button'},{title:'A Day in the Life of Boogy',href:'/?lang=ja#forever-friends'}], role:'作曲・共同作詞', status:'オリジナル・キャスト録音', collaborators:[{name:'Jeff Fritch',role:'脚本、共同作詞、演出・振付'},{name:'Shawn Mahler',role:'プロデューサー'}], art:'assets/showcase-2022.jpg', theme:'cyan' },

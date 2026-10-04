@@ -19,7 +19,7 @@ window.PORTFOLIO = {
       year: "2026", id: "showcase-2026",
       eyebrow: "Nagoya Players Junior Showcase",
       title: "Three worlds, shaped through song and sound",
-      works: ["Super Shells", "The Jar of Truth", { title: "Emma Amazing & the Bucket Fillers", id: "emma-amazing-bucket-fillers", href: "#big-blue-bucket" }],
+      works: ["Super Shells", "The Jar of Truth", { title: "Emma Amazing & The Bucket Fillers", id: "emma-amazing-bucket-fillers", href: "#big-blue-bucket" }],
       role: "Composer, co-lyricist & music director",
       status: "Original cast recording",
       collaborators: [
@@ -35,7 +35,7 @@ window.PORTFOLIO = {
       title: "The Cat Who Walked by Herself", id: "cat-who-walked-2024", recordings: [{ href: "#the-first-magic", label: "Watch The First Magic · Composer demo" }, { href: "#sassy-cat-and-friends", label: "Watch Sassy Cat and Friends · Composer demo" }],
       works: ["The First Magic — music and original lyrics by Ben Dorman, incorporating text by Rudyard Kipling", "Sassy Cat and Friends — music by Ben Dorman, lyrics by Ben Dorman and Jeff Fritch"],
       role: "Composer & lyricist",
-      status: "Composer demos / archive",
+      status: "Composer demos",
       collaborators: [
         { name: "Jeff Fritch", role: "writer, director & choreographer" },
         { name: "Ayako Hara", role: "vocal coach" },
@@ -50,7 +50,7 @@ window.PORTFOLIO = {
       title: "Romeo and Juliet", id: "romeo-and-juliet-2024", recordings: [{ href: "#juliets-nightingale", label: "Watch Juliet’s Nightingale / Home Sweet Home · Composer demo" }, { href: "#romeos-lament", label: "Watch Romeo’s Lament · Composer demo" }],
       works: ["Original songs for Shakespeare’s tragedy"],
       role: "Composer & lyricist",
-      status: "Composer demos / archive",
+      status: "Composer demos",
       collaborators: [
         { name: "Ana Valdes Lim", role: "adaptation writer & director" },
         { name: "Jeff Fritch", role: "choreographer" },
@@ -79,7 +79,7 @@ window.PORTFOLIO = {
       year: "2022",
       eyebrow: "Nagoya Players Junior Showcase",
       title: "Showcase 2022", id: "showcase-2022", recordings: [{ href: "/notes/word-hit-me-again-word/", label: "Read the Note: Word! Hit me again! Word!" }],
-      works: [{ title: "Rainbow Connections: The Land of Kindness", id: "rainbow-connections-land-of-kindness", href: "#rainbow-connections" }, { title: "Shiny Gold Button", href: "#shiny-gold-button" }, { title: "A Day in the Life of Boogy", href: "#forever-friends" }],
+      works: [{ title: "Rainbow Connections: The Land of Kindness", id: "rainbow-connections-land-of-kindness", href: "#rainbow-connections" }, { title: "Shiny Gold Button", href: "#shiny-gold-button", note: "2021 composer demo" }, { title: "A Day in the Life of Boogy", href: "#forever-friends" }],
       role: "Composer & co-lyricist",
       status: "Original cast recording",
       collaborators: [
@@ -95,7 +95,7 @@ window.PORTFOLIO = {
       title: "A Christmas Carol with Heart", id: "a-christmas-carol-with-heart-2010", recordings: [{ href: "#this-town", label: "Watch This Town · Production recording" }, { href: "/notes/where-a-song-begins/", label: "Read the Note: where a song begins" }],
       works: ["Earlier theatre work — archive in progress"],
       role: "Music",
-      status: "Production archive",
+      status: "Production recording",
       art: null,
       theme: "archive"
     }

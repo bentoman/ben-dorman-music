@@ -100,7 +100,7 @@ const artMarkup = (item) => item.art
   : `<div class="type-art" aria-hidden="true"><span>${item.year}</span><b>${item.theme === 'development' ? 'WIP' : 'ARCHIVE'}</b></div>`;
 const workMarkup = (work) => typeof work === 'string'
   ? `<li>${work}</li>`
-  : `<li${work.id ? ` id="${work.id}"` : ''}><a href="${work.href}">${work.title}</a></li>`;
+  : `<li${work.id ? ` id="${work.id}"` : ''}><a href="${work.href}">${work.title}</a>${work.note ? ` · ${work.note}` : ''}</li>`;
 
 window.PORTFOLIO.productions.forEach((item, index) => {
   const article = document.createElement('article');

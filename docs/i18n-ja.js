@@ -34,7 +34,7 @@
     'rainbow-connections': 'Rainbow Connections — 『Rainbow Connections: The Land of Kindness』Nagoya Players Junior（2022年 · キャスト録音）',
     'shiny-gold-button': 'Shiny Gold Button — 『Rainbow Connections: The Land of Kindness』Nagoya Players Junior（2021年 · 作曲者によるデモ）',
     'forever-friends': 'Forever Friends — 『A Day in the Life of Boogy』Nagoya Players Junior（2022年 · キャスト録音）',
-    'this-town': 'This Town — 『A Christmas Carol with Heart』Nagoya Players（2010年）',
+    'this-town': 'This Town — 『A Christmas Carol with Heart』Nagoya Players（2010年 · プロダクション録音）',
   };
   Object.entries(videoTitles).forEach(([id, title]) => { document.querySelector(`#${id} iframe`).title = title; });
 
@@ -52,10 +52,10 @@
   text('#music-title', '音楽');
   text('.music .section-note', '舞台と創作の過程から生まれた録音を集めています。キャストによる上演や公演の録音から、作曲者のデモ、制作中の作品まで。');
   text('#big-blue-bucket .kicker', 'オリジナル・キャストによるパフォーマンス · 2026');
-  html('#big-blue-bucket .video-copy > p:not(.kicker):not(.video-note):not(.photo-credit)', 'Nagoya Players Junior Showcase 2026のファミリー・ミュージカル<a href="/?lang=ja#emma-amazing-bucket-fillers">『<em>Emma Amazing & the Bucket Fillers</em>』</a>より、オリジナル・キャストによるパフォーマンス。');
+  html('#big-blue-bucket .video-copy > p:not(.kicker):not(.video-note):not(.photo-credit)', 'Nagoya Players Junior Showcase 2026のファミリー・ミュージカル<a href="/?lang=ja#emma-amazing-bucket-fillers">『<em>Emma Amazing & The Bucket Fillers</em>』</a>より、オリジナル・キャストによるパフォーマンス。');
   html('#big-blue-bucket .song-credit', '作曲：Ben Dorman。<br>作詞：Ben Dorman、Kory Alexander Majansky。<br>コンセプト：Kory Alexander Majansky。');
   html('#big-blue-bucket .video-note a', 'YouTubeで見る <span aria-hidden="true">↗</span>');
-  text('#big-blue-bucket .photo-credit', '写真提供：Nagoya Players Junior。Nagoya Players Junior Showcase 2026『Emma Amazing & the Bucket Fillers』。脚本・演出：Kory Alexander Majansky。');
+  text('#big-blue-bucket .photo-credit', '写真提供：Nagoya Players Junior。Nagoya Players Junior Showcase 2026『Emma Amazing & The Bucket Fillers』。脚本・演出：Kory Alexander Majansky。');
   document.querySelector('#romeos-lament .production-feedback').setAttribute('aria-label', '公演からの声');
   text('#romeos-lament .feedback-label', '公演からの声');
   text('#romeos-lament .production-feedback footer', 'Richard Harris（出演者）');
@@ -83,7 +83,7 @@
   text('#rainbow-connections .kicker', 'キャスト録音 · 2022');
   html('#rainbow-connections .video-description', '<a href="/?lang=ja#rainbow-connections-land-of-kindness">Nagoya Players Junior Showcase 2022の『<em>Rainbow Connections: The Land of Kindness</em>』</a>のために書いたオリジナル曲。キャスト録音です。');
   html('#rainbow-connections .production-return', '<a href="/?lang=ja#rainbow-connections-land-of-kindness">2022年の公演を見る</a>');
-  html('#rainbow-connections .song-credit', '作曲：Ben Dorman。<br>作詞：Ben Dorman、Jeff Fritch。<br>プロデュース：Ben Dorman。<br>演奏：Aya Kawakami。');
+  html('#rainbow-connections .song-credit', '作曲：Ben Dorman。<br>作詞：Ben Dorman、Jeff Fritch。<br>プロデュース：Ben Dorman。<br>歌：Aya Kawakami。');
   html('#rainbow-connections .video-note a', 'YouTubeで見る <span aria-hidden="true">↗</span>');
   text('#shiny-gold-button .kicker', '作曲者によるデモ · 2021');
   html('#shiny-gold-button .video-description', 'Nagoya Players Junior Showcase 2022の<a href="/?lang=ja#rainbow-connections-land-of-kindness">『<em>Rainbow Connections: The Land of Kindness</em>』</a>からの一曲。作曲者によるデモ音源です。');
@@ -92,7 +92,7 @@
   html('#shiny-gold-button .video-note a', 'YouTubeで見る <span aria-hidden="true">↗</span>');
   text('#forever-friends .kicker', 'キャスト録音 · 2022');
   html('#forever-friends .video-description', 'Nagoya Players Junior Showcase 2022の<a href="/?lang=ja#showcase-2022">『<em>A Day in the Life of Boogy</em>』</a>からの一曲です。');
-  html('#forever-friends .song-credit', '作曲：Ben Dorman。<br>作詞：Ben Dorman、Jeff Fritch。<br>プロデュース：Ben Dorman。<br>ボーカル：Aya Kawakami、Ben Dorman、Calum Vigrow、Kiko Sugii、Marii Takagi、Saki Kawashima、Twila Vigrow、Yurii Takagi。<br>2022年12月17日リリース · Ten Worlds Records。');
+  html('#forever-friends .song-credit', '作曲：Ben Dorman。<br>作詞：Ben Dorman、Jeff Fritch。<br>プロデュース：Ben Dorman。<br>歌：Aya Kawakami、Ben Dorman、Calum Vigrow、Kiko Sugii、Marii Takagi、Saki Kawashima、Twila Vigrow、Yurii Takagi。<br>2022年12月17日リリース · Ten Worlds Records。');
   html('#forever-friends .production-return', '<a href="/?lang=ja#showcase-2022">2022年の公演を見る</a>');
   html('#forever-friends .video-note a', 'YouTubeで見る <span aria-hidden="true">↗</span>');
   text('#this-town .kicker', 'プロダクション録音 · 2010');
@@ -109,12 +109,12 @@
   const groups = document.querySelectorAll('.music-label');
   html(groups[0].querySelector('h3'), 'オリジナル・キャスト録音');
   text(groups[0].querySelector('p'), '作品に命を吹き込んだ出演者たちによる録音。');
-  html(groups[1].querySelector('h3'), '作曲デモ／<br>プロダクション・アーカイブ');
-  text(groups[1].querySelector('p'), '制作中の音源と、舞台作品から残された音楽。');
+  html(groups[1].querySelector('h3'), '作曲者によるデモ');
+  text(groups[1].querySelector('p'), '舞台作品の作曲中に録音したデモ。');
   html(groups[2].querySelector('h3'), 'Bandcampの外にある音楽');
   text(groups[2].querySelector('p'), '公開中のアルバムは、これまでの作品の一部です。');
   text('.embed-placeholder strong', 'Ben DormanのBandcamp');
-  text('.embed-placeholder small', 'キャスト録音、作曲デモ、プロダクション・アーカイブ');
+  text('.embed-placeholder small', 'オリジナル・キャスト録音、作曲者によるデモ');
   html('.embed-placeholder > a', '音楽を聴く <span aria-hidden="true">↗</span>');
 
   ['romeos-lament', 'juliets-nightingale'].forEach(id => html(`#${id} .note-return`, '<a href="/notes/finding-a-home-for-home-sweet-home/ja/">ノートを読む：「Home Sweet Home」の居場所を見つける</a>'));
@@ -143,12 +143,12 @@
     ui: { artwork: 'アートワーク：', collaborators: '主なコラボレーター', bandcamp: 'Bandcampで聴く' },
     productions: [
       { year:'2027', id:'new-musicals-2027', eyebrow:'制作中', title:'2027年に向けた新作ミュージカル', works:['Mega Team Attack','Sweet Dreams, Eugene'], role:'作曲・共同作詞', status:'制作中', collaborators:[{name:'Jeff Fritch',role:'Mega Team Attack 脚本、共同作詞、ダンス指導・振付'},{name:'Kory Alexander Majansky',role:'Sweet Dreams, Eugene 脚本、共同作詞、演技指導'},{name:'Shawn Mahler',role:'プロデューサー'}], art:null, theme:'development' },
-      { year:'2026', id:'showcase-2026', eyebrow:'Nagoya Players Junior Showcase', title:'歌と音で形づくられた、三つの世界', works:['Super Shells','The Jar of Truth',{title:'Emma Amazing & the Bucket Fillers',id:'emma-amazing-bucket-fillers',href:'/?lang=ja#big-blue-bucket'}], role:'作曲・共同作詞・音楽監督', status:'オリジナル・キャスト録音', collaborators:[{name:'Kory Alexander Majansky',role:'脚本、共同作詞、演出・振付'},{name:'Shawn Mahler',role:'プロデューサー'}], art:'assets/showcase-2026.jpg', theme:'blue' },
-      { year:'2024', eyebrow:'Nagoya Players Junior Showcase', title:'The Cat Who Walked by Herself', id:'cat-who-walked-2024', recordings:[{href:'/?lang=ja#the-first-magic',label:'The First Magicを聴く · 作曲者によるデモ'},{href:'/?lang=ja#sassy-cat-and-friends',label:'Sassy Cat and Friendsを聴く · 作曲者によるデモ'}], works:['The First Magic — 作曲・オリジナル歌詞：Ben Dorman。Rudyard Kiplingの原文を一部使用','Sassy Cat and Friends — 作曲：Ben Dorman。作詞：Ben Dorman、Jeff Fritch'], role:'作曲・作詞', status:'作曲デモ／アーカイブ', collaborators:[{name:'Jeff Fritch',role:'脚本、演出・振付'},{name:'Ayako Hara',role:'ボーカルコーチ'},{name:'Shawn Mahler',role:'プロデューサー'}], art:'assets/showcase-2024.jpg', theme:'yellow' },
-      { year:'2024', eyebrow:'Nagoya Players', title:'Romeo and Juliet', id:'romeo-and-juliet-2024', recordings:[{href:'/?lang=ja#juliets-nightingale',label:'Juliet’s Nightingale / Home Sweet Homeを聴く · 作曲者によるデモ'},{href:'/?lang=ja#romeos-lament',label:'Romeo’s Lamentを聴く · 作曲者によるデモ'}], works:['シェイクスピアの悲劇のためのオリジナル楽曲'], role:'作曲・作詞', status:'作曲デモ／アーカイブ', collaborators:[{name:'Ana Valdes Lim',role:'脚色執筆・演出'},{name:'Jeff Fritch',role:'振付'},{name:'Valeriya Takazato',role:'振付・演出助手'},{name:'Shawn Mahler',role:'サウンドデザイン、クリエイティブディレクション、プロデューサー'}], art:'assets/romeo-juliet.jpg', theme:'pale' },
+      { year:'2026', id:'showcase-2026', eyebrow:'Nagoya Players Junior Showcase', title:'歌と音で形づくられた、三つの世界', works:['Super Shells','The Jar of Truth',{title:'Emma Amazing & The Bucket Fillers',id:'emma-amazing-bucket-fillers',href:'/?lang=ja#big-blue-bucket'}], role:'作曲・共同作詞・音楽監督', status:'オリジナル・キャスト録音', collaborators:[{name:'Kory Alexander Majansky',role:'脚本、共同作詞、演出・振付'},{name:'Shawn Mahler',role:'プロデューサー'}], art:'assets/showcase-2026.jpg', theme:'blue' },
+      { year:'2024', eyebrow:'Nagoya Players Junior Showcase', title:'The Cat Who Walked by Herself', id:'cat-who-walked-2024', recordings:[{href:'/?lang=ja#the-first-magic',label:'The First Magicを聴く · 作曲者によるデモ'},{href:'/?lang=ja#sassy-cat-and-friends',label:'Sassy Cat and Friendsを聴く · 作曲者によるデモ'}], works:['The First Magic — 作曲・オリジナル歌詞：Ben Dorman。Rudyard Kiplingの原文を一部使用','Sassy Cat and Friends — 作曲：Ben Dorman。作詞：Ben Dorman、Jeff Fritch'], role:'作曲・作詞', status:'作曲者によるデモ', collaborators:[{name:'Jeff Fritch',role:'脚本、演出・振付'},{name:'Ayako Hara',role:'ボーカルコーチ'},{name:'Shawn Mahler',role:'プロデューサー'}], art:'assets/showcase-2024.jpg', theme:'yellow' },
+      { year:'2024', eyebrow:'Nagoya Players', title:'Romeo and Juliet', id:'romeo-and-juliet-2024', recordings:[{href:'/?lang=ja#juliets-nightingale',label:'Juliet’s Nightingale / Home Sweet Homeを聴く · 作曲者によるデモ'},{href:'/?lang=ja#romeos-lament',label:'Romeo’s Lamentを聴く · 作曲者によるデモ'}], works:['シェイクスピアの悲劇のためのオリジナル楽曲'], role:'作曲・作詞', status:'作曲者によるデモ', collaborators:[{name:'Ana Valdes Lim',role:'脚色執筆・演出'},{name:'Jeff Fritch',role:'振付'},{name:'Valeriya Takazato',role:'振付・演出助手'},{name:'Shawn Mahler',role:'サウンドデザイン、クリエイティブディレクション、プロデューサー'}], art:'assets/romeo-juliet.jpg', theme:'pale' },
       { year:'2023', eyebrow:'Nagoya Players Junior', title:'Penny’s World of Dreams', id:'pennys-world-of-dreams-2023', works:['子どものためのオリジナル・ミュージカル'], role:'作曲・共同作詞', status:'オリジナル・キャスト録音', collaborators:[{name:'Jeff Fritch',role:'脚本、共同作詞、演出・振付'},{name:'Ayako Hara',role:'ボーカルコーチ'},{name:'Shawn Mahler',role:'プロデューサー'}], art:'assets/pennys-world.jpg', theme:'purple' },
-      { year:'2022', eyebrow:'Nagoya Players Junior Showcase', title:'2022年ショーケース', id:'showcase-2022', recordings:[{href:'/notes/word-hit-me-again-word/ja/',label:'Word! Hit me again! Word! — ノートを読む'}], works:[{title:'Rainbow Connections: The Land of Kindness',id:'rainbow-connections-land-of-kindness',href:'/?lang=ja#rainbow-connections'},{title:'Shiny Gold Button',href:'/?lang=ja#shiny-gold-button'},{title:'A Day in the Life of Boogy',href:'/?lang=ja#forever-friends'}], role:'作曲・共同作詞', status:'オリジナル・キャスト録音', collaborators:[{name:'Jeff Fritch',role:'脚本、共同作詞、演出・振付'},{name:'Shawn Mahler',role:'プロデューサー'}], art:'assets/showcase-2022.jpg', theme:'cyan' },
-      { year:'2010', eyebrow:'Nagoya Players', title:'A Christmas Carol with Heart', id:'a-christmas-carol-with-heart-2010', recordings:[{href:'/?lang=ja#this-town',label:'This Townを聴く · プロダクション録音'},{href:'/notes/where-a-song-begins/ja/',label:'曲の始まりについてのノートを読む'}], works:['初期の舞台作品 — アーカイブ整理中'], role:'音楽', status:'プロダクション・アーカイブ', art:null, theme:'archive' }
+      { year:'2022', eyebrow:'Nagoya Players Junior Showcase', title:'2022年ショーケース', id:'showcase-2022', recordings:[{href:'/notes/word-hit-me-again-word/ja/',label:'Word! Hit me again! Word! — ノートを読む'}], works:[{title:'Rainbow Connections: The Land of Kindness',id:'rainbow-connections-land-of-kindness',href:'/?lang=ja#rainbow-connections'},{title:'Shiny Gold Button',href:'/?lang=ja#shiny-gold-button',note:'2021年 作曲者によるデモ'},{title:'A Day in the Life of Boogy',href:'/?lang=ja#forever-friends'}], role:'作曲・共同作詞', status:'オリジナル・キャスト録音', collaborators:[{name:'Jeff Fritch',role:'脚本、共同作詞、演出・振付'},{name:'Shawn Mahler',role:'プロデューサー'}], art:'assets/showcase-2022.jpg', theme:'cyan' },
+      { year:'2010', eyebrow:'Nagoya Players', title:'A Christmas Carol with Heart', id:'a-christmas-carol-with-heart-2010', recordings:[{href:'/?lang=ja#this-town',label:'This Townを聴く · プロダクション録音'},{href:'/notes/where-a-song-begins/ja/',label:'曲の始まりについてのノートを読む'}], works:['初期の舞台作品 — アーカイブ整理中'], role:'音楽', status:'プロダクション録音', art:null, theme:'archive' }
     ],
     music: {
       cast:[
@@ -158,7 +158,7 @@
       ],
       demos:[
         {year:'2024',title:'Romeo and Juliet', id:'romeo-and-juliet-2024', recordings:[{href:'/?lang=ja#juliets-nightingale',label:'Juliet’s Nightingale / Home Sweet Homeを聴く · 作曲者によるデモ'},{href:'/?lang=ja#romeos-lament',label:'Romeo’s Lamentを聴く · 作曲者によるデモ'}],detail:'上演のために書かれた2曲の制作音源',art:'assets/romeo-juliet.jpg'},
-        {year:'2024',title:'The Cat Who Walked by Herself', id:'cat-who-walked-2024', recordings:[{href:'/?lang=ja#the-first-magic',label:'The First Magicを聴く · 作曲者によるデモ'},{href:'/?lang=ja#sassy-cat-and-friends',label:'Sassy Cat and Friendsを聴く · 作曲者によるデモ'}],detail:'NPJ Showcase 2024 · The First MagicとSassy Cat and Friendsの作曲デモ',art:'assets/showcase-2024.jpg'}
+        {year:'2024',title:'The Cat Who Walked by Herself', id:'cat-who-walked-2024', recordings:[{href:'/?lang=ja#the-first-magic',label:'The First Magicを聴く · 作曲者によるデモ'},{href:'/?lang=ja#sassy-cat-and-friends',label:'Sassy Cat and Friendsを聴く · 作曲者によるデモ'}],detail:'NPJ Showcase 2024 · The First MagicとSassy Cat and Friendsの作曲者によるデモ',art:'assets/showcase-2024.jpg'}
       ],
       beyond:[
         {title:'未発表曲',detail:'まだ一般公開していない楽曲やデモ'},

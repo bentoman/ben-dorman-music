@@ -32,7 +32,7 @@
     'juliets-nightingale': 'Juliet’s Nightingale / Home Sweet Home — 『Romeo and Juliet』Nagoya Players（2024年 · 作曲者によるデモ）',
     'romeos-lament': 'Romeo’s Lament — 『Romeo and Juliet』Nagoya Players（2024年 · 作曲者によるデモ）',
     'rainbow-connections': 'Rainbow Connections — 『Rainbow Connections: The Land of Kindness』Nagoya Players Junior（2022年 · 作曲者によるデモ）',
-    'shiny-gold-button': 'Shiny Gold Button — 『Rainbow Connections: The Land of Kindness』Nagoya Players Junior（2022年）',
+    'shiny-gold-button': 'Shiny Gold Button — 『Rainbow Connections: The Land of Kindness』Nagoya Players Junior（2021年 · 作曲者によるデモ）',
     'forever-friends': 'Forever Friends — 『A Day in the Life of Boogy』Nagoya Players Junior（2022年 · プロダクション録音）',
     'this-town': 'This Town — 『A Christmas Carol with Heart』Nagoya Players（2010年）',
   };

@@ -130,7 +130,12 @@
       "label": "The Cat Who Walked by Herself · 2024年の公演を見る"
      }
     ]
-   }
+   },
+   "context": {
+    "en": "The First Magic · The Cat Who Walked by Herself",
+    "ja": "The First Magic · The Cat Who Walked by Herself"
+   },
+   "excerptStart": 0
   },
   {
    "slug": "finding-a-home-for-home-sweet-home",
@@ -281,12 +286,17 @@
       "label": "Romeo and Julietの公演を見る"
      }
     ]
-   }
+   },
+   "context": {
+    "en": "Juliet’s Nightingale and Romeo’s Lament · Romeo and Juliet",
+    "ja": "Juliet’s NightingaleとRomeo’s Lament · Romeo and Juliet"
+   },
+   "excerptStart": 0
   },
   {
    "slug": "word-hit-me-again-word",
    "iso": "2026-10",
-   "excerptParagraphs": 2,
+   "excerptParagraphs": 1,
    "en": {
     "date": "October 2026",
     "title": "“Word! Hit me again! Word!”",
@@ -418,7 +428,12 @@
       "label": "Rainbow Connections: The Land of Kindness · 2022年公演を見る"
      }
     ]
-   }
+   },
+   "context": {
+    "en": "Shiny Gold Button · The Land of Kindness",
+    "ja": "Shiny Gold Button · The Land of Kindness"
+   },
+   "excerptStart": 1
   },
   {
    "slug": "where-a-song-begins",
@@ -497,7 +512,12 @@
       "label": "A Christmas Carol with Heart · 2010年公演を見る"
      }
     ]
-   }
+   },
+   "context": {
+    "en": "This Town · A Christmas Carol with Heart",
+    "ja": "This Town · A Christmas Carol with Heart"
+   },
+   "excerptStart": 0
   },
   {
    "slug": "two-new-shows-in-the-works",
@@ -528,7 +548,12 @@
      "仲間のコラボレーターたちと音楽を組み立てていく時間が、私は大好きです。彼らからのフィードバックや洞察が、出演者がきっと楽しんで演じられる作品へと私を導いてくれます。出演者が音楽や歌の思い出を持ち帰ってくれたなら、それ以上に望むことはありません。"
     ],
     "links": []
-   }
+   },
+   "context": {
+    "en": "Mega Team Attack and Sweet Dreams, Eugene · 2027",
+    "ja": "Mega Team AttackとSweet Dreams, Eugene · 2027年"
+   },
+   "excerptStart": 0
   }
  ]
 }

@@ -68,3 +68,12 @@ footer>a.contact-email{margin-top:28px;font:400 20px Georgia,serif;text-underlin
 .note-footer{padding-top:56px}.note-footer .footer-line{margin-top:0;border-top:0;padding-top:0}
 html[lang="ja"] .note-page h1{font-family:"Yu Mincho","Hiragino Mincho ProN",serif;letter-spacing:-.02em;line-height:1.3}html[lang="ja"] .note-body>p{line-height:1.95}
 @media(max-width:640px){.note-body>p{font-size:17px}.note-footer .footer-line{display:grid;gap:8px}}
+
+/* Homepage Notes: a curated two-column set (one column on narrow screens), no dates or boxes. */
+.notes-list{border-top:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:clamp(48px,7vw,110px);align-items:start}
+.notes-list .note{display:block;padding:38px 0 44px;border-bottom:0;border-top:1px solid var(--line)}
+.notes-list .note h3{font-size:clamp(28px,3vw,42px);line-height:1.08;margin:0 0 12px}
+.note div>p.note-context{margin:0 0 22px;font:italic 16px/1.4 Georgia,'Times New Roman',serif;color:#806313}
+.note div>p.note-context+p{margin-top:0}
+@media(max-width:900px){.notes-list{grid-template-columns:1fr}}
+@media(max-width:640px){.notes-list .note{padding:30px 0 34px}.notes-list .note h3{font-size:30px}.note div>p.note-context{font-size:15px;margin-bottom:18px}}

@@ -3,8 +3,8 @@ window.NOTE_PREVIEWS = {
  "en": [
   {
    "id": "where-does-magic-start",
-   "date": "October 2026",
    "title": "Where does magic start?",
+   "context": "The First Magic · The Cat Who Walked by Herself",
    "url": "/notes/where-does-magic-start/",
    "excerpt": [
     "It started for me in Port Moresby, Papua New Guinea, where I was born.",
@@ -14,8 +14,8 @@ window.NOTE_PREVIEWS = {
   },
   {
    "id": "finding-a-home-for-home-sweet-home",
-   "date": "October 2026",
    "title": "Finding a home for “Home Sweet Home”",
+   "context": "Juliet’s Nightingale and Romeo’s Lament · Romeo and Juliet",
    "url": "/notes/finding-a-home-for-home-sweet-home/",
    "excerpt": [
     "“Juliet's Nightingale” didn't begin with Juliet. It didn't begin with Shakespeare. It didn't even begin with <em>Romeo and Juliet</em>.",
@@ -24,18 +24,17 @@ window.NOTE_PREVIEWS = {
   },
   {
    "id": "word-hit-me-again-word",
-   "date": "October 2026",
    "title": "“Word! Hit me again! Word!”",
+   "context": "Shiny Gold Button · The Land of Kindness",
    "url": "/notes/word-hit-me-again-word/",
    "excerpt": [
-    "“Word! Hit me again! Word!”",
     "The “Word!” part was me venturing into language and cultural territory completely foreign to me. It belongs in roughly the same category as knowing how to tilt a baseball cap slightly to one side, wearing long baggy pants and a red T-shirt, and somehow making the whole thing look right. Concepts I understand in theory, perhaps, but have no business attempting myself."
    ]
   },
   {
    "id": "where-a-song-begins",
-   "date": "October 2026",
    "title": "Digging through the archive: where a song begins",
+   "context": "This Town · A Christmas Carol with Heart",
    "url": "/notes/where-a-song-begins/",
    "excerpt": [
     "I've been digging through my old music files recently, trying to put together an archive of the music I've written for theatre. Some of it goes back much further than the family musicals I've been working on in recent years. The earliest material I've found so far is from 2010."
@@ -43,8 +42,8 @@ window.NOTE_PREVIEWS = {
   },
   {
    "id": "two-new-shows-in-the-works",
-   "date": "September 2026",
    "title": "Two new shows in the works",
+   "context": "Mega Team Attack and Sweet Dreams, Eugene · 2027",
    "url": "/notes/two-new-shows-in-the-works/",
    "excerpt": [
     "Two new Nagoya Players Junior shows are in the works. <em>Mega Team Attack</em>, for the Elementary Troupe, is a lively fantasy world with the energy of a video game; <em>Sweet Dreams, Eugene</em>, for the Pre-Teen Troupe, is a comedy adventure about imagination, creativity and the power of working together."
@@ -54,8 +53,8 @@ window.NOTE_PREVIEWS = {
  "ja": [
   {
    "id": "where-does-magic-start",
-   "date": "2026年10月",
    "title": "魔法はどこから始まる？",
+   "context": "The First Magic · The Cat Who Walked by Herself",
    "url": "/notes/where-does-magic-start/ja/",
    "excerpt": [
     "僕にとっての始まりは、生まれ故郷のパプアニューギニア、ポートモレスビーだった。",
@@ -65,8 +64,8 @@ window.NOTE_PREVIEWS = {
   },
   {
    "id": "finding-a-home-for-home-sweet-home",
-   "date": "2026年10月",
    "title": "「Home Sweet Home」の居場所を見つける",
+   "context": "Juliet’s NightingaleとRomeo’s Lament · Romeo and Juliet",
    "url": "/notes/finding-a-home-for-home-sweet-home/ja/",
    "excerpt": [
     "「Juliet’s Nightingale」は、ジュリエットから始まったわけではない。シェイクスピアからでもない。そもそも『<em>Romeo and Juliet</em>』からですらなかった。",
@@ -75,18 +74,17 @@ window.NOTE_PREVIEWS = {
   },
   {
    "id": "word-hit-me-again-word",
-   "date": "2026年10月",
    "title": "“Word! Hit me again! Word!”（「Word! もう一発！ Word!」）",
+   "context": "Shiny Gold Button · The Land of Kindness",
    "url": "/notes/word-hit-me-again-word/ja/",
    "excerpt": [
-    "“Word! Hit me again! Word!”（「Word! もう一発！ Word!」）",
     "この「Word!」は、僕にはまったく縁のない言葉と文化の領域に足を踏み入れた結果だった。野球帽をちょっと斜めにかぶって、だぼだぼの長いパンツと赤いTシャツを着て、それでちゃんと様になる。だいたい、あれと同じ部類だ。理屈では分かる。たぶん。でも、自分でやっていいものじゃない。"
    ]
   },
   {
    "id": "where-a-song-begins",
-   "date": "2026年10月",
    "title": "アーカイブを掘り返して：歌が生まれるところ",
+   "context": "This Town · A Christmas Carol with Heart",
    "url": "/notes/where-a-song-begins/ja/",
    "excerpt": [
     "最近、昔の音楽ファイルを掘り返している。舞台のために書いてきた音楽を、アーカイブとしてまとめようと思って。ここ数年手がけているファミリー・ミュージカルより、ずっと前のものもある。今のところ、見つかった最も古い音源は2010年のものだ。"
@@ -94,8 +92,8 @@ window.NOTE_PREVIEWS = {
   },
   {
    "id": "two-new-shows-in-the-works",
-   "date": "2026年9月",
    "title": "二つの新作が進行中です",
+   "context": "Mega Team AttackとSweet Dreams, Eugene · 2027年",
    "url": "/notes/two-new-shows-in-the-works/ja/",
    "excerpt": [
     "Nagoya Players Juniorの二つの新作が、いま動き始めています。エレメンタリー・トゥループのための<em>Mega Team Attack</em>は、ビデオゲームのようなエネルギーをもつ、にぎやかなファンタジーの世界。プレティーン・トゥループのための<em>Sweet Dreams, Eugene</em>は、想像力、創造性、そして力を合わせることを描くコメディ・アドベンチャーです。"

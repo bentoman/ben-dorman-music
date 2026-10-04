@@ -148,14 +148,14 @@ for (const note of source.notes) {
   write(path.join(docs, 'notes', note.slug, 'ja', 'index.html'), page(note, 'ja'));
 }
 
-// Homepage previews: the opening paragraphs, verbatim, plus a link to the full Note.
+// Homepage previews (no date): a contextual line plus opening paragraph(s), verbatim, and a link to the full Note.
 const previews = { en: [], ja: [] };
 for (const note of source.notes) {
   for (const lang of ['en', 'ja']) {
     const data = note[lang];
     previews[lang].push({
-      id: note.slug, date: data.date, title: data.title, url: noteUrl(note.slug, lang),
-      excerpt: data.paragraphs.slice(0, note.excerptParagraphs)
+      id: note.slug, title: data.title, context: note.context[lang], url: noteUrl(note.slug, lang),
+      excerpt: data.paragraphs.slice(note.excerptStart || 0, (note.excerptStart || 0) + note.excerptParagraphs)
     });
   }
 }

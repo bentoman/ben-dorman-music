@@ -15,7 +15,8 @@
   text('.menu', 'メニュー');
   document.querySelector('#nav').setAttribute('aria-label', 'メインナビゲーション');
   const nav = document.querySelectorAll('#nav a');
-  ['作品', '音楽', 'ノート', 'プロフィール', 'お問い合わせ'].forEach((label, index) => { nav[index].textContent = label; });
+  ['作品', '音楽', 'ノート', 'プロフィール', '共同制作', 'お問い合わせ'].forEach((label, index) => { nav[index].textContent = label; });
+  document.querySelector('#nav a[href="/collaborations/"]').href = '/collaborations/ja/';
   const englishLink = document.querySelector('.language-link');
   englishLink.textContent = 'English';
   englishLink.href = window.location.pathname + window.location.hash;

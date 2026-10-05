@@ -11,7 +11,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const docs = path.join(root, 'docs');
 const source = JSON.parse(fs.readFileSync(path.join(root, 'tools', 'notes-source.json'), 'utf8'));
 const SITE = 'https://bendorman.com';
-const VERSION = '20261004-s3';
+const VERSION = '20261005-together2';
 const slugs = new Set(source.notes.map(note => note.slug));
 
 const escapeAttr = (text) => text.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
@@ -32,7 +32,7 @@ const copy = {
     htmlLang: 'en', locale: 'en_GB', alt: 'ja_JP',
     skip: 'Skip to content', menu: 'Menu', navLabel: 'Primary navigation',
     brand: 'Ben Dorman', brandSmall: 'Musical Theatre', brandLabel: 'Ben Dorman — Musical Theatre, home',
-    nav: ['Productions', 'Music', 'Voices', 'Notes', 'About', 'Contact'],
+    nav: ['Productions', 'Music', 'Voices', 'Notes', 'About', 'Together', 'Contact'],
     switchLabel: '日本語', switchLang: 'ja',
     back: '← All Notes', backBottom: '← Back to Notes', related: 'Related music and production',
     footer: ['Ben Dorman — Musical Theatre', 'Based in Japan · Available anywhere'],
@@ -42,14 +42,15 @@ const copy = {
     htmlLang: 'ja', locale: 'ja_JP', alt: 'en_GB',
     skip: '本文へ移動', menu: 'メニュー', navLabel: 'メインナビゲーション',
     brand: 'Ben Dorman', brandSmall: 'ミュージカル音楽', brandLabel: 'ベン・ドーマン — ミュージカル音楽、ホーム',
-    nav: ['作品', '音楽', 'みんなの声', 'ノート', 'プロフィール', 'お問い合わせ'],
+    nav: ['作品', '音楽', 'みんなの声', 'ノート', 'プロフィール', '共同制作', 'お問い合わせ'],
     switchLabel: 'English', switchLang: 'en',
     back: '← ノート一覧', backBottom: '← ノート一覧へ戻る', related: '関連する音楽と作品',
     footer: ['ベン・ドーマン — ミュージカル音楽', '日本を拠点に · 国内外で活動'],
     site: 'ベン・ドーマン — ミュージカル音楽', descLimit: 90
   }
 };
-const navHashes = ['#productions', '#music', '#feedback', '#notes', '#about', '#contact'];
+const navHashes = ['#productions', '#music', '#feedback', '#notes', '#about', 'together', '#contact'];
+const navHref = (lang, target) => target === 'together' ? (lang === 'ja' ? '/collaborations/ja/' : '/collaborations/') : homeUrl(lang, target);
 
 const description = (paragraphs, limit, lang) => {
   let text = '';
@@ -70,7 +71,7 @@ const page = (note, lang) => {
   const canonical = SITE + noteUrl(note.slug, lang);
   const desc = description(data.paragraphs, c.descLimit, lang);
   const title = `${plain(data.title)} — Ben Dorman`;
-  const navLinks = c.nav.map((label, index) => `<a href="${homeUrl(lang, navHashes[index])}">${label}</a>`).join('');
+  const navLinks = c.nav.map((label, index) => `<a href="${navHref(lang, navHashes[index])}">${label}</a>`).join('');
   const links = data.links.length
     ? `\n        <nav class="note-links" aria-label="${c.related}">${data.links.map(link => `<a href="${localiseHref(link.href, lang)}">${link.label}</a>`).join('')}</nav>`
     : '';

@@ -115,3 +115,5 @@ html[lang="ja"] .collab-role{font-style:normal}
 html[lang="ja"] .collab-text{line-height:1.95}
 html[lang="ja"] .collab-quote p{font-family:"Yu Mincho","Hiragino Mincho ProN",serif;line-height:1.8}
 html[lang="ja"] .collab-tagline em{font-style:normal}
+/* With seven menu items, switch to the Menu button below 1160px (the mobile rules above still apply below 900px). */
+@media(min-width:901px) and (max-width:1160px){.menu{display:block}.site-header nav{display:none;position:absolute;left:0;right:0;top:90px;background:var(--paper);padding:22px 24px;border-bottom:1px solid var(--line);flex-direction:column;gap:18px}.site-header nav.open{display:flex}.site-header nav .language-link{border-left:0;border-top:1px solid var(--line);padding:16px 0 0}}

@@ -5,39 +5,13 @@ const ui = window.PORTFOLIO.ui || {
   bandcamp: 'Find on Bandcamp'
 };
 // Approved survey excerpts; use the original Japanese when supplied.
-const productionFeedback = {
-  'cat-who-walked-2024': [
-    {
-      quote: 'After the performance, even after returning home, I remember that the children kept humming the song [“The First Magic,” from] <em>The Cat Who Walked by Herself</em>.',
-      attribution: 'Parent of a performer',
-      attributionJa: '出演者の保護者'
-    },
-    {
-      quote: 'The children sang with such energy. The songs were catchy and easy for the children to learn.',
-      quoteJa: '子供たちが生き生きと歌っていた。子供たちがすぐ覚えれるcatchyな曲でした。',
-      attribution: 'Tomoko, backstage team',
-      attributionJa: 'Tomoko（舞台裏スタッフ）'
-    }
-  ],
-  'romeo-and-juliet-2024': [
-    {
-      quote: 'The music was cohesive with the emotions portrayed by the actors on stage.',
-      attribution: 'Richard Harris, performer',
-      attributionJa: 'Richard Harris（出演者）'
-    },
-    {
-      quote: 'During <em>Romeo and Juliet</em>, when Kory sang, it brought tears to my eyes.',
-      quoteJa: 'R & J では、Koryが歌った時、涙が出てきました。',
-      attribution: 'Tomoko, performer',
-      attributionJa: 'Tomoko（出演者）'
-    }
-  ]
-};
+const japaneseFeedback = document.documentElement.lang === 'ja';
+const feedbackHeading = japaneseFeedback ? '舞台からの声' : 'From the productions';
 const feedbackMarkup = (feedback) => {
   if (!feedback) return '';
-  const japanese = document.documentElement.lang === 'ja';
-  return `<aside class="production-feedback" aria-label="${japanese ? '公演からの声' : 'From the productions'}">
-    <p class="feedback-label">${japanese ? '公演からの声' : 'From the productions'}</p>
+  const japanese = japaneseFeedback;
+  return `<aside class="production-feedback" aria-label="${feedbackHeading}">
+    <p class="feedback-label">${feedbackHeading}</p>
     ${(Array.isArray(feedback) ? feedback : [feedback]).map(comment => `<blockquote><p lang="${japanese && comment.quoteJa ? 'ja' : 'en'}">${japanese && comment.quoteJa ? `「${comment.quoteJa}」` : `“${comment.quote}”`}</p><footer>${japanese ? comment.attributionJa : comment.attribution}${!japanese && comment.quoteJa && !comment.originalEnglish ? ' · Translated from Japanese' : japanese && comment.originalEnglish ? ' · 英語からの翻訳' : ''}</footer></blockquote>`).join('')}
   </aside>`;
 };
@@ -47,53 +21,66 @@ const sugikoFeedback = {
   attribution: 'Sugiko Kenny, parent of a performer · On seeing ‘The First Magic’ performed onstage by the young cast',
   attributionJa: 'Sugiko Kenny（出演者の保護者）· 若いキャストが舞台で演じた「The First Magic」を観て'
 };
-const jeffFeedback = [{
-  quote: 'Actually all the songs contributed to the success of all the productions of NPJ that I was involved with.',
-  quoteJa: '私が関わったNPJの公演では、どの曲も、それぞれの公演の成功に貢献していました。',
-  originalEnglish: true,
-  attribution: 'Jeff Fritch, Director and Choreographer',
-  attributionJa: 'Jeff Fritch（演出・振付）'
+
+// "From the productions": one voice per perspective, quoted from the 2026 survey responses.
+// Quotations are excerpts of a single answer each; the only edits are an apostrophe
+// (Jeff Fritch) and an ellipsis (parent). All originals are in English.
+const voices = [{
+  id: 'voice-shawn-mahler',
+  quotes: [{
+    en: 'You can take the ideas in the script and develop them musically rather than simply putting a tune underneath the text.',
+    ja: '台本にあるアイデアを、テキストにただメロディーを付けるのではなく、音楽として発展させることができます。'
+  }],
+  name: 'Shawn Mahler',
+  role: 'Creative Director, Nagoya Players',
+  roleJa: 'Nagoya Players クリエイティブ・ディレクター'
 }, {
-  quote: 'Ben’s lyrics and music compositions always boosted the show’s appeal and popularity. They enhanced performers motivation and inspired them.',
-  quoteJa: 'ベンの歌詞と音楽はいつも、公演の魅力と人気を高めてくれました。出演者の意欲を高め、刺激を与えてくれました。',
-  originalEnglish: true,
-  attribution: 'Jeff Fritch, Director and Choreographer',
-  attributionJa: 'Jeff Fritch（演出・振付）'
-}];
-const performerFeedback = [{
-  quote: 'The low harmonies in the music really stayed with me.',
-  quoteJa: '曲の低音のハモリが、良く心に残っている',
-  attribution: 'NPJ performer',
-  attributionJa: 'NPJ出演者'
+  id: 'voice-ana-valdes-lim',
+  quotes: [{
+    en: 'The music connected the drama of the story to the energy of performance. It elevated the experience of audience and performers.',
+    ja: '音楽は、物語のドラマと舞台のエネルギーを結びつけていました。観客と出演者の体験を、より高めてくれました。'
+  }],
+  name: 'Ana Valdes Lim',
+  role: 'Director, <em>Romeo and Juliet</em>, Nagoya Players',
+  roleJa: 'Nagoya Players『Romeo and Juliet』演出'
 }, {
-  quote: 'Please keep writing cool songs.',
-  quoteJa: 'これからもかっこいい曲お願いします。',
-  attribution: 'NPJ performer',
-  attributionJa: 'NPJ出演者'
+  id: 'voice-jeff-fritch',
+  quotes: [{
+    en: 'Ben’s lyrics and music compositions always boosted the show’s appeal and popularity. They enhanced performers’ motivation and inspired them.',
+    ja: 'ベンの歌詞と音楽はいつも、公演の魅力と人気を高めてくれました。出演者の意欲を高め、刺激を与えてくれました。'
+  }],
+  name: 'Jeff Fritch',
+  role: 'Director and Choreographer',
+  roleJa: '演出・振付'
+}, {
+  id: 'voice-richard-harris',
+  quotes: [{
+    en: 'Our chorus voices easily intertwined with the fine music.',
+    ja: '私たちのコーラスの声は、その素晴らしい音楽に自然に溶け合いました。'
+  }],
+  name: 'Richard Harris',
+  role: 'Chorus, Romeo’s Lament',
+  roleJa: '「Romeo’s Lament」コーラス'
+}, {
+  id: 'voice-parent',
+  quotes: [{
+    en: 'After the performance, even after returning home, I remember that the children kept humming the song… It was a wonderful song that left an impression on us.',
+    ja: '公演が終わり、家に帰ってからも、子どもたちがその歌を口ずさんでいたのを覚えています。……心に残る素晴らしい歌でした。'
+  }],
+  name: '',
+  role: 'Parent of a performer · <em>The Cat Who Walked by Herself</em>, 2024',
+  roleJa: '出演者の保護者 ·『The Cat Who Walked by Herself』2024年'
 }];
-const japaneseFeedback = document.documentElement.lang === 'ja';
-productionFeedback['cat-who-walked-2024'][0].quoteJa = '公演が終わり、家に帰ってからも、子どもたちが『The Cat Who Walked by Herself』の歌［「The First Magic」］を口ずさんでいたのを覚えています。';
-productionFeedback['cat-who-walked-2024'][0].originalEnglish = true;
-productionFeedback['romeo-and-juliet-2024'][0].quoteJa = '音楽は、舞台上で役者たちが表現する感情と調和していました。';
-productionFeedback['romeo-and-juliet-2024'][0].originalEnglish = true;
-const chorusFeedback = {
-  quote: 'Our chorus voices easily intertwined with the fine music.',
-  quoteJa: '私たちのコーラスの声は、その素晴らしい音楽に自然に溶け合いました。',
-  originalEnglish: true,
-  attribution: 'Richard Harris, performer', attributionJa: 'Richard Harris（出演者）'
-};
-const feedbackLink = (id) => `<p class="feedback-more"><a href="#${id}">${japaneseFeedback ? '公演からの声を読む' : 'Read more from the productions'}</a></p>`;
-document.querySelector('#nav a[href="#notes"]').insertAdjacentHTML('beforebegin', `<a href="#feedback">${japaneseFeedback ? '公演からの声' : 'Feedback'}</a>`);
-const groups = [
-  {id:'feedback-cat-2024', title:'Nagoya Players Junior · The Cat Who Walked by Herself · 2024', comments:[...productionFeedback['cat-who-walked-2024'], sugikoFeedback], href:'#cat-who-walked-2024'},
-  {id:'feedback-romeo-2024', title:'Romeo and Juliet · 2024', comments:[...productionFeedback['romeo-and-juliet-2024'], chorusFeedback], href:'#romeo-and-juliet-2024'},
-  {id:'npj-performer-feedback', title:japaneseFeedback ? 'Nagoya Players Junior · 複数の公演から' : 'Nagoya Players Junior · Across the productions', comments:[...jeffFeedback,...performerFeedback], href:'#cast-recordings'}
-];
-document.querySelector('#feedback-title').textContent = japaneseFeedback ? '公演からの声' : 'From the productions';
+const voiceMarkup = (voice) => `<figure class="voice" id="${voice.id}">
+  ${voice.quotes.map(quote => `<blockquote><p lang="${japaneseFeedback ? 'ja' : 'en'}">${japaneseFeedback ? `「${quote.ja}」` : `“${quote.en}”`}</p></blockquote>`).join('')}
+  <figcaption>${voice.name ? `<span class="voice-name">${voice.name}</span>` : ''}<span class="voice-role">${japaneseFeedback ? voice.roleJa : voice.role}</span>${japaneseFeedback ? '<span class="voice-note">英語からの翻訳</span>' : ''}</figcaption>
+</figure>`;
+const feedbackLink = (id) => `<p class="feedback-more"><a href="#${id}">${japaneseFeedback ? '舞台からの声を読む' : 'Read more from the productions'}</a></p>`;
+document.querySelector('#nav a[href="#notes"]').insertAdjacentHTML('beforebegin', `<a href="#feedback">${feedbackHeading}</a>`);
+document.querySelector('#feedback-title').textContent = feedbackHeading;
 document.querySelector('#feedback-intro').textContent = japaneseFeedback ? '出演者、ご家族、制作に関わった人たちの声。' : 'Selected comments from performers, families and creative collaborators.';
-document.querySelector('#feedback-groups').innerHTML = groups.map(group => `<article class="feedback-group" id="${group.id}"><h3>${group.title}</h3>${feedbackMarkup(group.comments)}<p class="feedback-more"><a href="${group.href}">${japaneseFeedback ? '関連する作品・音楽を見る' : 'Explore the related production or music'}</a></p></article>`).join('');
-document.querySelector('#the-first-magic .production-return').insertAdjacentHTML('afterend', feedbackMarkup({...sugikoFeedback, quote:'I was moved to tears.', quoteJa:'感動して涙が出ました。'}) + feedbackLink('feedback-cat-2024'));
-document.querySelector('#romeos-lament .production-feedback').outerHTML = feedbackMarkup(chorusFeedback) + feedbackLink('feedback-romeo-2024');
+document.querySelector('#feedback-groups').innerHTML = voices.map(voiceMarkup).join('');
+document.querySelector('#the-first-magic .production-return').insertAdjacentHTML('afterend', feedbackMarkup({...sugikoFeedback, quote:'I was moved to tears.', quoteJa:'感動して涙が出ました。'}) + feedbackLink('feedback'));
 
 const artMarkup = (item) => item.art
   ? `<img src="${item.art}" alt="${ui.artwork} ${item.eyebrow}: ${item.title}" loading="lazy" decoding="async">`
@@ -196,7 +183,7 @@ document.addEventListener('click', (event) => {
   const destination = new URL(link.href, window.location.href);
   if (destination.origin !== window.location.origin || destination.pathname !== window.location.pathname || destination.search !== window.location.search) return;
   if (link.matches('#nav a[href^="#"], .brand, .text-link[href^="#"]') && scrollToSection(destination.hash)) { event.preventDefault(); return; }
-  if (!['#feedback', '#feedback-cat-2024', '#feedback-romeo-2024', '#npj-performer-feedback', '#cast-recordings', '#finding-a-home-for-home-sweet-home', '#word-hit-me-again-word', '#where-a-song-begins', '#this-town', '#romeo-and-juliet-2024', '#romeos-lament', '#juliets-nightingale', '#cat-who-walked-2024', '#the-first-magic', '#sassy-cat-and-friends', '#showcase-2022', '#rainbow-connections-land-of-kindness', '#rainbow-connections', '#shiny-gold-button', '#forever-friends', '#a-christmas-carol-with-heart-2010', '#emma-amazing-bucket-fillers', '#big-blue-bucket'].includes(destination.hash)) return;
+  if (!['#feedback', '#cast-recordings', '#finding-a-home-for-home-sweet-home', '#word-hit-me-again-word', '#where-a-song-begins', '#this-town', '#romeo-and-juliet-2024', '#romeos-lament', '#juliets-nightingale', '#cat-who-walked-2024', '#the-first-magic', '#sassy-cat-and-friends', '#showcase-2022', '#rainbow-connections-land-of-kindness', '#rainbow-connections', '#shiny-gold-button', '#forever-friends', '#a-christmas-carol-with-heart-2010', '#emma-amazing-bucket-fillers', '#big-blue-bucket'].includes(destination.hash)) return;
   const target = document.getElementById(destination.hash.slice(1));
   if (!target) return;
   event.preventDefault();

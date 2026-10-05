@@ -77,3 +77,17 @@ html[lang="ja"] .note-page h1{font-family:"Yu Mincho","Hiragino Mincho ProN",ser
 .note div>p.note-context+p{margin-top:0}
 @media(max-width:900px){.notes-list{grid-template-columns:1fr}}
 @media(max-width:640px){.notes-list .note{padding:30px 0 34px}.notes-list .note h3{font-size:30px}.note div>p.note-context{font-size:15px;margin-bottom:18px}}
+
+/* From the productions: one voice per perspective, with generous space between them. */
+#feedback-groups{gap:88px}
+.voice{margin:0;max-width:820px;scroll-margin-top:110px}
+.voice blockquote{margin:0;padding:0}
+.voice blockquote p{margin:0;font:400 clamp(21px,2.2vw,26px)/1.5 Georgia,'Times New Roman',serif;color:var(--ink);overflow-wrap:anywhere}
+.voice blockquote+blockquote{margin-top:24px}
+.voice figcaption{margin-top:22px;display:flex;flex-direction:column;gap:4px;font:400 15px/1.5 Arial,Helvetica,sans-serif;color:var(--muted)}
+.voice-name{font-weight:700;color:var(--ink)}
+.voice-role{font-style:italic}.voice-role em{font-style:normal}
+.voice-note{font-size:12px}
+html[lang="ja"] .voice blockquote p{line-height:1.75}
+@media(max-width:640px){#feedback-groups{gap:60px}}
+html[lang="ja"] .voice-role{font-style:normal}

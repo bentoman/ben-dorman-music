@@ -2,6 +2,81 @@
  "_comment": "Source of truth for Note pages. Run `node tools/build-notes.mjs` after editing. Paragraph text is the approved Note text, split on the former <br><br> separators.",
  "notes": [
   {
+   "slug": "we-got-the-power",
+   "collection": "together",
+   "iso": "2026-10",
+   "excerptParagraphs": 2,
+   "en": {
+    "date": "October 2026",
+    "title": "We Got the Power",
+    "paragraphs": [
+     "<em>Big Blue Bucket</em> was the first song I wrote with Kory Alexander Majansky.",
+     "I’d heard him tear hearts apart onstage in <em>Romeo and Juliet</em>. This time, though, he was in the director’s chair, telling me what the scene needed: a town gathering to celebrate the mysterious Big Blue Bucket and all the wonderful things it brought to people’s lives.",
+     "The bucket had power. It gave people power.",
+     "Great.",
+     "My first instinct was power pop—something in the world of the Raspberries or the late Phil Seymour, whose music I’ve always loved.",
+     "It just wasn’t clicking.",
+     "With my head still stuck somewhere in the 1970s, I started thinking about glam rock: Slade, Wizzard and T. Rex. Then one line came back to me:",
+     "<strong>“We got the power.”</strong>",
+     "It’s from Alice Cooper’s “Department of Youth.” Whether Alice really belongs under glam rock isn’t the point. What stayed with me wasn’t a melody or an arrangement. It was the sheer force of that line being shouted back by a crowd of kids—the energy, the attitude, the feeling that everyone in the room had suddenly joined the same gang.",
+     "That was what Kory’s scene needed.",
+     "His script and lyrics gave me the dramatic foundation. I brought that rough, stomping musical world to it, added a few ideas of my own, and slowly carved out the song.",
+     "One thing was completely non-negotiable.",
+     "Emma asks the perfectly reasonable question, “How can a bucket bake bread?”",
+     "The Chairperson considers this carefully and replies:",
+     "“Hmmm... five, four, three, two, one...”",
+     "What does that mean?",
+     "It doesn’t matter. I loved the rhythm of it. It had to stay.",
+     "As the song took shape, I kept imagining crowds of screaming fans in tartan scarves and impossibly tight trousers, like the Bay City Rollers in their heyday, shouting “Big Blue Bucket!” back at the stage.",
+     "That image didn’t come from Kory’s script, and the song I wrote wasn’t sitting there waiting inside my record collection. It appeared somewhere between the two: his strange town and mysterious bucket meeting all those sounds and images rattling around in my head.",
+     "That’s one of the pleasures of writing for Nagoya Players Junior.",
+     "Every production brings an entirely new world with it. Working together means discovering the musical language that belongs to that particular world—and sometimes finding something neither of us would have arrived at alone."
+    ],
+    "links": [
+     { "href": "#big-blue-bucket", "label": "Watch Big Blue Bucket · Original cast recording" },
+     { "href": "https://youtu.be/E5kRjd10Row", "label": "Watch Big Blue Bucket on YouTube" },
+     { "href": "/collaborations/#kory-alexander-majansky", "label": "Working with Kory Alexander Majansky" }
+    ]
+   },
+   "ja": {
+    "date": "2026年10月",
+    "title": "We Got the Power",
+    "paragraphs": [
+     "「<em>Big Blue Bucket</em>」は、Kory Alexander Majanskyと初めて一緒に書いた曲だった。",
+     "『<em>Romeo and Juliet</em>』の舞台で、彼が歌で観客の胸を締めつけるのを見たことはあった。でも今回は、彼は演出家の椅子に座り、この場面に何が必要なのかを話してくれた。謎めいたBig Blue Bucketと、それが人々の暮らしにもたらす素晴らしいものを祝う、町の集まり。",
+     "バケツには力がある。人々に力を与える。",
+     "なるほど。",
+     "最初に浮かんだのはパワー・ポップだった。The Raspberriesや、昔から大好きだった故Phil Seymourのような世界。",
+     "でも、どうもうまくはまらなかった。",
+     "頭の中がまだ1970年代にあった僕は、Slade、Wizzard、T. Rexといったグラムロックのことを考え始めた。すると、ある一節が戻ってきた。",
+     "<strong>“We got the power.”</strong>",
+     "Alice Cooperの「Department of Youth」の一節だ。Aliceが本当にグラムロックに入るのかは、ここでは問題ではない。心に残っていたのは、メロディーでもアレンジでもなかった。子どもたちの群衆がその言葉を叫び返す、圧倒的な力。エネルギーと態度。そして、その場にいる全員が突然、同じ仲間になったような感覚だった。",
+     "Koryの場面に必要なのは、それだった。",
+     "彼の脚本と歌詞が、ドラマの土台をつくってくれた。僕はそこに、荒々しく足を踏み鳴らすような音楽の世界を持ち込み、自分のアイデアを少し加えながら、ゆっくり曲を削り出していった。",
+     "どうしても譲れないものが、ひとつあった。",
+     "Emmaが、「バケツがどうやってパンを焼けるの？」という、まったくもっともな質問をする。",
+     "Chairpersonは慎重に考えて、こう答える。",
+     "「うーん……5、4、3、2、1……」",
+     "どういう意味なのか？",
+     "そんなことはどうでもいい。僕はそのリズムが大好きだった。絶対に残したかった。",
+     "曲が形になっていくあいだ、僕の頭には、全盛期のBay City Rollersのように、タータンのスカーフとありえないほどぴったりしたズボンを身につけたファンの大群が、舞台に向かって「Big Blue Bucket!」と叫び返す姿が浮かんでいた。",
+     "そのイメージはKoryの脚本に書かれていたものではないし、僕が書いた曲も、レコード棚の中で待っていたわけではない。曲は、その二つのあいだに現れた。彼の奇妙な町と謎めいたバケツが、僕の頭の中を転がっていた音やイメージのすべてと出会ったところに。",
+     "それが、Nagoya Players Juniorのために書く楽しさのひとつだ。",
+     "公演のたびに、まったく新しい世界がやってくる。一緒につくるということは、その世界にふさわしい音楽の言葉を見つけること。そして時には、どちらか一人だけではたどり着けなかったものを見つけることだ。"
+    ],
+    "links": [
+     { "href": "#big-blue-bucket", "label": "Big Blue Bucketを聴く · オリジナル・キャスト録音" },
+     { "href": "https://youtu.be/E5kRjd10Row", "label": "Big Blue BucketをYouTubeで見る" },
+     { "href": "/collaborations/ja/#kory-alexander-majansky", "label": "Kory Alexander Majanskyとの共同制作" }
+    ]
+   },
+   "context": {
+    "en": "Big Blue Bucket · Emma Amazing & The Bucket Fillers",
+    "ja": "Big Blue Bucket · Emma Amazing & The Bucket Fillers"
+   },
+   "excerptStart": 0
+  },
+  {
    "slug": "where-does-magic-start",
    "iso": "2026-10",
    "excerptParagraphs": 3,

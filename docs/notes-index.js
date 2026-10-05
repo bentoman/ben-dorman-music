@@ -2,6 +2,16 @@
 window.NOTE_PREVIEWS = {
  "en": [
   {
+   "id": "we-got-the-power",
+   "title": "We Got the Power",
+   "context": "Big Blue Bucket · Emma Amazing & The Bucket Fillers",
+   "url": "/collaborations/we-got-the-power/",
+   "excerpt": [
+    "<em>Big Blue Bucket</em> was the first song I wrote with Kory Alexander Majansky.",
+    "I’d heard him tear hearts apart onstage in <em>Romeo and Juliet</em>. This time, though, he was in the director’s chair, telling me what the scene needed: a town gathering to celebrate the mysterious Big Blue Bucket and all the wonderful things it brought to people’s lives."
+   ]
+  },
+  {
    "id": "where-does-magic-start",
    "title": "Where does magic start?",
    "context": "The First Magic · The Cat Who Walked by Herself",
@@ -51,6 +61,16 @@ window.NOTE_PREVIEWS = {
   }
  ],
  "ja": [
+  {
+   "id": "we-got-the-power",
+   "title": "We Got the Power",
+   "context": "Big Blue Bucket · Emma Amazing & The Bucket Fillers",
+   "url": "/collaborations/we-got-the-power/ja/",
+   "excerpt": [
+    "「<em>Big Blue Bucket</em>」は、Kory Alexander Majanskyと初めて一緒に書いた曲だった。",
+    "『<em>Romeo and Juliet</em>』の舞台で、彼が歌で観客の胸を締めつけるのを見たことはあった。でも今回は、彼は演出家の椅子に座り、この場面に何が必要なのかを話してくれた。謎めいたBig Blue Bucketと、それが人々の暮らしにもたらす素晴らしいものを祝う、町の集まり。"
+   ]
+  },
   {
    "id": "where-does-magic-start",
    "title": "魔法はどこから始まる？",

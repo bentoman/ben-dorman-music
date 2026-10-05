@@ -47,13 +47,14 @@ const L = {
 };
 const navHashes = ['#productions', '#music', '#feedback', '#notes', '#about', 'together', '#contact'];
 const note = {
+  'we-got-the-power': { en: 'Together: We Got the Power', ja: '共同制作：We Got the Power' },
   'where-a-song-begins': { en: 'Note: Digging through the archive: where a song begins', ja: 'ノート：アーカイブを掘り返して：歌が生まれるところ' },
   'word-hit-me-again-word': { en: 'Note: Word! Hit me again! Word!', ja: 'ノート：“Word! Hit me again! Word!”' },
   'finding-a-home-for-home-sweet-home': { en: 'Note: Finding a home for “Home Sweet Home”', ja: 'ノート：「Home Sweet Home」の居場所を見つける' },
   'where-does-magic-start': { en: 'Note: Where does magic start?', ja: 'ノート：魔法はどこから始まる？' }
 };
 const track = (id, en, ja) => ({ id, en, ja });
-const noteLink = (slug) => ({ note: slug });
+const noteLink = (slug, collection = 'notes') => ({ note: slug, collection });
 
 const people = [{
   id: 'john-lenihan', name: 'John Lenihan',
@@ -106,7 +107,7 @@ const people = [{
     ja: ['Koryは、2026年のショーケースのために『Emma Amazing &amp; The Bucket Fillers』の脚本と演出を手がけた。「Big Blue Bucket」のコンセプトは彼のもので、歌詞は二人で書いた。『Sweet Dreams, Eugene』でも、また一緒に書いている。',
          'それより前、彼は『Romeo and Juliet』の舞台に立っていた。Koryとバックで歌う人たちが、「Romeo’s Lament」の骨組みを受け取って、ずっと大きなものにしてくれた。']
   },
-  links: [track('big-blue-bucket', 'Big Blue Bucket', '「Big Blue Bucket」'), track('romeos-lament', 'Romeo’s Lament', '「Romeo’s Lament」')]
+  links: [track('big-blue-bucket', 'Big Blue Bucket', '「Big Blue Bucket」'), noteLink('we-got-the-power', 'collaborations'), track('romeos-lament', 'Romeo’s Lament', '「Romeo’s Lament」')]
 }];
 
 const process = {
@@ -123,7 +124,7 @@ const quoteBlock = (lang, text, by) => {
   const parts = [by, lang === 'ja' ? L.ja.translated : ''].filter(Boolean).join(' · ');
   return `\n          <blockquote class="collab-quote"><p>${q(lang, text)}</p>${parts ? `<footer>${parts}</footer>` : ''}</blockquote>`;
 };
-const linkHref = (lang, l) => l.note ? `/notes/${l.note}/${lang === 'ja' ? 'ja/' : ''}` : `${L[lang].home}#${l.id}`;
+const linkHref = (lang, l) => l.note ? `/${l.collection || 'notes'}/${l.note}/${lang === 'ja' ? 'ja/' : ''}` : `${L[lang].home}#${l.id}`;
 const linkText = (lang, l) => l.note ? note[l.note][lang] : l[lang];
 
 const page = (lang) => {

@@ -13,10 +13,11 @@ const source = JSON.parse(fs.readFileSync(path.join(root, 'tools', 'notes-source
 const SITE = 'https://bendorman.com';
 const VERSION = '20261005-together2';
 const slugs = new Set(source.notes.map(note => note.slug));
+const noteBySlug = new Map(source.notes.map(note => [note.slug, note]));
 
 const escapeAttr = (text) => text.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
 const plain = (html) => html.replace(/<[^>]+>/g, '').replace(/&amp;/g, '&').replace(/\s+/g, ' ').trim();
-const noteUrl = (slug, lang) => `/notes/${slug}/${lang === 'ja' ? 'ja/' : ''}`;
+const noteUrl = (slug, lang) => `/${noteBySlug.get(slug)?.collection === 'together' ? 'collaborations' : 'notes'}/${slug}/${lang === 'ja' ? 'ja/' : ''}`;
 const homeUrl = (lang, hash = '') => (lang === 'ja' ? '/?lang=ja' : '/') + hash;
 
 // Same-page anchors in the approved text point at the homepage or at another Note page.
@@ -71,7 +72,11 @@ const page = (note, lang) => {
   const canonical = SITE + noteUrl(note.slug, lang);
   const desc = description(data.paragraphs, c.descLimit, lang);
   const title = `${plain(data.title)} — Ben Dorman`;
-  const navLinks = c.nav.map((label, index) => `<a href="${navHref(lang, navHashes[index])}">${label}</a>`).join('');
+  const isTogether = note.collection === 'together';
+  const navLinks = c.nav.map((label, index) => `<a href="${navHref(lang, navHashes[index])}"${isTogether && navHashes[index] === 'together' ? ' aria-current="page"' : ''}>${label}</a>`).join('');
+  const backHref = isTogether ? (lang === 'ja' ? '/collaborations/ja/' : '/collaborations/') : homeUrl(lang, '#notes');
+  const backText = isTogether ? (lang === 'ja' ? '← 共同制作' : '← Together') : c.back;
+  const backBottomText = isTogether ? (lang === 'ja' ? '← 共同制作へ戻る' : '← Back to Together') : c.backBottom;
   const links = data.links.length
     ? `\n        <nav class="note-links" aria-label="${c.related}">${data.links.map(link => `<a href="${localiseHref(link.href, lang)}">${link.label}</a>`).join('')}</nav>`
     : '';
@@ -121,7 +126,7 @@ const page = (note, lang) => {
 
   <main id="main">
     <article class="note-page">
-      <p class="note-back"><a href="${homeUrl(lang, '#notes')}">${c.back}</a></p>
+      <p class="note-back"><a href="${backHref}">${backText}</a></p>
       <header class="note-page-head">
         <p class="note-date"><time datetime="${note.iso}">${data.date}</time></p>
         <h1>${data.title}</h1>
@@ -129,7 +134,7 @@ const page = (note, lang) => {
       <div class="note-body">
 ${data.paragraphs.map(paragraph => `        <p>${localiseBody(paragraph, lang)}</p>`).join('\n')}
       </div>${links}
-      <p class="note-back note-back-bottom"><a href="${homeUrl(lang, '#notes')}">${c.backBottom}</a></p>
+      <p class="note-back note-back-bottom"><a href="${backHref}">${backBottomText}</a></p>
     </article>
   </main>
 
@@ -145,8 +150,9 @@ ${data.paragraphs.map(paragraph => `        <p>${localiseBody(paragraph, lang)}<
 const write = (file, text) => { fs.mkdirSync(path.dirname(file), { recursive: true }); fs.writeFileSync(file, text); };
 
 for (const note of source.notes) {
-  write(path.join(docs, 'notes', note.slug, 'index.html'), page(note, 'en'));
-  write(path.join(docs, 'notes', note.slug, 'ja', 'index.html'), page(note, 'ja'));
+  const collection = note.collection === 'together' ? 'collaborations' : 'notes';
+  write(path.join(docs, collection, note.slug, 'index.html'), page(note, 'en'));
+  write(path.join(docs, collection, note.slug, 'ja', 'index.html'), page(note, 'ja'));
 }
 
 // Homepage previews (no date): a contextual line plus opening paragraph(s), verbatim, and a link to the full Note.

@@ -7,7 +7,7 @@ const ui = window.PORTFOLIO.ui || {
 // Approved survey excerpts; use the original Japanese when supplied.
 const japaneseFeedback = document.documentElement.lang === 'ja';
 const feedbackHeading = japaneseFeedback ? '舞台からの声' : 'Voices from the stage';
-const feedbackNavLabel = japaneseFeedback ? '声' : 'Voices';
+const feedbackNavLabel = japaneseFeedback ? 'みんなの声' : 'Voices';
 const feedbackMarkup = (feedback) => {
   if (!feedback) return '';
   const japanese = japaneseFeedback;

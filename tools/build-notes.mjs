@@ -42,7 +42,7 @@ const copy = {
     htmlLang: 'ja', locale: 'ja_JP', alt: 'en_GB',
     skip: '本文へ移動', menu: 'メニュー', navLabel: 'メインナビゲーション',
     brand: 'Ben Dorman', brandSmall: 'ミュージカル音楽', brandLabel: 'ベン・ドーマン — ミュージカル音楽、ホーム',
-    nav: ['作品', '音楽', '声', 'ノート', 'プロフィール', 'お問い合わせ'],
+    nav: ['作品', '音楽', 'みんなの声', 'ノート', 'プロフィール', 'お問い合わせ'],
     switchLabel: 'English', switchLang: 'en',
     back: '← ノート一覧', backBottom: '← ノート一覧へ戻る', related: '関連する音楽と作品',
     footer: ['ベン・ドーマン — ミュージカル音楽', '日本を拠点に · 国内外で活動'],

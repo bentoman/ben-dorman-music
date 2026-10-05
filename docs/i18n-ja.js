@@ -28,7 +28,7 @@
   document.querySelector('.art-main img').alt = 'Nagoya Players Junior Showcase 2026のアートワーク';
   document.querySelector('.art-side img').alt = '『The Cat Who Walked by Herself』のアートワーク';
   const videoTitles = {
-    'big-blue-bucket': 'Big Blue Bucket — Nagoya Players Junior（オリジナル・キャストによるパフォーマンス、2026年）',
+    'big-blue-bucket': 'Big Blue Bucket — Nagoya Players Junior（2026年 · キャスト録音）',
     'the-first-magic': 'The First Magic — 『The Cat Who Walked by Herself』Nagoya Players Junior（2024年 · 作曲者によるデモ）',
     'sassy-cat-and-friends': 'Sassy Cat — 『The Cat Who Walked by Herself』Nagoya Players Junior（2024年 · 作曲者によるデモ）',
     'juliets-nightingale': 'Juliet’s Nightingale / Home Sweet Home — 『Romeo and Juliet』Nagoya Players（2024年 · 作曲者によるデモ）',
@@ -53,7 +53,7 @@
   text('.music .section-heading .kicker', '聴く');
   text('#music-title', '音楽');
   text('.music .section-note', '舞台と創作の過程から生まれた録音を集めています。キャストによる上演や公演の録音から、作曲者のデモ、制作中の作品まで。');
-  text('#big-blue-bucket .kicker', 'オリジナル・キャストによるパフォーマンス · 2026');
+  text('#big-blue-bucket .kicker', 'キャスト録音 · 2026');
   html('#big-blue-bucket .video-copy > p:not(.kicker):not(.video-note):not(.photo-credit)', 'Nagoya Players Junior Showcase 2026のファミリー・ミュージカル<a href="/?lang=ja#emma-amazing-bucket-fillers">『<em>Emma Amazing & The Bucket Fillers</em>』</a>より、オリジナル・キャストによるパフォーマンス。');
   html('#big-blue-bucket .song-credit', '作曲：Ben Dorman。<br>作詞：Ben Dorman、Kory Alexander Majansky。<br>コンセプト：Kory Alexander Majansky。');
   html('#big-blue-bucket .video-note a', 'YouTubeで見る <span aria-hidden="true">↗</span>');
@@ -162,8 +162,8 @@
         {year:'2022',title:'NPJ Showcase 2022',detail:'Rainbow Connections と A Day in the Life of Boogy からの楽曲',art:'assets/showcase-2022.jpg'}
       ],
       demos:[
-        {year:'2024',title:'Romeo and Juliet', id:'romeo-and-juliet-2024', recordings:[{href:'/?lang=ja#juliets-nightingale',label:'Juliet’s Nightingale / Home Sweet Homeを聴く · 作曲者によるデモ'},{href:'/?lang=ja#romeos-lament',label:'Romeo’s Lamentを聴く · 作曲者によるデモ'}],detail:'上演のために書かれた2曲の制作音源',art:'assets/romeo-juliet.jpg'},
-        {year:'2024',title:'The Cat Who Walked by Herself', id:'cat-who-walked-2024', recordings:[{href:'/?lang=ja#the-first-magic',label:'The First Magicを聴く · 作曲者によるデモ'},{href:'/?lang=ja#sassy-cat-and-friends',label:'Sassy Catを聴く · 作曲者によるデモ'}],detail:'NPJ Showcase 2024 · The First MagicとSassy Catの作曲者によるデモ',art:'assets/showcase-2024.jpg'}
+        {year:'2024',title:'Romeo and Juliet', id:'romeo-and-juliet-2024', recordings:[{href:'/?lang=ja#juliets-nightingale',label:'Juliet’s Nightingale / Home Sweet Homeを聴く · 作曲者によるデモ'},{href:'/?lang=ja#romeos-lament',label:'Romeo’s Lamentを聴く · 作曲者によるデモ'}],detail:'上演のために書かれた2曲の制作音源',art:'assets/romeo-juliet.jpg', bandcamp:'https://bendorman.bandcamp.com/album/original-songs-from-nagoya-players-2024-production-of-romeo-and-juliet-composer-demos'},
+        {year:'2024',title:'The Cat Who Walked by Herself', id:'cat-who-walked-2024', recordings:[{href:'/?lang=ja#the-first-magic',label:'The First Magicを聴く · 作曲者によるデモ'},{href:'/?lang=ja#sassy-cat-and-friends',label:'Sassy Catを聴く · 作曲者によるデモ'}],detail:'NPJ Showcase 2024 · The First MagicとSassy Catの作曲者によるデモ',art:'assets/showcase-2024.jpg', bandcamp:'https://bendorman.bandcamp.com/album/nagoya-players-junior-showcase-2024-composer-demos'}
       ],
       beyond:[
         {title:'未発表曲',detail:'まだ一般公開していない楽曲やデモ'},

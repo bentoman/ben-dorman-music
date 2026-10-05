@@ -107,8 +107,8 @@ window.PORTFOLIO = {
       { year: "2022", title: "NPJ Showcase 2022", detail: "Songs from Rainbow Connections and A Day in the Life of Boogy", art: "assets/showcase-2022.jpg" }
     ],
     demos: [
-      { year: "2024", title: "Romeo and Juliet", id: "romeo-and-juliet-2024", recordings: [{ href: "#juliets-nightingale", label: "Watch Juliet’s Nightingale / Home Sweet Home · Composer demo" }, { href: "#romeos-lament", label: "Watch Romeo’s Lament · Composer demo" }], detail: "Two working recordings written for the production", art: "assets/romeo-juliet.jpg" },
-      { year: "2024", title: "The Cat Who Walked by Herself", id: "cat-who-walked-2024", recordings: [{ href: "#the-first-magic", label: "Watch The First Magic · Composer demo" }, { href: "#sassy-cat-and-friends", label: "Watch Sassy Cat · Composer demo" }], detail: "NPJ Showcase 2024 · Composer demos: The First Magic and Sassy Cat", art: "assets/showcase-2024.jpg" }
+      { year: "2024", title: "Romeo and Juliet", id: "romeo-and-juliet-2024", recordings: [{ href: "#juliets-nightingale", label: "Watch Juliet’s Nightingale / Home Sweet Home · Composer demo" }, { href: "#romeos-lament", label: "Watch Romeo’s Lament · Composer demo" }], detail: "Two working recordings written for the production", art: "assets/romeo-juliet.jpg", bandcamp: "https://bendorman.bandcamp.com/album/original-songs-from-nagoya-players-2024-production-of-romeo-and-juliet-composer-demos" },
+      { year: "2024", title: "The Cat Who Walked by Herself", id: "cat-who-walked-2024", recordings: [{ href: "#the-first-magic", label: "Watch The First Magic · Composer demo" }, { href: "#sassy-cat-and-friends", label: "Watch Sassy Cat · Composer demo" }], detail: "NPJ Showcase 2024 · Composer demos: The First Magic and Sassy Cat", art: "assets/showcase-2024.jpg", bandcamp: "https://bendorman.bandcamp.com/album/nagoya-players-junior-showcase-2024-composer-demos" }
     ],
     beyond: [
       { title: "Unpublished songs", detail: "Songs and demos that have not been released publicly" },

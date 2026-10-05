@@ -167,6 +167,8 @@ const alt = (en, ja) => `    <xhtml:link rel="alternate" hreflang="en" href="${e
 const entry = (loc, en, ja, lastmod) => `  <url>\n    <loc>${loc}</loc>${lastmod ? `\n    <lastmod>${lastmod}</lastmod>` : ''}\n${alt(en, ja)}\n  </url>`;
 const entries = [
   entry(`${SITE}/`, `${SITE}/`, `${SITE}/?lang=ja`),
+  entry(`${SITE}/collaborations/`, `${SITE}/collaborations/`, `${SITE}/collaborations/ja/`),
+  entry(`${SITE}/collaborations/ja/`, `${SITE}/collaborations/`, `${SITE}/collaborations/ja/`),
   ...source.notes.flatMap(note => {
     const en = SITE + noteUrl(note.slug, 'en');
     const ja = SITE + noteUrl(note.slug, 'ja');

@@ -133,6 +133,12 @@
   text('footer > .kicker', 'お問い合わせ');
   text('footer > h2', '一緒にお仕事をしてみませんか？まずはご連絡ください。');
   html('footer > .contact-email', 'ベンに連絡する <span aria-hidden="true">→</span>');
+  const aboutMore = document.querySelector('.about-more a');
+  aboutMore.href = '/collaborations/ja/';
+  aboutMore.innerHTML = '一緒につくる <span aria-hidden="true">→</span>';
+  const contactMore = document.querySelector('.contact-more a');
+  contactMore.href = '/collaborations/ja/#how-a-project-runs';
+  contactMore.textContent = 'プロジェクトの進め方';
   const footerParts = document.querySelectorAll('.footer-line > span');
   text(footerParts[0], 'ベン・ドーマン — ミュージカル音楽');
   text(footerParts[1], '日本を拠点に · 国内外で活動');

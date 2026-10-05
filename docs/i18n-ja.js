@@ -15,11 +15,12 @@
   text('.menu', 'メニュー');
   document.querySelector('#nav').setAttribute('aria-label', 'メインナビゲーション');
   const nav = document.querySelectorAll('#nav a');
-  ['ホーム', '作品', '音楽', 'ノート', 'プロフィール', 'お問い合わせ'].forEach((label, index) => { nav[index].textContent = label; });
-  nav[6].textContent = 'English';
-  nav[6].href = window.location.pathname + window.location.hash;
-  nav[6].lang = 'en';
-  nav[6].hreflang = 'en';
+  ['作品', '音楽', 'ノート', 'プロフィール', 'お問い合わせ'].forEach((label, index) => { nav[index].textContent = label; });
+  const englishLink = document.querySelector('.language-link');
+  englishLink.textContent = 'English';
+  englishLink.href = window.location.pathname + window.location.hash;
+  englishLink.lang = 'en';
+  englishLink.hreflang = 'en';
 
   // Accessible names in Japanese (visible text unchanged).
   document.querySelector('.hero-art').setAttribute('aria-label', '主な作品のアートワーク');

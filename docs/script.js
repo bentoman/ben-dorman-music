@@ -6,7 +6,8 @@ const ui = window.PORTFOLIO.ui || {
 };
 // Approved survey excerpts; use the original Japanese when supplied.
 const japaneseFeedback = document.documentElement.lang === 'ja';
-const feedbackHeading = japaneseFeedback ? '舞台からの声' : 'From the productions';
+const feedbackHeading = japaneseFeedback ? '舞台からの声' : 'Voices from the stage';
+const feedbackNavLabel = japaneseFeedback ? '声' : 'Voices';
 const feedbackMarkup = (feedback) => {
   if (!feedback) return '';
   const japanese = japaneseFeedback;
@@ -22,7 +23,7 @@ const sugikoFeedback = {
   attributionJa: 'Sugiko Kenny（出演者の保護者）· 若いキャストが舞台で演じた「The First Magic」を観て'
 };
 
-// "From the productions": one voice per perspective, quoted from the 2026 survey responses.
+// "Voices from the stage": one voice per perspective, quoted from the 2026 survey responses.
 // Quotations are excerpts of a single answer each; the only edits are an apostrophe
 // (Jeff Fritch) and an ellipsis (parent). All originals are in English.
 const voices = [{
@@ -75,12 +76,12 @@ const voiceMarkup = (voice) => `<figure class="voice" id="${voice.id}">
   ${voice.quotes.map(quote => `<blockquote><p lang="${japaneseFeedback ? 'ja' : 'en'}">${japaneseFeedback ? `「${quote.ja}」` : `“${quote.en}”`}</p></blockquote>`).join('')}
   <figcaption>${voice.name ? `<span class="voice-name">${voice.name}</span>` : ''}<span class="voice-role">${japaneseFeedback ? voice.roleJa : voice.role}</span>${japaneseFeedback ? '<span class="voice-note">英語からの翻訳</span>' : ''}</figcaption>
 </figure>`;
-const feedbackLink = (id) => `<p class="feedback-more"><a href="#${id}">${japaneseFeedback ? '舞台からの声を読む' : 'Read more from the productions'}</a></p>`;
-document.querySelector('#nav a[href="#notes"]').insertAdjacentHTML('beforebegin', `<a href="#feedback">${feedbackHeading}</a>`);
+const feedbackLink = (id) => `<p class="feedback-more"><a href="#${id}">${japaneseFeedback ? '舞台からの声を読む' : 'Read more voices from the stage'}</a></p>`;
+document.querySelector('#nav a[href="#notes"]').insertAdjacentHTML('beforebegin', `<a href="#feedback">${feedbackNavLabel}</a>`);
 document.querySelector('#feedback-title').textContent = feedbackHeading;
 document.querySelector('#feedback-intro').textContent = japaneseFeedback ? '出演者、ご家族、制作に関わった人たちの声。' : 'Selected comments from performers, families and creative collaborators.';
 document.querySelector('#feedback-groups').innerHTML = voices.map(voiceMarkup).join('');
-document.querySelector('#the-first-magic .production-return').insertAdjacentHTML('afterend', feedbackMarkup({...sugikoFeedback, quote:'I was moved to tears.', quoteJa:'感動して涙が出ました。'}) + feedbackLink('feedback'));
+document.querySelector('#the-first-magic .production-return').insertAdjacentHTML('afterend', feedbackMarkup({...sugikoFeedback, quote:'I was moved to tears.', quoteJa:'感動して涙が出ました。'}) + feedbackLink('voice-parent'));
 
 const artMarkup = (item) => item.art
   ? `<img src="${item.art}" alt="${ui.artwork} ${item.eyebrow}: ${item.title}" loading="lazy" decoding="async">`
@@ -183,7 +184,7 @@ document.addEventListener('click', (event) => {
   const destination = new URL(link.href, window.location.href);
   if (destination.origin !== window.location.origin || destination.pathname !== window.location.pathname || destination.search !== window.location.search) return;
   if (link.matches('#nav a[href^="#"], .brand, .text-link[href^="#"]') && scrollToSection(destination.hash)) { event.preventDefault(); return; }
-  if (!['#feedback', '#cast-recordings', '#finding-a-home-for-home-sweet-home', '#word-hit-me-again-word', '#where-a-song-begins', '#this-town', '#romeo-and-juliet-2024', '#romeos-lament', '#juliets-nightingale', '#cat-who-walked-2024', '#the-first-magic', '#sassy-cat-and-friends', '#showcase-2022', '#rainbow-connections-land-of-kindness', '#rainbow-connections', '#shiny-gold-button', '#forever-friends', '#a-christmas-carol-with-heart-2010', '#emma-amazing-bucket-fillers', '#big-blue-bucket'].includes(destination.hash)) return;
+  if (!['#feedback', '#voice-parent', '#cast-recordings', '#finding-a-home-for-home-sweet-home', '#word-hit-me-again-word', '#where-a-song-begins', '#this-town', '#romeo-and-juliet-2024', '#romeos-lament', '#juliets-nightingale', '#cat-who-walked-2024', '#the-first-magic', '#sassy-cat-and-friends', '#showcase-2022', '#rainbow-connections-land-of-kindness', '#rainbow-connections', '#shiny-gold-button', '#forever-friends', '#a-christmas-carol-with-heart-2010', '#emma-amazing-bucket-fillers', '#big-blue-bucket'].includes(destination.hash)) return;
   const target = document.getElementById(destination.hash.slice(1));
   if (!target) return;
   event.preventDefault();

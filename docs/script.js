@@ -27,6 +27,17 @@ const sugikoFeedback = {
 // Quotations are excerpts of a single answer each; the only edits are an apostrophe
 // (Jeff Fritch) and an ellipsis (parent). All originals are in English.
 const voices = [{
+  "id": "voice-kory-alexander-majansky",
+  "quotes": [
+    {
+      "en": "I am so impressed by his ability to take simple little seeds of ideas, thoughts, or impressions and turn them into a completed product that feels fresh and alive.",
+      "ja": "小さなアイデアや考え、印象の種を受け取り、新鮮で生き生きとした完成作品へと育て上げるベンの力には、本当に感心しています。"
+    }
+  ],
+  "name": "Kory Alexander Majansky",
+  "role": "NPJ Director/Writer",
+  "roleJa": "NPJ 演出・脚本"
+}, {
   id: 'voice-shawn-mahler',
   quotes: [{
     en: 'You can take the ideas in the script and develop them musically rather than simply putting a tune underneath the text.',

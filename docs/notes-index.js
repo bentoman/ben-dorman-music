@@ -8,7 +8,7 @@ window.NOTE_PREVIEWS = {
    "url": "/collaborations/we-got-the-power/",
    "excerpt": [
     "<em>Big Blue Bucket</em> was the first song I wrote with Kory Alexander Majansky.",
-    "I’d heard him tear hearts apart onstage in <em>Romeo and Juliet</em>. This time, though, he was in the director’s chair, telling me what the scene needed: a town gathering to celebrate the mysterious Big Blue Bucket and all the wonderful things it brought to people’s lives."
+    "I’d heard them tear hearts apart onstage in <em>Romeo and Juliet</em>. This time, though, they were in the director’s chair, telling me what the scene needed: a town gathering to celebrate the mysterious Big Blue Bucket and all the wonderful things it brought to people’s lives."
    ]
   },
   {
@@ -68,7 +68,7 @@ window.NOTE_PREVIEWS = {
    "url": "/collaborations/we-got-the-power/ja/",
    "excerpt": [
     "「<em>Big Blue Bucket</em>」は、Kory Alexander Majanskyと初めて一緒に書いた曲だった。",
-    "『<em>Romeo and Juliet</em>』の舞台で、彼が歌で観客の胸を締めつけるのを見たことはあった。でも今回は、彼は演出家の椅子に座り、この場面に何が必要なのかを話してくれた。謎めいたBig Blue Bucketと、それが人々の暮らしにもたらす素晴らしいものを祝う、町の集まり。"
+    "『<em>Romeo and Juliet</em>』の舞台で、Koryが歌で観客の胸を締めつけるのを見たことはあった。でも今回は、Koryは演出家の椅子に座り、この場面に何が必要なのかを話してくれた。謎めいたBig Blue Bucketと、それが人々の暮らしにもたらす素晴らしいものを祝う、町の集まり。"
    ]
   },
   {

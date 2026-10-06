@@ -7,6 +7,7 @@
    "iso": "2026-10",
    "excerptParagraphs": 2,
    "en": {
+    "feedbackHtml": "<aside class=\"production-feedback\" aria-label=\"Voices from the stage\"><p class=\"feedback-label\">On Big Blue Bucket</p><blockquote><p lang=\"en\">“I remember feeling the music build towards the end, making me want to jump out of my seat and dance along.”</p><footer>Kory Alexander Majansky · NPJ Director/Writer</footer></blockquote></aside>",
     "date": "October 2026",
     "title": "We Got the Power",
     "paragraphs": [
@@ -39,6 +40,7 @@
     ]
    },
    "ja": {
+    "feedbackHtml": "<aside class=\"production-feedback\" aria-label=\"舞台からの声\"><p class=\"feedback-label\">Big Blue Bucketについて</p><blockquote><p lang=\"ja\">「終盤に向かって音楽が盛り上がっていくのを感じ、席から飛び出して一緒に踊りたくなったのを覚えています。」</p><footer>Kory Alexander Majansky · NPJ 演出・脚本 · 英語からの翻訳</footer></blockquote></aside>",
     "date": "2026年10月",
     "title": "We Got the Power",
     "paragraphs": [

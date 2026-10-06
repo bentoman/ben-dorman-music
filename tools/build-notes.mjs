@@ -133,7 +133,8 @@ const page = (note, lang) => {
       </header>
       <div class="note-body">
 ${data.paragraphs.map(paragraph => `        <p>${localiseBody(paragraph, lang)}</p>`).join('\n')}
-      </div>${links}
+      </div>${data.feedbackHtml ? `
+      ${data.feedbackHtml}` : ''}${links}
       <p class="note-back note-back-bottom"><a href="${backHref}">${backBottomText}</a></p>
     </article>
   </main>

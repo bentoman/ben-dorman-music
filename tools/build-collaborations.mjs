@@ -15,7 +15,7 @@ const L = {
     home: '/', title: 'Working together',
     description: 'A song might eventually have my name attached to it as composer, but that’s rarely where it actually begins. The directors, writers, producers and performers I make music with.',
     skip: 'Skip to content', menu: 'Menu', navLabel: 'Primary navigation', brandSmall: 'Musical Theatre', brandLabel: 'Ben Dorman — Musical Theatre, home',
-    nav: ['Productions', 'Music', 'Voices', 'Notes', 'About', 'Together', 'Contact'],
+    nav: ['Productions', 'Music', 'Voices', 'Notes', 'Together', 'About', 'Contact'],
     back: '← About Ben', linksLabel: 'Related music and Notes', translated: '',
     footer: ['Ben Dorman — Musical Theatre', 'Based in Japan · Available anywhere'],
     contact: 'Contact Ben',
@@ -32,7 +32,7 @@ const L = {
     home: '/?lang=ja', title: '一緒につくる',
     description: '出来上がった曲には作曲者として僕の名前が載るかもしれない。でも、曲が実際に生まれる場所は、たいていそこじゃない。一緒に音楽をつくってきた演出家、脚本家、プロデューサー、出演者たち。',
     skip: '本文へ移動', menu: 'メニュー', navLabel: 'メインナビゲーション', brandSmall: 'ミュージカル音楽', brandLabel: 'ベン・ドーマン — ミュージカル音楽、ホーム',
-    nav: ['作品', '音楽', 'みんなの声', 'ノート', 'プロフィール', '共同制作', 'お問い合わせ'],
+    nav: ['作品', '音楽', 'みんなの声', 'ノート', '共同制作', 'プロフィール', 'お問い合わせ'],
     back: '← ベンについて', linksLabel: '関連する音楽とノート', translated: '英語からの翻訳',
     footer: ['ベン・ドーマン — ミュージカル音楽', '日本を拠点に · 国内外で活動'],
     contact: 'ベンに連絡する',
@@ -45,7 +45,7 @@ const L = {
     processTitle: 'プロジェクトの進め方'
   }
 };
-const navHashes = ['#productions', '#music', '#feedback', '#notes', '#about', 'together', '#contact'];
+const navHashes = ['#productions', '#music', '#feedback', '#notes', 'together', '#about', '#contact'];
 const note = {
   'we-got-the-power': { en: 'Together: We Got the Power', ja: '共同制作：We Got the Power' },
   'where-a-song-begins': { en: 'Note: Digging through the archive: where a song begins', ja: 'ノート：アーカイブを掘り返して：歌が生まれるところ' },

@@ -33,7 +33,7 @@ const copy = {
     htmlLang: 'en', locale: 'en_GB', alt: 'ja_JP',
     skip: 'Skip to content', menu: 'Menu', navLabel: 'Primary navigation',
     brand: 'Ben Dorman', brandSmall: 'Musical Theatre', brandLabel: 'Ben Dorman — Musical Theatre, home',
-    nav: ['Productions', 'Music', 'Voices', 'Notes', 'About', 'Together', 'Contact'],
+    nav: ['Productions', 'Music', 'Voices', 'Notes', 'Together', 'About', 'Contact'],
     switchLabel: '日本語', switchLang: 'ja',
     back: '← All Notes', backBottom: '← Back to Notes', related: 'Related music and production',
     footer: ['Ben Dorman — Musical Theatre', 'Based in Japan · Available anywhere'],
@@ -43,14 +43,14 @@ const copy = {
     htmlLang: 'ja', locale: 'ja_JP', alt: 'en_GB',
     skip: '本文へ移動', menu: 'メニュー', navLabel: 'メインナビゲーション',
     brand: 'Ben Dorman', brandSmall: 'ミュージカル音楽', brandLabel: 'ベン・ドーマン — ミュージカル音楽、ホーム',
-    nav: ['作品', '音楽', 'みんなの声', 'ノート', 'プロフィール', '共同制作', 'お問い合わせ'],
+    nav: ['作品', '音楽', 'みんなの声', 'ノート', '共同制作', 'プロフィール', 'お問い合わせ'],
     switchLabel: 'English', switchLang: 'en',
     back: '← ノート一覧', backBottom: '← ノート一覧へ戻る', related: '関連する音楽と作品',
     footer: ['ベン・ドーマン — ミュージカル音楽', '日本を拠点に · 国内外で活動'],
     site: 'ベン・ドーマン — ミュージカル音楽', descLimit: 90
   }
 };
-const navHashes = ['#productions', '#music', '#feedback', '#notes', '#about', 'together', '#contact'];
+const navHashes = ['#productions', '#music', '#feedback', '#notes', 'together', '#about', '#contact'];
 const navHref = (lang, target) => target === 'together' ? (lang === 'ja' ? '/collaborations/ja/' : '/collaborations/') : homeUrl(lang, target);
 
 const description = (paragraphs, limit, lang) => {

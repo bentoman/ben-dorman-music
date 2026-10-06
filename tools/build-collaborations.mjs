@@ -102,11 +102,12 @@ const people = [{
   id: 'kory-alexander-majansky', name: 'Kory Alexander Majansky',
   role: { en: 'Writer, director and co-lyricist · Nagoya Players Junior, 2026–', ja: '脚本・演出・共同作詞 · Nagoya Players Junior、2026年〜' },
   text: {
-    en: ['Kory wrote and directed <em>Emma Amazing &amp; The Bucket Fillers</em> for the 2026 Showcase. The concept for “Big Blue Bucket” was his, and we wrote its lyrics together. We’re writing together again for <em>Sweet Dreams, Eugene</em>.',
-         'Before that, he was onstage in <em>Romeo and Juliet</em>. Kory and the backing singers took the bare bones of “Romeo’s Lament” and turned them into something much larger.'],
-    ja: ['Koryは、2026年のショーケースのために『Emma Amazing &amp; The Bucket Fillers』の脚本と演出を手がけた。「Big Blue Bucket」のコンセプトは彼のもので、歌詞は二人で書いた。『Sweet Dreams, Eugene』でも、また一緒に書いている。',
-         'それより前、彼は『Romeo and Juliet』の舞台に立っていた。Koryとバックで歌う人たちが、「Romeo’s Lament」の骨組みを受け取って、ずっと大きなものにしてくれた。']
+    en: ['Kory wrote and directed <em>Emma Amazing &amp; The Bucket Fillers</em> for the 2026 Showcase. The concept for “Big Blue Bucket” was theirs, and we wrote its lyrics together. We’re writing together again for <em>Sweet Dreams, Eugene</em>.',
+         'Before that, they were onstage in <em>Romeo and Juliet</em>. Kory and the backing singers took the bare bones of “Romeo’s Lament” and turned them into something much larger.'],
+    ja: ['Koryは、2026年のショーケースのために『Emma Amazing &amp; The Bucket Fillers』の脚本と演出を手がけた。「Big Blue Bucket」のコンセプトはKoryのもので、歌詞は二人で書いた。『Sweet Dreams, Eugene』でも、また一緒に書いている。',
+         'それより前、Koryは『Romeo and Juliet』の舞台に立っていた。Koryとバックで歌う人たちが、「Romeo’s Lament」の骨組みを受け取って、ずっと大きなものにしてくれた。']
   },
+  quote: {"en":"I'm always impressed at how Ben's music can create special acting moments for the performers.","ja":"ベンの音楽が、出演者にとって特別な演技の瞬間を生み出せることに、いつも感心しています。"},
   links: [track('big-blue-bucket', 'Big Blue Bucket', '「Big Blue Bucket」'), noteLink('we-got-the-power', 'collaborations'), track('romeos-lament', 'Romeo’s Lament', '「Romeo’s Lament」')]
 }];
 

@@ -71,6 +71,15 @@ window.NOTE_PREVIEWS = {
  ],
  "ja": [
   {
+   "id": "messin-around",
+   "title": "Messin’ Around",
+   "context": "The Throwbacks · キャンベラ · 1986〜87年頃の録音",
+   "url": "/notes/messin-around/ja/",
+   "excerpt": [
+    "先日、友人から連絡があった。The Throwbacksの録音、せめて昔のセットリストでも残っていないか、と。そこから昔の記録を探し回るうちに、この録音にたどり着いた。「Messin’ Around」。録ったのは1986年か87年だったと思う。"
+   ]
+  },
+  {
    "id": "we-got-the-power",
    "title": "We Got the Power",
    "context": "Big Blue Bucket · Emma Amazing & The Bucket Fillers",

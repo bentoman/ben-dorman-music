@@ -65,11 +65,11 @@ const description = (paragraphs, limit, lang) => {
   return clean.replace(/[\s,;:—-]+$/, '') + '…';
 };
 
-// Optional embedded YouTube video: { id, title, caption, afterParagraph } (afterParagraph is 1-based).
+// Optional embedded YouTube video: { id, title, caption, linkLabel?, afterParagraph } (afterParagraph is 1-based).
 const videoBlock = (video) => `
         <figure class="note-video">
           <div class="video-frame"><iframe src="https://www.youtube-nocookie.com/embed/${video.id}" title="${escapeAttr(video.title)}" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-          <figcaption>${video.caption} <a href="https://youtu.be/${video.id}" target="_blank" rel="noopener">Watch on YouTube <span aria-hidden="true">↗</span></a></figcaption>
+          <figcaption>${video.caption} <a href="https://youtu.be/${video.id}" target="_blank" rel="noopener">${video.linkLabel || 'Watch on YouTube'} <span aria-hidden="true">↗</span></a></figcaption>
         </figure>`;
 
 const page = (note, lang) => {

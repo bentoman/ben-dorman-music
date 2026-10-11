@@ -2,6 +2,41 @@
  "_comment": "Source of truth for Note pages. Run `node tools/build-notes.mjs` after editing. Paragraph text is the approved Note text, split on the former <br><br> separators.",
  "notes": [
   {
+   "slug": "messin-around",
+   "iso": "2026-10",
+   "excerptParagraphs": 1,
+   "context": {
+    "en": "The Throwbacks · Canberra · recorded c. 1986–87"
+   },
+   "en": {
+    "date": "October 2026",
+    "title": "Messin’ Around",
+    "video": {
+     "id": "EiJ_XxgHUYY",
+     "title": "Messin’ Around — The Throwbacks (Original Song, c. 1986–87)",
+     "caption": "“Messin’ Around” · The Throwbacks, recorded c. 1986–87.",
+     "afterParagraph": 3
+    },
+    "paragraphs": [
+     "The other day a friend asked whether I had any recordings of The Throwbacks, or even an old setlist. That sent me down a rabbit hole, and at the bottom of it I found this recording of “Messin’ Around,” made sometime in 1986 or 1987, I think.",
+     "The Throwbacks played around Canberra from 1984 to 1987, with a few reunion gigs in the ’90s. The lineup that lasted longest, and the most stable, was me on guitar and usually lead vocals, Michael O’Regan on keyboards and guitar, Harry Rodin on bass and Richard Weinman on drums. All of us sang backing vocals, because we felt they were really important. Once, when Michael was ill, we were reduced to three, making us The Threebacks.",
+     "The recording exists thanks to our friend Ian Batterham, who recorded us on a four-track in a living room, very old school. He passed me a copy a few years ago. The cassette had that unmistakable Maxell hiss, so I did a little quick-and-dirty mastering to coax a bit more life out of it.",
+     "“Messin’ Around” was one of the few originals we played. Most nights we were happily working our way through the Velvet Underground, the Flamin’ Groovies, the Barracudas, the Cramps, ? and the Mysterians, surf instrumentals and anything else that suited our affection for scruffy 1960s garage rock.",
+     "Listening now, I still enjoy the harmonies, the “96 Tears” keyboard sound, the tortured lyrics and the fact that you can actually hear the bass. More than anything, though, I’m glad we got it recorded at all.",
+     "Those years were my education in playing live: how to sing harmony, how to read an audience, how to hold a stage (while holding a beer). I didn’t think of it as an education at the time. I just thought we were having fun.",
+     "The Throwbacks never really broke up, and I honestly can’t say when we played our last regular gig; it’s a bit of a blur. We drifted apart geographically. Two members moved to Sydney, two of us stayed in Canberra, and eventually it became too hard to keep the band going.",
+     "But I kept playing.",
+     "By 1989 I was in a soul band, The Acetones, with Michael and his brother Bernie among its six regular members and, whenever we could manage it, a brass section whose numbers shifted. That band lasted about a year. Andy Lewis, a friend who was actually in the very first lineup of The Throwbacks, had returned to Canberra from Melbourne, where he had played with The Plunderers. I roped him in to play bass. He was a phenomenal musician, the most natural and intuitive I’ve ever played with, and unbelievable on bass. Andy has since passed away, and I may write more about him another time.",
+     "The Acetones’ lead female singer, Karen Strahan, was discovered by the band’s original drummer, who spotted her, a customer at the Italian restaurant where he worked, standing on a table and belting out a tune a cappella. He recommended her highly, and when we heard her she blew us all away. I shared the vocals with her. She was tiny in stature, with a voice that could fill any room, a natural performer and a lot of fun. She was also deeply involved in local musical theatre, and seemed to be in production after production.",
+     "At the time, I simply thought she was a great singer and performer. Looking back, I think that was my first glimpse of another musical world.",
+     "After The Acetones, Karen and I carried on as a three-piece with another friend for about a year. Bernie, Michael’s brother, was a key reason I became interested in learning Japanese and in going to Japan at all. We kept in touch, and when I first came to Japan he suggested we meet up in Kamakura. We went to see the Great Buddha together. He’s no longer with us, and I think of him often.",
+     "Many years later I would find myself writing for musical theatre. I couldn’t have imagined that back then, guitar in hand, on a Canberra stage. Musical journeys rarely make sense while you’re living them; you only see the path when you look back.",
+     "<em>Thank you to Michael, Harry and Richard, my fellow Throwbacks; to Ian Batterham, for recording us and keeping the tape; and to Karen and everyone in The Acetones. And in memory of Bernie and Andy.</em>"
+    ],
+    "links": []
+   }
+  },
+  {
    "slug": "we-got-the-power",
    "collection": "together",
    "iso": "2026-10",

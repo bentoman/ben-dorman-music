@@ -2,6 +2,15 @@
 window.NOTE_PREVIEWS = {
  "en": [
   {
+   "id": "messin-around",
+   "title": "Messin’ Around",
+   "context": "The Throwbacks · Canberra · recorded c. 1986–87",
+   "url": "/notes/messin-around/",
+   "excerpt": [
+    "The other day a friend asked whether I had any recordings of The Throwbacks, or even an old setlist. That sent me down a rabbit hole, and at the bottom of it I found this recording of “Messin’ Around,” made sometime in 1986 or 1987, I think."
+   ]
+  },
+  {
    "id": "we-got-the-power",
    "title": "We Got the Power",
    "context": "Big Blue Bucket · Emma Amazing & The Bucket Fillers",

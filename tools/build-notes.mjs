@@ -11,7 +11,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const docs = path.join(root, 'docs');
 const source = JSON.parse(fs.readFileSync(path.join(root, 'tools', 'notes-source.json'), 'utf8'));
 const SITE = 'https://bendorman.com';
-const VERSION = '20261005-together2';
+const VERSION = '20261011-messin';
 const slugs = new Set(source.notes.map(note => note.slug));
 const noteBySlug = new Map(source.notes.map(note => [note.slug, note]));
 
@@ -65,10 +65,18 @@ const description = (paragraphs, limit, lang) => {
   return clean.replace(/[\s,;:—-]+$/, '') + '…';
 };
 
+// Optional embedded YouTube video: { id, title, caption, afterParagraph } (afterParagraph is 1-based).
+const videoBlock = (video) => `
+        <figure class="note-video">
+          <div class="video-frame"><iframe src="https://www.youtube-nocookie.com/embed/${video.id}" title="${escapeAttr(video.title)}" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+          <figcaption>${video.caption} <a href="https://youtu.be/${video.id}" target="_blank" rel="noopener">Watch on YouTube <span aria-hidden="true">↗</span></a></figcaption>
+        </figure>`;
+
 const page = (note, lang) => {
   const c = copy[lang];
   const data = note[lang];
   const other = lang === 'ja' ? 'en' : 'ja';
+  const hasJa = Boolean(note.ja); // English-only Notes have no Japanese page, language switch or hreflang alternate
   const canonical = SITE + noteUrl(note.slug, lang);
   const desc = description(data.paragraphs, c.descLimit, lang);
   const title = `${plain(data.title)} — Ben Dorman`;
@@ -88,10 +96,10 @@ const page = (note, lang) => {
   <title>${escapeAttr(title)}</title>
   <meta name="description" content="${escapeAttr(desc)}">
   <link rel="canonical" href="${canonical}">
-  <link rel="alternate" hreflang="en" href="${SITE}${noteUrl(note.slug, 'en')}">
+${hasJa ? `  <link rel="alternate" hreflang="en" href="${SITE}${noteUrl(note.slug, 'en')}">
   <link rel="alternate" hreflang="ja" href="${SITE}${noteUrl(note.slug, 'ja')}">
   <link rel="alternate" hreflang="x-default" href="${SITE}${noteUrl(note.slug, 'en')}">
-  <meta property="og:title" content="${escapeAttr(plain(data.title))}">
+` : ''}  <meta property="og:title" content="${escapeAttr(plain(data.title))}">
   <meta property="og:description" content="${escapeAttr(desc)}">
   <meta property="og:image" content="${SITE}/assets/ben-dorman-social.png">
   <meta property="og:image:type" content="image/png">
@@ -101,8 +109,8 @@ const page = (note, lang) => {
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="Ben Dorman">
   <meta property="og:locale" content="${c.locale}">
-  <meta property="og:locale:alternate" content="${c.alt}">
-  <meta property="article:published_time" content="${note.iso}">
+${hasJa ? `  <meta property="og:locale:alternate" content="${c.alt}">
+` : ''}  <meta property="article:published_time" content="${note.iso}">
   <meta property="article:author" content="Ben Dorman">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="${escapeAttr(plain(data.title))}">
@@ -120,8 +128,8 @@ const page = (note, lang) => {
     <button class="menu" type="button" aria-expanded="false" aria-controls="nav">${c.menu}</button>
     <nav id="nav" aria-label="${c.navLabel}">
       ${navLinks}
-      <a class="language-link" href="${noteUrl(note.slug, other)}" lang="${c.switchLang}" hreflang="${c.switchLang}">${c.switchLabel}</a>
-    </nav>
+${hasJa ? `      <a class="language-link" href="${noteUrl(note.slug, other)}" lang="${c.switchLang}" hreflang="${c.switchLang}">${c.switchLabel}</a>
+` : ''}    </nav>
   </header>
 
   <main id="main">
@@ -132,7 +140,7 @@ const page = (note, lang) => {
         <h1>${data.title}</h1>
       </header>
       <div class="note-body">
-${data.paragraphs.map(paragraph => `        <p>${localiseBody(paragraph, lang)}</p>`).join('\n')}
+${data.paragraphs.map((paragraph, index) => `        <p>${localiseBody(paragraph, lang)}</p>` + (data.video && data.video.afterParagraph === index + 1 ? videoBlock(data.video) : '')).join('\n')}
       </div>${data.feedbackHtml ? `
       ${data.feedbackHtml}` : ''}${links}
       <p class="note-back note-back-bottom"><a href="${backHref}">${backBottomText}</a></p>
@@ -153,7 +161,7 @@ const write = (file, text) => { fs.mkdirSync(path.dirname(file), { recursive: tr
 for (const note of source.notes) {
   const collection = note.collection === 'together' ? 'collaborations' : 'notes';
   write(path.join(docs, collection, note.slug, 'index.html'), page(note, 'en'));
-  write(path.join(docs, collection, note.slug, 'ja', 'index.html'), page(note, 'ja'));
+  if (note.ja) write(path.join(docs, collection, note.slug, 'ja', 'index.html'), page(note, 'ja'));
 }
 
 // Homepage previews (no date): a contextual line plus opening paragraph(s), verbatim, and a link to the full Note.
@@ -161,6 +169,7 @@ const previews = { en: [], ja: [] };
 for (const note of source.notes) {
   for (const lang of ['en', 'ja']) {
     const data = note[lang];
+    if (!data) continue; // English-only Note: not listed in the Japanese homepage view
     previews[lang].push({
       id: note.slug, title: data.title, context: note.context[lang], url: noteUrl(note.slug, lang),
       excerpt: data.paragraphs.slice(note.excerptStart || 0, (note.excerptStart || 0) + note.excerptParagraphs)
@@ -179,6 +188,7 @@ const entries = [
   entry(`${SITE}/collaborations/ja/`, `${SITE}/collaborations/`, `${SITE}/collaborations/ja/`),
   ...source.notes.flatMap(note => {
     const en = SITE + noteUrl(note.slug, 'en');
+    if (!note.ja) return [`  <url>\n    <loc>${en}</loc>${note.iso ? `\n    <lastmod>${note.iso}</lastmod>` : ''}\n  </url>`];
     const ja = SITE + noteUrl(note.slug, 'ja');
     return [entry(en, en, ja, note.iso), entry(ja, en, ja, note.iso)];
   })
@@ -186,4 +196,4 @@ const entries = [
 write(path.join(docs, 'sitemap.xml'),
   `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${entries.join('\n')}\n</urlset>\n`);
 
-console.log(`Built ${source.notes.length} Notes × 2 languages, notes-index.js and sitemap.xml`);
+console.log(`Built ${source.notes.length} Notes (${source.notes.filter(note => note.ja).length} with Japanese), notes-index.js and sitemap.xml`);

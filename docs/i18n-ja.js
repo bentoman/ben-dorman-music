@@ -105,6 +105,10 @@
   text('#breathe .kicker', 'アコースティック');
   text('#breathe .video-description', 'ギターとボーカル・ハーモニーによる、穏やかなアコースティック・ソング。');
   html('#breathe .video-note a', 'YouTubeで見る <span aria-hidden="true">↗</span>');
+  text('#throwbacks-messin-around .kicker', 'ガレージ・ロック · 1986〜87年頃');
+  text('#throwbacks-messin-around .video-description', 'The Throwbacksのオリジナル曲。キャンベラのリビングルームで、4トラックで録音しました。');
+  html('#throwbacks-messin-around .video-note a', 'YouTubeで見る <span aria-hidden="true">↗</span>');
+  html('#throwbacks-messin-around .note-return', '<a href="/notes/messin-around/ja/">ノートを読む：Messin’ Around</a>');
   const groups = document.querySelectorAll('.music-label');
   html(groups[0].querySelector('h3'), 'オリジナル・キャスト録音');
   text(groups[0].querySelector('p'), '作品に命を吹き込んだ出演者たちによる録音。');
